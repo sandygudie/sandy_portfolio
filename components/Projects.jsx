@@ -96,7 +96,6 @@ function Projects() {
           return (
             <a
               key={item.id}
-              // className="rounded-lg my-6 bg-dark relative  hover:bg-dark/5 hover:border-primary hover:border-2"
               className="w-[500px] h-[500px] rounded-lg  my-6 outline-none shadow-lg relative hover:border-primary hover:border-[0.5px]"
               href={item.link}
               rel="noreferrer"
