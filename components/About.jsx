@@ -3,7 +3,7 @@ import Image from "next/image";
 import profileImage from "../assets/images/profile-image.PNG";
 function About() {
   return (
-    <div id="aboutme" class="shadow-lg w-full pt-8 pb-32 ">
+    <div id="aboutme" className="shadow-lg w-full pt-8 pb-32 ">
       <div className="w-10/12 m-auto ">
         <h1 className="font-bold py-1 mt-12 text-primary text-lg md:text-2xl">
           About Me

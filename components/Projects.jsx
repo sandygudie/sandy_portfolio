@@ -112,7 +112,7 @@ function Projects() {
                 quality={100}
                 className="rounded-lg "
               />
-              <div class=" p-4 absolute w-full bottom-0 bg-secondary shadow-lg h-[100px] rounded-b-lg">
+              <div className=" p-4 absolute w-full bottom-0 bg-secondary shadow-lg h-[100px] rounded-b-lg">
                 <div className="flex gap-x-4  text-primary text-xl absolute right-5">
                   <a href={item.Github_link} rel="noreferrer" target="_blank">
                     {" "}
