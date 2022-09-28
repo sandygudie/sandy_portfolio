@@ -22,7 +22,6 @@ export default function Home() {
         <meta name="description" content="Goodnews Sandy Portfolio" />
         <link rel="icon" href="/logo.svg" />
       </Head>
-
       <main>
         {loading ? (
           <div className="loader-container bg-secondary">
