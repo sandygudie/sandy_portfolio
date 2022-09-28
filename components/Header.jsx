@@ -23,7 +23,7 @@ const Header = () => (
             About Me
           </a>
           <a className="hover:text-primary" href="#project">
-            Projects
+           Experience
           </a>
           <a className="hover:text-primary" href="#contact">
             Contact

@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Profile from "../components/Profile";
 import Header from "../components/Header";
-import Projects from "../components/Projects";
 import About from "../components/About";
 import Footer from "../components/Footer";
+import Experience from "../components/Experience";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -32,7 +32,7 @@ export default function Home() {
             <Header />
             <Profile />
             <About />
-            <Projects />
+            <Experience />
             <Footer />
           </>
         )}

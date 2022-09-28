@@ -86,57 +86,53 @@ function Projects() {
   ];
 
   return (
-    <div id="project" className="py-[5em]  w-11/12 m-auto">
-      <h1 className="text-center font-bold py-2 mt-12 text-primary text-lg md:text-2xl">
-        Projects
-      </h1>
-
-      <div className="my-8 flex justify-center flex-wrap gap-10">
-        {project.map((item) => {
-          return (
-            <a
-              key={item.id}
-              className="w-[500px] h-[500px] rounded-lg  my-6 outline-none shadow-lg relative hover:border-primary hover:border-[0.5px]"
-              href={item.link}
-              rel="noreferrer"
-              target="_blank"
-            >
-              <Image
-                src={item.image}
-                alt="Photo"
-                width={400}
-                height={400}
-                layout="fill"
-                objectFit="cover"
-                quality={100}
-                className="rounded-lg "
-              />
-              <div className=" p-4 absolute w-full bottom-0 bg-secondary shadow-lg h-[100px] rounded-b-lg">
-                <div className="flex gap-x-4  text-primary text-xl absolute right-5">
-                  <a href={item.Github_link} rel="noreferrer" target="_blank">
-                    {" "}
-                    <FaGithub />
-                  </a>
-                  <BiLinkExternal />{" "}
-                </div>
-                <div>
-                  <h2 className="text-sm text-primary font-bold">
-                    {item.name}
-                  </h2>
-                  <p className="text-sm"> {item.description}</p>
-
-                  <ul className="w-full flex gap-x-4 flex-wrap justify-start items-center text-xs">
-                    <span className="text-sm text-primary ">Built with:</span>
-                    {item.tools.map((list, i) => {
-                      return <li key={i}>{list},</li>;
-                    })}
-                  </ul>
-                </div>{" "}
+    <div className="my-8 flex justify-center flex-wrap gap-10">
+      {project.map((item) => {
+        return (
+          <a
+            key={item.id}
+            className="w-[500px] h-[500px] rounded-lg my-6 outline-none shadow-lg border-transparent relative hover:border-primary hover:border-[0.5px]"
+            href={item.link}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <Image
+              src={item.image}
+              alt="Photo"
+              width={400}
+              height={400}
+              layout="fill"
+              objectFit="cover"
+              quality={100}
+              className="rounded-lg "
+            />
+            <div className="p-4 absolute w-full bottom-0 bg-secondary shadow-lg rounded-b-lg">
+              <div className="flex gap-x-4 text-primary text-xl absolute right-5">
+                <a href={item.Github_link} rel="noreferrer" target="_blank">
+                  {" "}
+                  <FaGithub />
+                </a>
+                <BiLinkExternal />{" "}
               </div>
-            </a>
-          );
-        })}
-      </div>
+              <div>
+                <h2 className="text-sm text-primary font-bold">{item.name}</h2>
+                <p className="text-xs my-1"> {item.description}</p>
+
+                <ul className="w-full flex gap-x-4 flex-wrap justify-start items-center  text-xs">
+                  <span className=" text-primary ">Built with:</span>
+                  {item.tools.map((list, i) => {
+                    return (
+                      <li className="text-xs" key={i}>
+                        {list},
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>{" "}
+            </div>
+          </a>
+        );
+      })}
     </div>
   );
 }

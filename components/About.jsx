@@ -29,12 +29,11 @@ function About() {
               <span className="text-primary">
                 <a href="https://sandygoody.medium.com">Meduim.</a>
               </span>{" "}
-              I love the thrills of{" "}
-              <span className="text-primary">Startups.</span>{" "}
+              And, i love the thrills of Startups.
             </p>
             <div className="pt-2">
               {" "}
-              Some tools/technologies i have work with includes:
+              Some tools/technologies i have work with include:
               <div>
                 <p>
                   {" "}

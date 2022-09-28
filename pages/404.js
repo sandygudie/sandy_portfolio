@@ -7,7 +7,7 @@ export default function Custom404() {
       <h1>404: Not Found</h1>
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
       <Link  href="/" className="text-red-500 text-sm">
-          <a>  Return to Home Page</a>
+          <a>  Return to <span className="text-primary">Home </span>Page</a>
         </Link>
     </div>
   );
