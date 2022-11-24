@@ -7,13 +7,22 @@ import pomodoroImage from "../assets/images/Pomodoro.png";
 import commentImage from "../assets/images/Comment.png";
 import networthImage from "../assets/images/Networth.PNG";
 import shoeAppImage from "../assets/images/ShoppingApp.png";
-import whatsappImage from "../assets/images/whatsapp_clone.PNG";
+import kanbanImage from "../assets/images/kanban.PNG";
 import LaunmaxImage from "../assets/images/Launmax.PNG";
 
 function Projects() {
   const project = [
     {
       id: 0,
+      name: "Kanban Task Management App",
+      description: "A task management board application.",
+      tools: ["Vite(ReactJs)", "TypeScript","TailwindCSS","Redux Toolkit",],
+      link: "https://kanban-management-app.netlify.app/",
+      Github_link: "https://github.com/sandygudie/Kanban-App",
+      image: kanbanImage,
+    },
+    {
+      id: 1,
       name: "Invoice App",
       description: "An app to view, create and filter invoices.",
       tools: [
@@ -28,7 +37,7 @@ function Projects() {
       image: invoiceImage,
     },
     {
-      id: 1,
+      id: 2,
       name: "Pomodoro Stop-watch",
       description: " A Pomodoro timer with control settings.",
       tools: ["HTML", "SASS", "WebPack", "JavaSript"],
@@ -37,7 +46,7 @@ function Projects() {
       image: pomodoroImage,
     },
     {
-      id: 2,
+      id: 3,
       name: "Comment App",
       description: "Interactive Comment App.",
       tools: ["Typescript", "Nextjs", "TailwindCSS", "Context-Api"],
@@ -46,7 +55,7 @@ function Projects() {
       image: commentImage,
     },
     {
-      id: 3,
+      id: 4,
       name: "NetWorth",
       description: "Keep track of your assets.",
       tools: ["HTML", "SASS", "Javascript"],
@@ -56,7 +65,7 @@ function Projects() {
     },
 
     {
-      id: 4,
+      id: 5,
       name: "Shopping App",
       description: "Ecommerce App for women's Shoes.",
       tools: ["HTML", "SASS", "Javascript", "Contentful"],
@@ -65,17 +74,9 @@ function Projects() {
       image: shoeAppImage,
     },
 
+   
     {
-      id: 5,
-      name: "Whatsapp Clone",
-      description: "Whatsapp Clone.",
-      tools: ["ReactJs", "Firebase"],
-      link: "https://whatsapp-clone-steel.vercel.app/",
-      Github_link: "https://github.com/sandygudie/Whatsapp-clone",
-      image: whatsappImage,
-    },
-    {
-      id: 6,
+      id: 7,
       name: "Launmax",
       description: "An on-demand Laundy service.",
       tools: ["HTML", "SASS", "Javascript"],
@@ -100,12 +101,14 @@ function Projects() {
               src={item.image}
               alt="Photo"
               width={400}
-              height={400}
-              layout="fill"
+              height={300}
+              layout="responsive" 
               objectFit="cover"
               quality={100}
-              className="rounded-lg "
+              className="rounded-lg"
+              priority="lazy"
             />
+            {/* <img src={item.image} alt="image" className="rounded-lg h-full w-full" /> */}
             <div className="p-4 absolute w-full bottom-0 bg-secondary shadow-lg rounded-b-lg">
               <div className="flex gap-x-4 text-primary text-xl absolute right-5">
                 <a href={item.Github_link} rel="noreferrer" target="_blank">

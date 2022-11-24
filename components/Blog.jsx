@@ -69,7 +69,7 @@ export default function Blog() {
         })}
       </div>
       <a
-        href="https://medium.com/me/stories/public"
+        href="https://sandygoody.medium.com/"
         rel="noreferrer"
         target="_blank"
         className="mt-6 text-primary hover:underline"

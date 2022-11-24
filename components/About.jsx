@@ -25,7 +25,7 @@ function About() {
               I am big on performance, accessibilty and simplicity.{" "}
             </p>
             <p className="pt-2">
-              I contribute to open source and share technical topics on my{" "}
+              I contribute to open source and write articles on{" "}
               <span className="text-primary">
                 <a href="https://sandygoody.medium.com">Meduim.</a>
               </span>{" "}
@@ -46,7 +46,7 @@ function About() {
                 </p>
                 <p>
                   <span className="text-primary">Framework :</span> ReactJs,
-                  Vite, NextJs, Gatsby
+                  Vite, NextJs, Gatsby,Redux
                 </p>
                 <p>
                   <span className="text-primary">Backend Tools:</span> NodeJs,
