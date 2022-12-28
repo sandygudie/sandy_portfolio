@@ -69,7 +69,6 @@ function About() {
               alt="Photo"
               width={350}
               height={350}
-              layout="responsive"
               objectFit="cover"
               className="rounded-full"
               quality={100}
