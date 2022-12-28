@@ -42,14 +42,14 @@ function About() {
                 </p>
                 <p>
                   <span className="text-primary">Styling libraries: </span>
-                  TailwindCSS, Material UI
+                  TailwindCSS, Material-UI
                 </p>
                 <p>
-                  <span className="text-primary">Framework :</span> ReactJs,
-                  Vite, NextJs, Gatsby,Redux
+                  <span className="text-primary">Framework/Libraries :</span> ReactJs,
+                  Vite, NextJs, Gatsby, Redux
                 </p>
                 <p>
-                  <span className="text-primary">Backend Tools:</span> NodeJs,
+                  <span className="text-primary">Backend Tools:</span> NodeJs
                   Firebase
                 </p>
               </div>
@@ -69,8 +69,9 @@ function About() {
               alt="Photo"
               width={350}
               height={350}
-              // layout="fill"
+              layout="responsive"
               objectFit="cover"
+              className="rounded-full"
               quality={100}
             />
           </div>

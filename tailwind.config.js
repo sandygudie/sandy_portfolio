@@ -1,16 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: 'jit',
-  purge: [
-    './pages/**/*.{js,jsx}',
-    , "./components/**/*.{js,jsx}"
-  ],
+  mode: "jit",
+  purge: ["./pages/**/*.{js,jsx}", , "./components/**/*.{js,jsx}"],
   theme: {
     extend: {
       colors: {
-        primary: "hsl(171deg 47% 63%)",
+        primary: "hsl(0deg 84% 60%)",
         secondary: "hsl(220deg 26% 14%)",
-        red_light: "hsl(0deg 84% 60%)",
+        tourquise: "hsl(171deg 47% 63%)",
         dark: "hsl(0deg 0% 0%)",
         white: "hsl(0deg 0% 100%)",
       },
@@ -27,9 +24,11 @@ module.exports = {
       fontFamily: {
         cursive: "cursive, sans-serif",
       },
+      boxShadow: {
+        "3xl":
+          "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px",
+      },
     },
   },
   plugins: [],
-}
-
-
+};

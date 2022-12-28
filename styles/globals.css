@@ -42,3 +42,20 @@ body {
     transform: rotate(360deg);
   }
 }
+
+
+.linear {
+  animation: grow 8s linear infinite;
+}
+@keyframes grow {
+  0% {
+    font-size: 3em;
+  }
+  50% {
+    font-size: 8em;
+  }
+  100% {
+    font-size: 3em;
+  }
+}
+

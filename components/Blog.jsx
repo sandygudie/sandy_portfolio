@@ -1,48 +1,69 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+import Image from "next/image";
+import solidityImage from "../assets/images/blog/solidity.png";
+import viteImage from "../assets/images/blog/vite.jpg";
+import githubactionImage from "../assets/images/blog/github-action.jpg";
+import unittestingImage from "../assets/images/blog/unittesting.PNG";
+import wordpressImage from "../assets/images/blog/wordpress.jpg";
+import twinmacroImage from "../assets/images/blog/twinmacro.png";
+import linttoolImage from "../assets/images/blog/lint.png";
 
 export default function Blog() {
   const articles = [
     {
       id: 0,
-      name: "ESLint, Prettier and Husky",
-      description:
-        "How to install ESLint and Prettier, and using Husky for pre-commit lint",
-      link: "https://sandygoody.medium.com/eslint-prettier-and-husky-e6116518f2f9",
+
+      description: "Twin Macro: Combine TailwindCSS and Material-UI theme",
+      link: "https://medium.com/@sandygoody/vite-twin-macro-d27a5f89df06",
+      images: twinmacroImage,
+      dateCreated: "October 1, 2022",
     },
     {
       id: 1,
-      name: "Get Started with Vite.",
+
       description:
-        "Learn about this frontend development tool for modern web projects",
-      link: "https://sandygoody.medium.com/get-started-with-vite-230deaef0ecf",
+        "How to install ESLint and Prettier, and using Husky for pre-commit lint",
+      link: "https://sandygoody.medium.com/eslint-prettier-and-husky-e6116518f2f9",
+      images: linttoolImage,
+      dateCreated: "April 19th, 2022",
     },
     {
       id: 2,
-      name: "Data Types in Solidity",
-      description: "Learn the differnet data Types in Solidity",
-      link: "https://coinsbench.com/data-types-in-solidity-9c3e61c46661",
+
+      description: "Get Started with Vite.",
+      link: "https://sandygoody.medium.com/get-started-with-vite-230deaef0ecf",
+      images: viteImage,
+      dateCreated: "April 7th, 2022",
     },
     {
       id: 3,
-      name: "Unit Testing",
-      description: " Learn Unit Testing with Jest for React Applications",
-      link: "https://sandygoody.medium.com/unit-testing-7799b753b486",
+      description: "Data Types in Solidity",
+      link: "https://coinsbench.com/data-types-in-solidity-9c3e61c46661",
+      images: solidityImage,
+      dateCreated: "April 7th, 2022",
     },
-
     {
       id: 4,
-      name: "CI/CD with React App using GitHub Actions",
-      description:
-        "How to set up continuous integration and deployment for your React App",
-      link: "https://sandygoody.medium.com/ci-cd-pipeline-with-react-app-using-github-actions-1b219d4e162f",
+      description: " Learn Unit Testing with Jest for React Applications",
+      link: "https://sandygoody.medium.com/unit-testing-7799b753b486",
+      images: unittestingImage,
+      dateCreated: "December 16th, 2021",
     },
 
     {
       id: 5,
-      name: "Installing WordPress.",
-      description: " Using Wordpress for Website or Blog",
+      description: "CI/CD with React App using GitHub Actions",
+      link: "https://sandygoody.medium.com/ci-cd-pipeline-with-react-app-using-github-actions-1b219d4e162f",
+      images: githubactionImage,
+      dateCreated: "October 29th, 2021",
+    },
+
+    {
+      id: 6,
+      description: " Installing WordPress.",
       link: "https://sandygoody.medium.com/installing-wordpress-cc634e51fa71",
+      images: wordpressImage,
+      dateCreated: "January 14th, 2021",
     },
   ];
 
@@ -53,16 +74,29 @@ export default function Blog() {
           return (
             <a
               key={item.id}
-              className="w-72 h-50 rounded-lg p-6 my-6 bg-secondary shadow-lg border border-red hover:bg-primary/20 hover:border-primary hover:border-[0.5px]"
+              className="w-[20rem] rounded-lg my-6 bg-secondary shadow-lg shadow-gray-500/50 border-red "
               href={item.link}
               rel="noreferrer"
               target="_blank"
             >
-              <div>
-                <h2 className="text-base  text-primary font-bold">
-                  {item.name}
-                </h2>
-                <p className="text-sm mt-2  leading-8 ">{item.description}.</p>
+              <Image
+                src={item.images}
+                alt="blog-images"
+                width={600}
+                height={500}
+                layout="responsive"
+                objectFit="cover"
+                quality={100}
+                priority="lazy"
+                className="rounded-t-lg"
+              />
+              <div className="p-6">
+                <p className="text-base">{item.description}.</p>
+                <p className="text-xs  mt-2 mb-6">{item.dateCreated}</p>
+                <a className="text-primary" href={item.link}>
+                  {" "}
+                  Read More &gt;&gt;
+                </a>
               </div>
             </a>
           );
@@ -74,7 +108,7 @@ export default function Blog() {
         target="_blank"
         className="mt-6 text-primary hover:underline"
       >
-        See More
+        Read More Articles
       </a>
     </div>
   );

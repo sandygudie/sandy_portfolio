@@ -14,9 +14,9 @@ function Projects() {
   const project = [
     {
       id: 0,
-      name: "Kanban Task Management App",
+      name: "Kanban Management App",
       description: "A task management board application.",
-      tools: ["Vite(ReactJs)", "TypeScript","TailwindCSS","Redux Toolkit",],
+      tools: ["Vite(ReactJs)", "TypeScript", "TailwindCSS", "Redux Toolkit"],
       link: "https://kanban-management-app.netlify.app/",
       Github_link: "https://github.com/sandygudie/Kanban-App",
       image: kanbanImage,
@@ -74,10 +74,9 @@ function Projects() {
       image: shoeAppImage,
     },
 
-   
     {
       id: 7,
-      name: "Launmax",
+      name: "LaunMax",
       description: "An on-demand Laundy service.",
       tools: ["HTML", "SASS", "Javascript"],
       link: "https://launmax.netlify.app/",
@@ -90,50 +89,51 @@ function Projects() {
     <div className="my-8 flex justify-center flex-wrap gap-10">
       {project.map((item) => {
         return (
-          <a
+          <div
             key={item.id}
-            className="w-[500px] lg:h-[500px] rounded-lg my-6 outline-none shadow-lg border-transparent relative hover:border-primary hover:border-[0.5px]"
-            href={item.link}
-            rel="noreferrer"
-            target="_blank"
+            className="w-[30rem] h-auto rounded-xl my-6 shadow-xl shadow-gray-500/40 linear "
           >
             <Image
               src={item.image}
               alt="Photo"
-              width={400}
-              height={300}
-              layout="responsive" 
-              objectFit="cover"
+              height={700}
+              layout="responsive"
+              objectFit="contain"
               quality={100}
-              className="rounded-lg"
-              priority="lazy"
+              className="rounded-t-2xl"
+              key={item.id}
             />
-            {/* <img src={item.image} alt="image" className="rounded-lg h-full w-full" /> */}
-            <div className="p-4 absolute w-full bottom-0 bg-secondary shadow-lg rounded-b-lg">
-              <div className="flex gap-x-4 text-primary text-xl absolute right-5">
-                <a href={item.Github_link} rel="noreferrer" target="_blank">
-                  {" "}
-                  <FaGithub />
-                </a>
-                <BiLinkExternal />{" "}
-              </div>
-              <div>
-                <h2 className="text-sm text-primary font-bold">{item.name}</h2>
-                <p className="text-xs my-1"> {item.description}</p>
+   
 
-                <ul className="w-full flex gap-x-4 flex-wrap justify-start items-center  text-xs">
-                  <span className=" text-primary ">Built with:</span>
-                  {item.tools.map((list, i) => {
-                    return (
-                      <li className="text-xs" key={i}>
-                        {list},
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>{" "}
+            <div className="p-6">
+              <div className="rounded-b-xl w-full bg-secondary flex items-center justify-between rounded-b-lg">
+                <div>
+                  <h2 className="text-lg font-bold">
+                    {item.name}
+                  </h2>
+                  <p className="text-xs"> {item.description}</p>
+                </div>
+                <div className="flex gap-x-4 text-white text-lg">
+                  <a href={item.Github_link} rel="noreferrer" target="_blank">
+                    {" "}
+                    <FaGithub />
+                  </a>
+                 <a href={item.link}><BiLinkExternal />{" "}</a> 
+                </div>
+              </div>
+
+              <ul className="w-full flex gap-2 flex-wrap justify-start items-center text-xs mt-4">
+                <hr />
+                {item.tools.map((list, i) => {
+                  return (
+                    <li className="text-xs bg-white text-secondary rounded-full px-2 py-1" key={i}>
+                      {list}
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
-          </a>
+          </div>
         );
       })}
     </div>

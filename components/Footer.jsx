@@ -46,20 +46,20 @@ function Footer() {
       <form
         onSubmit={
           handleSubmit}
-        className="flex items-center justify-center gap-10 my-8"
+        className="lg:flex  items-center justify-center gap-10 my-8"
       >
         <div>
           <textarea
             placeholder="Say Something !"
             id="message"
             name="message"
-            className=" text-sm w-64 bg-transparent outline-none border-solid border-[1px] border-primary  p-2 rounded-md"
+            className=" text-sm w-80 h-24 bg-transparent outline-none border-solid border-[1px] border-white  p-2 rounded-md"
           />
           {state.errors ? (
             <p className="text-[#b54e4e] text-sm">{state.errors[0]?.message}</p>
           ) : null}
           {state.succeeded ? (
-            <p className="text-sm text-primary"> Message Sent!</p>
+            <p className="text-sm text-tourquise"> Message Sent!</p>
           ) : null}
         </div>
         <button
@@ -76,7 +76,7 @@ function Footer() {
           return (
             <a
               key={item.id}
-              className="mr-3 border-2 border-primary p-2 rounded-full hover:text-primary hover:border-dark"
+              className="mr-3 border-[1px] border-white p-2 rounded-full hover:text-primary hover:border-dark"
               href={item.link}
             >
               {item.icon}
@@ -86,7 +86,7 @@ function Footer() {
       </div>
 
       <p className="text-center pt-2 mt-2 text-sm">
-        All rights reserved. Sandy © 2022
+        All rights reserved. Sandy©2023
       </p>
     </div>
   );
