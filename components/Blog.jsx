@@ -3,7 +3,7 @@ import Image from "next/image";
 import solidityImage from "../assets/images/blog/solidity.png";
 import viteImage from "../assets/images/blog/vite.jpg";
 import githubactionImage from "../assets/images/blog/github-action.jpg";
-import unittestingImage from "../assets/images/blog/unittesting.PNG";
+import unittestingImage from "../assets/images/blog/unittesting.png";
 import wordpressImage from "../assets/images/blog/wordpress.jpg";
 import twinmacroImage from "../assets/images/blog/twinmacro.png";
 import linttoolImage from "../assets/images/blog/lint.png";
