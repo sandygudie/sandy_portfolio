@@ -40,7 +40,7 @@ function Projects() {
       id: 2,
       name: "Pomodoro Stop-watch",
       description: " A Pomodoro timer with control settings.",
-      tools: ["HTML", "SASS", "WebPack", "JavaSript"],
+      tools: ["HTML", "SASS", "WebPack", "Javascript"],
       link: " https://pomodoro-stopwatch.netlify.app/",
       Github_link: "https://github.com/sandygudie/Pomodoro-Timer",
       image: pomodoroImage,

@@ -39,21 +39,21 @@ function Footer() {
       id="contact"
       className="text-white text-align-center my-6 w-11/12 m-auto"
     >
-      <h1 className="text-center font-bold py-2 mt-12 text-primary text-lg md:text-2xl">
+      <h1 className="text-center font-bold py-2 mt-12 text-primary text-2xl md:text-3xl">
         Contact
       </h1>
 
       <form
         onSubmit={
           handleSubmit}
-        className="lg:flex  items-center justify-center gap-10 my-8"
+        className="lg:flex text-center items-center justify-center gap-10 my-8"
       >
         <div>
           <textarea
             placeholder="Say Something !"
             id="message"
             name="message"
-            className=" text-sm w-80 h-24 bg-transparent outline-none border-solid border-[1px] border-white  p-2 rounded-md"
+            className=" text-sm w-full lg:w-80 h-24 bg-transparent outline-none border-solid border-[1px] border-white  p-2 rounded-md"
           />
           {state.errors ? (
             <p className="text-[#b54e4e] text-sm">{state.errors[0]?.message}</p>

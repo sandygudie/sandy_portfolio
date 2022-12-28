@@ -25,7 +25,7 @@ export default function Experience() {
   ];
   return (
     <div id="project" className="py-[5em] w-11/12 m-auto">
-      <h1 className="text-center font-bold py-2 mt-12 text-primary text-lg md:text-2xl">
+      <h1 className="text-center font-bold py-2 mt-12 text-primary text-2xl md:text-3xl">
         Experience
       </h1>
 
