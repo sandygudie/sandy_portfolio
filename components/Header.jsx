@@ -1,8 +1,20 @@
 import * as React from "react";
+import Image from "next/image";
+import profileImage from "../assets/images/";
 
 const Header = () => (
   <div className="p-6 bg-secondary fixed w-full md:px-6 md:py-6 xl:px-8 z-10">
     <div className="hidden md:flex justify-between items-center">
+     
+    <Image
+              src={profileImage}
+              alt="Photo"
+              width={350}
+              height={350}
+              objectFit="cover"
+              className="rounded-full"
+              quality={100}
+            />
       <a
         className="rounded-md text-center p-2 font-bold border border-white bg-white w-24 text-secondary hover:bg-transparent hover:text-white"
         href="https://docs.google.com/document/d/1TGO4P6XlqEZfvw5tUH4uoEaLKvWILtxAAinyAPIGC8U/edit?usp=sharing"

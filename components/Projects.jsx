@@ -91,7 +91,7 @@ function Projects() {
         return (
           <div
             key={item.id}
-            className="w-[30rem] h-auto rounded-xl my-6 shadow-xl shadow-gray-500/40 linear "
+            className="pulse w-[30rem] h-auto rounded-xl my-6 shadow-xl shadow-gray-500/40 "
           >
             <Image
               src={item.image}
@@ -103,14 +103,11 @@ function Projects() {
               className="rounded-t-2xl"
               key={item.id}
             />
-   
 
             <div className="p-6">
               <div className="rounded-b-xl w-full bg-secondary flex items-center justify-between rounded-b-lg">
                 <div>
-                  <h2 className="text-lg font-bold">
-                    {item.name}
-                  </h2>
+                  <h2 className="text-lg font-bold">{item.name}</h2>
                   <p className="text-xs"> {item.description}</p>
                 </div>
                 <div className="flex gap-x-4 text-white text-lg">
@@ -118,7 +115,9 @@ function Projects() {
                     {" "}
                     <FaGithub />
                   </a>
-                 <a href={item.link}><BiLinkExternal />{" "}</a> 
+                  <a href={item.link}>
+                    <BiLinkExternal />{" "}
+                  </a>
                 </div>
               </div>
 
@@ -126,7 +125,10 @@ function Projects() {
                 <hr />
                 {item.tools.map((list, i) => {
                   return (
-                    <li className="text-xs bg-white text-secondary rounded-full px-2 py-1" key={i}>
+                    <li
+                      className="text-xs bg-white text-secondary rounded-full px-2 py-1"
+                      key={i}
+                    >
                       {list}
                     </li>
                   );

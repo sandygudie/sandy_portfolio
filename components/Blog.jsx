@@ -74,7 +74,7 @@ export default function Blog() {
           return (
             <a
               key={item.id}
-              className="w-[20rem] rounded-lg my-6 bg-secondary shadow-lg shadow-gray-500/50 border-red "
+              className="pulse w-[20rem] rounded-lg my-6 bg-secondary shadow-lg shadow-gray-500/50 border-red "
               href={item.link}
               rel="noreferrer"
               target="_blank"

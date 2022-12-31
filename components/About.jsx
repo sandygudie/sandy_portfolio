@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import profileImage from "../assets/images/profile-image.PNG";
+
 function About() {
   return (
     <div id="aboutme" className="shadow-lg w-full pt-8 pb-32 ">
