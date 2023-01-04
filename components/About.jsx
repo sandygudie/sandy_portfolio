@@ -73,6 +73,9 @@ function About() {
               objectFit="cover"
               className="rounded-full"
               quality={100}
+              placeholder="blur"
+              blurDataURL="https://media.tenor.com/UnFx-k_lSckAAAAC/amalie-steiness.gif"
+
             />
           </div>
         </div>

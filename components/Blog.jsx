@@ -87,8 +87,10 @@ export default function Blog() {
                 layout="responsive"
                 objectFit="cover"
                 quality={100}
-                priority="lazy"
                 className="rounded-t-lg"
+                placeholder="blur"
+                blurDataURL="https://media.tenor.com/UnFx-k_lSckAAAAC/amalie-steiness.gif"
+  
               />
               <div className="p-6">
                 <p className="text-base">{item.description}.</p>

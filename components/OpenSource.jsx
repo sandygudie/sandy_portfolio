@@ -53,7 +53,8 @@ function OpenSource() {
                     layout="responsive"
                     objectFit="cover"
                     quality={100}
-                
+                    placeholder="blur"
+                    blurDataURL="https://media.tenor.com/UnFx-k_lSckAAAAC/amalie-steiness.gif"
                     className="rounded-t-lg "
                   />
                   <div className="p-6">
