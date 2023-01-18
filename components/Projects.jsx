@@ -89,9 +89,9 @@ function Projects() {
     <div className="my-8 flex justify-center flex-wrap gap-10">
       {project.map((item) => {
         return (
-          <div
+          <a href={item.link}
             key={item.id}
-            className="pulse w-[30rem] h-auto rounded-xl my-6 shadow-xl shadow-gray-500/40 "
+            className="hover:scale-110 hover:transition duration-300 ease-out w-[30rem] h-auto rounded-xl my-6 shadow-xl shadow-gray-500/40 "
           >
             <Image
               src={item.image}
@@ -137,7 +137,7 @@ function Projects() {
                 })}
               </ul>
             </div>
-          </div>
+          </a>
         );
       })}
     </div>
