@@ -109,8 +109,8 @@ function Projects() {
             <div className="p-6">
               <div className="rounded-b-xl w-full bg-secondary flex items-center justify-between rounded-b-lg">
                 <div>
-                  <h2 className="text-lg font-bold">{item.name}</h2>
-                  <p className="text-xs"> {item.description}</p>
+                  <h2 className="text-xl font-bold">{item.name}</h2>
+                  <p className="text-base"> {item.description}</p>
                 </div>
                 <div className="flex gap-x-4 text-white text-lg">
                   <a href={item.Github_link} rel="noreferrer" target="_blank">
@@ -124,7 +124,7 @@ function Projects() {
               </div>
 
               <ul className="w-full flex gap-2 flex-wrap justify-start items-center text-xs mt-4">
-                <hr />
+          
                 {item.tools.map((list, i) => {
                   return (
                     <li

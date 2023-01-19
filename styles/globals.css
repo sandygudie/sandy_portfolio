@@ -2,6 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html,
+body {
+  @apply bg-secondary text-white;
+}
+@font-face {
+  font-family: "QanelasSoft";
+  font-weight: 100;
+  src: url("./fonts/QanelasSoftUltraLight.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "QanelasSoft";
+  font-weight: 200;
+  src: url("./fonts/QanelasSoftThin.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "QanelasSoft";
+  font-weight: 300;
+  src: url("./fonts/QanelasSoftLight.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "QanelasSoft";
+  font-weight: 400;
+  src: url("./fonts/QanelasSoftRegular.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "QanelasSoft";
+  font-weight: 500;
+  src: url("./fonts/QanelasSoftMedium.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "QanelasSoft";
+  font-weight: 600;
+  src: url("./fonts/QanelasSoftSemiBold.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "QanelasSoft";
+  font-weight: 700;
+  src: url("./fonts/QanelasSoftBold.otf") format("opentype");
+  font-display: swap;
+}
+
 *,
 html,
 body {
@@ -9,10 +60,7 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-}
-html,
-body {
-  @apply bg-secondary xl:font-cursive text-white;
+  font-family: "QanelasSoft", "Open Sans", sans-serif
 }
 
 .loader-container {
@@ -63,7 +111,7 @@ body {
 
 .scrolltoTop:hover > .arrowtop {
   display: inline-block;
-  animation: slideOutUp; 
+  animation: slideOutUp;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
@@ -108,11 +156,8 @@ body {
   }
 }
 
-
-
-
 .pulse:hover {
   display: inline-block;
-  animation:pulse ; /* referring directly to the animation's @keyframe declaration */
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
 }

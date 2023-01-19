@@ -43,6 +43,11 @@ export default function Home() {
           </>
         )}
       </main>
+
     </div>
   );
 }
+
+// Use dynamic pages to explain more about each project
+// Add animation
+// review for a better font

@@ -11,7 +11,7 @@ function About() {
         </h1>
 
         <div className="flex flex-col-reverse justify-between items-center gap-x-4 xl:flex-row mt-4">
-          <div className="text-justify basis-3/5 leading-10 text-lg">
+          <div className="text-justify basis-3/5 leading-10 text-xl">
             <p className="pt-2">
               Hi!
               <span role="img" aria-label="wave">
@@ -50,7 +50,7 @@ function About() {
                   Vite, NextJs, Gatsby, Redux
                 </p>
                 <p>
-                  <span className="text-primary">Backend Tools:</span> NodeJs
+                  <span className="text-primary">Backend Tools:</span> NodeJs, ExpressJs MongoDb,
                   Firebase
                 </p>
               </div>
