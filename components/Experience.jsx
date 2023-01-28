@@ -29,13 +29,13 @@ export default function Experience() {
         Experience
       </h1>
 
-      <ul className="border-primary text-lg rounded-lg m-auto w-fit flex items-center pt-4 pb-8">
+      <ul className="text-lg rounded-lg m-auto w-fit flex items-center pt-4 pb-8">
         {tabitem.map((item) => {
           return (
             <li
               key={item.id}
               className={`${
-                activeTab === item.tab ? "border-white border" : "hover:text-primary"
+                activeTab === item.tab ? "bg-primary" : "hover:text-primary"
               }  px-4 lg:px-9 py-2 text-center cursor-pointer rounded-lg `}
               onClick={() => {
                 setActiveTab(item.tab);

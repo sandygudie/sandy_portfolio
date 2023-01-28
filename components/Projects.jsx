@@ -102,8 +102,8 @@ function Projects() {
               quality={100}
               className="rounded-t-2xl"
               key={item.id}
-              placeholder="blur"
-              blurDataURL="https://media.tenor.com/UnFx-k_lSckAAAAC/amalie-steiness.gif"
+              placeholder="empty"
+              // blurDataURL="https://media.tenor.com/UnFx-k_lSckAAAAC/amalie-steiness.gif"
             />
 
             <div className="p-6">
