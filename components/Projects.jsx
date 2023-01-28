@@ -110,7 +110,7 @@ function Projects() {
             <div className="p-6">
               <div className="rounded-b-xl w-full bg-secondary flex items-center justify-between rounded-b-lg">
                 <div>
-                  <h2 className="text-base md:text-xl font-bold">{item.name}</h2>
+                  <h2 className="text-base md:text-lg font-bold">{item.name}</h2>
                   <p className="text-sm"> {item.description}</p>
                 </div>
                 <div className="flex gap-x-4 text-white text-lg">
