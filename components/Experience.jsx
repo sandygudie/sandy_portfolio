@@ -24,6 +24,7 @@ export default function Experience() {
     },
   ];
   return (
+    <div className="shadow-lg">
     <div id="project" className="py-[5em] w-11/12 m-auto">
       <h1 className="text-center font-bold py-2 mt-12 text-primary text-2xl md:text-3xl">
         Experience
@@ -55,6 +56,7 @@ export default function Experience() {
           <OpenSource />
         )}
       </div>
+    </div>
     </div>
   );
 }

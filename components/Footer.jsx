@@ -26,7 +26,7 @@ function Footer() {
       >
         <div>
           <textarea
-            placeholder="Say Something !"
+            placeholder="Drop a message!"
             id="message"
             name="message"
             className=" text-lg w-full lg:w-96 h-32 bg-transparent outline-none border-solid border-[1px] border-white  p-2 rounded-md"
@@ -47,7 +47,7 @@ function Footer() {
         </button>
       </form>
 
-      <p className="text-center pt-2 mt-2 text-sm">
+      <p className="text-center italic pt-2 mt-2 text-sm">
         All rights reserved. Sandy©2023
       </p>
     </div>

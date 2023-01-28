@@ -12,7 +12,7 @@ const Header = () => (
         className="border-2 p-2 w-10 h-10 border-primary  rounded-full"
       />
 
-      <div className="flex justify-between items-center text-lg gap-x-8">
+      <div className="flex justify-between items-center text-base gap-x-8">
         <a className="hover:text-primary" href="#profile">
           {" "}
           Profile{" "}
@@ -41,6 +41,7 @@ const Header = () => (
       <a href="#profile"> Profile </a>
       <a href="#aboutme">About Me</a>
       <a href="#project">Projects</a>
+      <a href="#contact">Contact</a>
     </div>
   </div>
 );
