@@ -29,7 +29,7 @@ function Footer() {
             placeholder="Drop a message!"
             id="message"
             name="message"
-            className=" text-lg w-full lg:w-96 h-32 bg-transparent outline-none border-solid border-[1px] border-white  p-2 rounded-md"
+            className=" text-base w-full lg:w-96 h-32 bg-transparent outline-none border-solid border-[1px] border-white p-2 rounded-lg"
           />
           {state.errors ? (
             <p className="text-[#b54e4e] text-sm">{state.errors[0]?.message}</p>

@@ -11,7 +11,7 @@ function About() {
         </h1>
 
         <div className="flex flex-col-reverse justify-between items-center gap-x-4 xl:flex-row mt-4">
-          <div className="text-justify basis-3/5 leading-10 text-xl">
+          <div className="text-justify basis-3/5 leading-10  text-lg">
             <p className="pt-2">
               Hi!
               <span role="img" aria-label="wave">
@@ -26,7 +26,7 @@ function About() {
               I am big on performance, accessibilty and simplicity.{" "}
             </p>
             <p className="pt-2">
-              I contribute to open source and write articles on{" "}
+              I contribute to  <span className="text-primary">Open Source</span>  and write articles on{" "}
               <span className="text-primary">
                 <a href="https://sandygoody.medium.com">Meduim.</a>
               </span>{" "}

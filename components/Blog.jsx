@@ -74,7 +74,7 @@ export default function Blog() {
           return (
             <a
               key={item.id}
-              className="hover:scale-110 hover:transition duration-300 ease-out w-[20rem] rounded-lg my-6 bg-secondary shadow-lg shadow-gray-500/50 border-red "
+              className=" relative hover:scale-110 hover:transition duration-300 ease-out w-[20rem] rounded-lg my-6 bg-secondary shadow-lg shadow-gray-500/50 border-red "
               href={item.link}
               rel="noreferrer"
               target="_blank"
@@ -90,16 +90,16 @@ export default function Blog() {
                 className="rounded-t-lg"
                 placeholder="blur"
                 blurDataURL="https://media.tenor.com/UnFx-k_lSckAAAAC/amalie-steiness.gif"
-  
               />
               <div className="p-6">
                 <p className="text-base">{item.description}.</p>
-                <p className="text-xs  mt-2 mb-6">{item.dateCreated}</p>
-                <a className="text-primary" href={item.link}>
-                  {" "}
-                  Read More &gt;&gt;
-                </a>
+                <p className="text-xs mt-2 mb-6">{item.dateCreated}</p>
+                
               </div>
+              <a className="text-primary text-sm absolute bottom-5 left-6" href={item.link}>
+                  {" "}
+                  Read More
+                </a>
             </a>
           );
         })}

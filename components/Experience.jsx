@@ -30,7 +30,7 @@ export default function Experience() {
         Experience
       </h1>
 
-      <ul className="text-lg rounded-lg m-auto w-fit flex items-center pt-4 pb-8">
+      <ul className="text-base rounded-lg md:m-auto flex items-center justify-between md:justify-center pt-4 pb-8">
         {tabitem.map((item) => {
           return (
             <li

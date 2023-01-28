@@ -55,8 +55,8 @@ function OpenSource() {
                 blurDataURL="https://media.tenor.com/UnFx-k_lSckAAAAC/amalie-steiness.gif"
                 className="rounded-t-lg "
               />
-              <div className="p-6">
-                <h2 className="text-lg text-white font-bold">{item.name}</h2>
+              <div className="p-6 ">
+                <h2 className="text-base text-white font-bold">{item.name}</h2>
                 {/* <hr/> */}
                 <p className="text-sm mt-2">{item.description}</p>
               </div>

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -61,7 +62,8 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif
+  font-family: "Plus Jakarta Sans","Open Sans", sans-serif
+  
 }
 
 .loader-container {
