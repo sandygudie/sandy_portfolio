@@ -8,10 +8,11 @@ import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
 import "animate.css";
 import { AiFillThunderbolt } from "react-icons/ai";
+import { createClient } from "next-sanity";
 
 const Experience = dynamic(() => import("../components/Experience"));
 
-export default function Home() {
+export default function Home({ opensourcedata }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -37,17 +38,37 @@ export default function Home() {
             <Header />
             <Profile />
             <About />
-            <Experience />
+            <Experience opensourcedata={opensourcedata} />
             <Footer />
             <ScrollToTop />
           </>
         )}
       </main>
-
     </div>
   );
 }
 
+const client = createClient({
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  dataset: "production",
+  apiVersion: "2022-03-25",
+  useCdn: false,
+});
+
+export async function getStaticProps() {
+  const opensourcedata = await client.fetch(`*[_type == "open-source"]{
+    name,
+  link,
+  _id,
+  description,
+    "imageUrl": image.asset->url
+  }`);
+  return {
+    props: {
+      opensourcedata,
+    },
+  };
+}
+// Todo
 // Use dynamic pages to explain more about each project
 // Add animation
-// review for a better font

@@ -3,7 +3,7 @@ import Blog from "./Blog";
 import OpenSource from "./OpenSource";
 import Projects from "./Projects";
 
-export default function Experience() {
+export default function Experience({opensourcedata}) {
   const [activeTab, setActiveTab] = useState("tab1");
 
   const tabitem = [
@@ -53,7 +53,7 @@ export default function Experience() {
         ) : activeTab === "tab2" ? (
           <Blog />
         ) : (
-          <OpenSource />
+          <OpenSource opensourcedata={opensourcedata} />
         )}
       </div>
     </div>
