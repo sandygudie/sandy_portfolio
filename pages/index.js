@@ -67,6 +67,7 @@ export async function getStaticProps() {
     props: {
       opensourcedata,
     },
+    revalidate: 60,
   };
 }
 // Todo
