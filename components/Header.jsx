@@ -4,14 +4,14 @@ import * as React from "react";
 const Header = () => (
   <div className="w-11/12 md:w-10/12 max-w-10/12 mx-auto">
     <div className="py-6 bg-secondary fixed w-11/12 md:w-10/12 mx-auto z-10">
-      <div className="md:flex justify-between  items-center">
+      <div className="md:flex justify-between items-center">
         <img
           src="logo.svg"
           alt="Photo"
           className="hidden md:inline border-2 p-2 w-10 h-10 border-primary  rounded-full"
         />
 
-        <div className="flex justify-between items-center md:text-sm gap-x-4 md:gap-x-8">
+        <div className="text-sm flex justify-between items-center gap-x-4 md:gap-x-8">
           <a className="hover:text-primary" href="#profile">
             {" "}
             Profile{" "}

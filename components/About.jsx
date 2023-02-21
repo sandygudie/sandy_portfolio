@@ -4,9 +4,9 @@ import profileImage from "../public/images/profile-image.PNG";
 
 function About() {
   return (
-    <div id="aboutme" className="shadow-lg w-full pt-8 pb-16 md:pb-32 ">
+    <div id="aboutme" className="shadow-lg w-full pt-8 pb-16 md:pb-32">
       <div className="w-10/12 m-auto ">
-        <h1 className=" text-center font-bold py-1 mt-12 text-primary text-2xl md:text-left md:text-3xl">
+        <h1 className="text-center font-bold py-1 mt-12 text-primary text-2xl md:text-left md:text-3xl">
           About Me
         </h1>
 

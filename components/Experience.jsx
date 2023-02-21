@@ -25,7 +25,7 @@ export default function Experience({ opensourcedata }) {
   ];
   return (
     <div className="shadow-lg">
-      <div id="project" className="py-[5em] w-11/12 m-auto">
+      <div id="project" className="py-[5em] w-10/12 m-auto">
         <h1 className="my-6 text-center font-bold py-2 mt-12 text-primary text-2xl md:text-3xl">
           Projects
         </h1>
@@ -37,7 +37,7 @@ export default function Experience({ opensourcedata }) {
                 key={item.id}
                 className={`${
                   activeTab === item.tab ? "bg-primary" : "hover:text-primary"
-                }  px-4 lg:px-9 py-2 text-center cursor-pointer rounded-lg `}
+                }  px-2 lg:px-9 py-2 text-center cursor-pointer rounded-lg `}
                 onClick={() => {
                   setActiveTab(item.tab);
                 }}
