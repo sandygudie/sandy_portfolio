@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import solidityImage from "../assets/images/blog/solidity.png";
-import viteImage from "../assets/images/blog/vite.jpg";
-import githubactionImage from "../assets/images/blog/github-action.jpg";
-import unittestingImage from "../assets/images/blog/unittesting.png";
-import wordpressImage from "../assets/images/blog/wordpress.jpg";
-import twinmacroImage from "../assets/images/blog/twinmacro.png";
-import linttoolImage from "../assets/images/blog/lint.png";
+import solidityImage from "../public/images/blog/solidity.png";
+import viteImage from "../public/images/blog/vite.jpg";
+import githubactionImage from "../public/images/blog/github-action.jpg";
+import unittestingImage from "../public/images/blog/unittesting.png";
+import wordpressImage from "../public/images/blog/wordpress.jpg";
+import twinmacroImage from "../public/images/blog/twinmacro.png";
+import linttoolImage from "../public/images/blog/lint.png";
 
 export default function Blog() {
   const articles = [

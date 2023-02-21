@@ -22,7 +22,7 @@ module.exports = {
       },
 
       fontFamily: {
-        cursive: "cursive, sans-serif",
+       
       },
       boxShadow: {
         "3xl":

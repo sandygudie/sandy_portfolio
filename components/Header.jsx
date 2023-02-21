@@ -1,47 +1,41 @@
 /* eslint-disable @next/next/no-img-element */
 import * as React from "react";
-import Image from "next/image";
-import profileLogo from "../assets/images/logo.svg";
 
 const Header = () => (
-  <div className="p-6 bg-secondary fixed w-full md:px-6 md:py-6 xl:px-8 z-10">
-    <div className="hidden md:flex justify-between items-center">
-      <img
-        src="logo.svg"
-        alt="Photo"
-        className="border-2 p-2 w-10 h-10 border-primary  rounded-full"
-      />
+  <div className="w-11/12 md:w-10/12 max-w-10/12 mx-auto">
+    <div className="py-6 bg-secondary fixed w-11/12 md:w-10/12 mx-auto z-10">
+      <div className="md:flex justify-between  items-center">
+        <img
+          src="logo.svg"
+          alt="Photo"
+          className="hidden md:inline border-2 p-2 w-10 h-10 border-primary  rounded-full"
+        />
 
-      <div className="flex justify-between items-center text-sm gap-x-8">
-        <a className="hover:text-primary" href="#profile">
-          {" "}
-          Profile{" "}
-        </a>
+        <div className="flex justify-between items-center md:text-sm gap-x-4 md:gap-x-8">
+          <a className="hover:text-primary" href="#profile">
+            {" "}
+            Profile{" "}
+          </a>
 
-        <a className="hover:text-primary" href="#aboutme">
-          About Me
-        </a>
-        <a className="hover:text-primary" href="#project">
-          Experience
-        </a>
-        <a className="hover:text-primary" href="#contact">
-          Contact
-        </a>
-        <a
-          className="rounded-md text-center p-2 font-bold border border-white bg-white w-24 text-secondary hover:bg-transparent hover:text-primary hover:border-primary"
-          href="https://docs.google.com/document/d/1TGO4P6XlqEZfvw5tUH4uoEaLKvWILtxAAinyAPIGC8U/edit?usp=sharing"
-          rel="noreferrer"
-          target="_blank"
-        >
-          Resume
-        </a>
+          <a className="hover:text-primary" href="#aboutme">
+            About Me
+          </a>
+          <a className="hover:text-primary" href="#project">
+            Projects
+          </a>
+          <a className="hover:text-primary" href="#contact">
+            Contact
+          </a>
+          <a
+            className="hidden md:inline rounded-md text-center p-2 font-bold border border-white bg-white w-24 text-secondary hover:bg-transparent hover:text-primary hover:border-primary"
+            href="https://docs.google.com/document/d/1TGO4P6XlqEZfvw5tUH4uoEaLKvWILtxAAinyAPIGC8U/edit?usp=sharing"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Resume
+          </a>
+        </div>
       </div>
-    </div>
-    <div className="flex justify-between text-base mt-3 md:hidden">
-      <a href="#profile"> Profile </a>
-      <a href="#aboutme">About Me</a>
-      <a href="#project">Projects</a>
-      <a href="#contact">Contact</a>
     </div>
   </div>
 );

@@ -1,17 +1,17 @@
 import React from "react";
 import Image from "next/image";
-import profileImage from "../assets/images/profile-image.PNG";
+import profileImage from "../public/images/profile-image.PNG";
 
 function About() {
   return (
-    <div id="aboutme" className="shadow-lg w-full pt-8 pb-32 ">
+    <div id="aboutme" className="shadow-lg w-full pt-8 pb-16 md:pb-32 ">
       <div className="w-10/12 m-auto ">
         <h1 className=" text-center font-bold py-1 mt-12 text-primary text-2xl md:text-left md:text-3xl">
           About Me
         </h1>
 
         <div className="flex flex-col-reverse justify-between items-center gap-x-4 xl:flex-row mt-4">
-          <div className="text-justify basis-3/5 leading-10  text-lg">
+          <div className="text-justify basis-3/5 leading-10 text-lg">
             <p className="pt-2">
               Hi!
               <span role="img" aria-label="wave">
@@ -26,7 +26,8 @@ function About() {
               I am big on performance, accessibilty and simplicity.{" "}
             </p>
             <p className="pt-2">
-              I contribute to  <span className="text-primary">Open Source</span>  and write articles on{" "}
+              I contribute to <span className="text-primary">Open Source</span>{" "}
+              and write articles on{" "}
               <span className="text-primary">
                 <a href="https://sandygoody.medium.com">Meduim.</a>
               </span>{" "}
@@ -35,7 +36,7 @@ function About() {
             <div className="pt-2">
               {" "}
               Some tools/technologies i have work with include:
-              <div>
+              <div className="mb-6">
                 <p>
                   {" "}
                   <span className="text-primary">Technologies: </span> HTML,
@@ -46,12 +47,16 @@ function About() {
                   TailwindCSS, Material-UI
                 </p>
                 <p>
-                  <span className="text-primary">Framework/Libraries :</span> ReactJs,
-                  Vite, NextJs, Gatsby, Redux
+                  <span className="text-primary">Framework/Libraries :</span>{" "}
+                  ReactJs, Vite, NextJs, Gatsby, Redux
                 </p>
                 <p>
-                  <span className="text-primary">Backend Tools:</span> NodeJs, ExpressJs MongoDb,
-                  Firebase
+                  <span className="text-primary">Backend Tools:</span> NodeJs,
+                  ExpressJs MongoDb, Firebase
+                </p>
+                <p>
+                  <span className="text-primary ">CMS:</span> Contentful,
+                  Sanity.io
                 </p>
               </div>
             </div>
@@ -75,7 +80,6 @@ function About() {
               quality={100}
               placeholder="blur"
               blurDataURL="https://media.tenor.com/UnFx-k_lSckAAAAC/amalie-steiness.gif"
-
             />
           </div>
         </div>
