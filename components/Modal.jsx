@@ -21,10 +21,10 @@ export default function Modal({ handleModalChange, item }) {
     <div className="z-30 bg-black/70 fixed -translate-y-[50%] -translate-x-[50%] top-[50%] left-[50%] w-screen h-screen">
       <div
         ref={ref}
-        className={`z-40 rounded-lg w-11/12 md:w-[50%] fixed bg-white dark:bg-secondary 
+        className={`z-40 rounded-lg w-11/12 md:w-[50%] fixed bg-white
             -translate-y-[50%] -translate-x-[50%] left-[50%] top-[50%] rounded-xl`}
       >
-        <div className="relative p-8">
+        <div className="bg-white relative rounded-lg p-4 lg:p-8">
           <AiFillCloseCircle
             onClick={() => handleModalChange()}
             className="cursor-pointer hover:text-primary/40 absolute right-10 top-3 text-primary font-extrabold text-2xl"
