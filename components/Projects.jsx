@@ -87,12 +87,11 @@ function Projects() {
   ];
 
   return (
-    <div className="my-12 md:my-20 w-full md:w-4/6 m-auto flex flex-wrap items-center justify-center gap-12">
+    <div className="my-12 md:mt-24 md:mb-20 w-full md:w-4/6 m-auto flex flex-wrap items-center justify-center gap-12">
       {project.map((item, index) => {
         return (
-          <>
+          <div key={item.id}>
             <p
-              key={item.id}
               onClick={() => {
                 setOpenModal(true), setSelectedProject(index);
               }}
@@ -107,7 +106,7 @@ function Projects() {
                 handleModalChange={() => setOpenModal(false)}
               />
             )}
-          </>
+          </div>
         );
       })}
     </div>

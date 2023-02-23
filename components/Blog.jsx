@@ -107,7 +107,7 @@ export default function Blog() {
               />
               <div className="p-6 relative">
                 <p className="text-base">{item.description}.</p>
-                <p className="text-xs mt-2 mb-6 text-gray-500">
+                <p className="text-xs mt-2 mb-6 text-gray-500 font-extrabold">
                   {item.dateCreated}
                 </p>
                 <div className="md:absolute top-28 mr-6">

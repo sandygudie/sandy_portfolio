@@ -79,7 +79,8 @@ export async function getStaticProps() {
   link,
   _id,
   description,
-    "imageUrl": image.asset->url
+    "imageUrl": image.asset->url,
+    activity
   }`);
   return {
     props: {
