@@ -82,7 +82,12 @@ export default function Modal({ handleModalChange, item }) {
                   {" "}
                   Github
                 </a>
-                <a className="underline text-secondary" href={item.link}>
+                <a
+                  className="underline text-secondary"
+                  target="_blank"
+                  rel="noreferrer"
+                  href={item.link}
+                >
                   Live Project
                 </a>
               </div>
