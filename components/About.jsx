@@ -1,86 +1,58 @@
 import React from "react";
-import Image from "next/image";
-import profileImage from "../public/images/profile-image.PNG";
 
 function About() {
   return (
-    <div id="aboutme" className="shadow-lg w-full pt-8 pb-16 md:pb-32">
-      <div className="w-10/12 m-auto ">
-        <h1 className="text-center font-bold py-1 mt-12 text-primary text-2xl md:text-left md:text-3xl">
-          About Me
-        </h1>
-
-        <div className="flex flex-col-reverse justify-between items-center gap-x-4 xl:flex-row mt-4">
-          <div className="text-justify basis-3/5 leading-10 text-lg">
-            <p className="pt-2">
-              Hi!
-              <span role="img" aria-label="wave">
-                👋
-              </span>
-              , My name is <span className="text-primary">Goodnews Sandy.</span>{" "}
-              <br /> I am an experienced{" "}
-              <span className="text-primary">Frontend developer </span>,{" "}
-              <span className="text-primary">Tech Instructor </span>
-              and <span className="text-primary">Writer. </span>I enjoy building
-              web-based applications that leaves a lasting impression on users.
-              I am big on performance, accessibilty and simplicity.{" "}
-            </p>
-            <p className="pt-2">
-              I contribute to <span className="text-primary">Open Source</span>{" "}
-              and write articles on{" "}
-              <span className="text-primary">
-                <a href="https://sandygoody.medium.com">Meduim.</a>
-              </span>{" "}
-              And, i love the thrills of Startups.
-            </p>
-            <div className="pt-2">
-              {" "}
-              Some tools/technologies i have work with include:
-              <div className="mb-6">
-                <p>
+    <div className="bg-white py-16 md:py-24 lg:py-40 w-full">
+      <div className="w-10/12 m-auto">
+        <div className="flex flex-col-reverse items-center gap-10 md:gap-20 lg:flex-row mt-4">
+          <div className="text-justify basis-[50%] leading-8 text-base">
+            <div className="px-0 lg:px-8 rounded-lg text-black">
+              <p>
+                I am an experienced{" "}
+                <span className="text-[#9D5431] font-bold">
+                  Full-Stack developer
+                </span>{" "}
+                ,
+                <span className="text-[#9D5431] font-bold">
                   {" "}
-                  <span className="text-primary">Technologies: </span> HTML,
-                  CSS, SASS, TypeScript, JavaScript,
-                </p>
-                <p>
-                  <span className="text-primary">Styling libraries: </span>
-                  TailwindCSS, Material-UI
-                </p>
-                <p>
-                  <span className="text-primary">Framework/Libraries :</span>{" "}
-                  ReactJs, Vite, NextJs, Gatsby, Redux
-                </p>
-                <p>
-                  <span className="text-primary">Backend Tools:</span> NodeJs,
-                  ExpressJs MongoDb, Firebase
-                </p>
-                <p>
-                  <span className="text-primary ">CMS:</span> Contentful,
-                  Sanity.io
+                  Tech Instructor
+                </span>{" "}
+                and
+                <span className="text-[#9D5431] font-bold"> Writer</span>. I
+                enjoy building web-based applications that leaves a lasting
+                impression on users
+              </p>
+            </div>
+            <div className="px-0 py-4 lg:px-8 rounded-lg text-black">
+              <p>
+                I contribute to Open Source and write about my work on{" "}
+                <a
+                  href="https://sandygoody.medium.com/"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="text-[#9D5431] font-bold underline"
+                >
+                  Medium
+                </a>
+              </p>
+            </div>
+
+            <div className="px-0 lg:px-8 rounded-lg text-black">
+              <p>Tools and Technologies i have used includes: </p>
+              <div>
+                <p className="text-[#9D5431] font-bold">
+                  HTML, CSS, SASS, TypeScript, JavaScript, TailwindCSS,
+                  Material-UI, ReactJs, Vite, NextJs, Gatsby, Redux, NodeJs,
+                  ExpressJs MongoDb, Firebase, Contentful, Sanity.io
                 </p>
               </div>
             </div>
-            <a
-              className="rounded-md p-2 font-bold border border-white bg-white w-24 text-secondary hover:bg-transparent md:hidden"
-              href="https://docs.google.com/document/d/1TGO4P6XlqEZfvw5tUH4uoEaLKvWILtxAAinyAPIGC8U/edit?usp=sharing"
-              rel="noreferrer"
-              target="_blank"
-            >
-              Resume
-            </a>
           </div>
-          <div>
-            <Image
-              src={profileImage}
-              alt="Photo"
-              width={350}
-              height={350}
-              objectFit="cover"
-              className="rounded-full"
-              quality={100}
-              placeholder="blur"
-              blurDataURL="https://media.tenor.com/UnFx-k_lSckAAAAC/amalie-steiness.gif"
-            />
+          <div className="w-full text-center md:w-3/5 lg:w-[30ch]">
+            <q className="text-3xl md:text-5xl text-black font-bold">
+              {" "}
+              I build with purpose
+            </q>
           </div>
         </div>
       </div>

@@ -1,19 +1,36 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
-
-import invoiceImage from "../public/images/Invoice.png";
-import pomodoroImage from "../public/images/Pomodoro.png";
-import commentImage from "../public/images/Comment.png";
-import networthImage from "../public/images/Networth.PNG";
-import shoeAppImage from "../public/images/ShoppingApp.png";
-import kanbanImage from "../public/images/kanban.PNG";
-import LaunmaxImage from "../public/images/Launmax.PNG";
-import DefiantsImage from "../public/images/defiants.PNG";
-import Modal from "./Modal";
+import Masonry from "react-masonry-css";
+import Blog from "./Blog";
 
 function Projects() {
-  const [selectedProject, setSelectedProject] = useState();
-  const [openModal, setOpenModal] = useState(false);
+  const breakpointColumnsObj = {
+    default: 3,
+    1100: 3,
+    700: 2,
+    // 500: 1
+  };
+
   const project = [
+    {
+      id: 3,
+      name: "Moocs",
+      description: "A task management board application.",
+      tools: ["Vite(ReactJs)", "TypeScript", "TailwindCSS", "Redux Toolkit"],
+      link: "https://kanban-management-app.netlify.app/",
+      Github_link: "https://github.com/sandygudie/Kanban-App",
+      image: "images/mooc.PNG",
+    },
+    {
+      id: 4,
+      name: "QuizBase",
+      description: "A task management board application.",
+      tools: ["Vite(ReactJs)", "TypeScript", "TailwindCSS", "Redux Toolkit"],
+      link: "https://kanban-management-app.netlify.app/",
+      Github_link: "https://github.com/sandygudie/Kanban-App",
+      image: "images/QuizBase.png",
+    },
+
     {
       id: 0,
       name: "Kanban Management App",
@@ -21,7 +38,7 @@ function Projects() {
       tools: ["Vite(ReactJs)", "TypeScript", "TailwindCSS", "Redux Toolkit"],
       link: "https://kanban-management-app.netlify.app/",
       Github_link: "https://github.com/sandygudie/Kanban-App",
-      image: kanbanImage,
+      image: "images/kanban.PNG",
     },
     {
       id: 1,
@@ -36,79 +53,60 @@ function Projects() {
       ],
       link: " https://app-invoice.netlify.app/",
       Github_link: "https://github.com/sandygudie/Invoice-App",
-      image: invoiceImage,
+      image: "images/Invoice.jpg",
     },
+
     {
       id: 2,
-      name: "Pomodoro Stop-watch",
-      description: " A Pomodoro timer with control settings.",
-      tools: ["HTML", "SASS", "WebPack", "Javascript"],
-      link: " https://pomodoro-stopwatch.netlify.app/",
-      Github_link: "https://github.com/sandygudie/Pomodoro-Timer",
-      image: pomodoroImage,
-    },
-    {
-      id: 3,
       name: "Defiants",
       description: "Official Website for Defiants",
       tools: ["NextJs", "TailwindCSS", "Sanity.io"],
       link: "https://defiants-defiants.vercel.app/",
-      image: DefiantsImage,
-    },
-    {
-      id: 4,
-      name: "NetWorth",
-      description: "Keep track of your assets.",
-      tools: ["HTML", "SASS", "Javascript"],
-      link: "https://mynetworth.netlify.app/",
-      Github_link: "https://mynetworth.netlify.app/",
-      image: networthImage,
-    },
-
-    {
-      id: 5,
-      name: "Shopping App",
-      description: "Ecommerce App for women's Shoes.",
-      tools: ["HTML", "SASS", "Javascript", "Contentful"],
-      link: "https://womenheels.netlify.app/ ",
-      Github_link: "https://github.com/sandygudie/shoppingcart",
-      image: shoeAppImage,
-    },
-
-    {
-      id: 6,
-      name: "LaunMax",
-      description: "An on-demand Laundy service.",
-      tools: ["HTML", "SASS", "Javascript"],
-      link: "https://launmax.netlify.app/",
-      Github_link: "https://github.com/sandygudie/launmax",
-      image: LaunmaxImage,
+      image: "images/defiants.PNG",
     },
   ];
 
   return (
-    <div className="my-12 md:mt-24 md:mb-20 w-full md:w-4/6 m-auto flex flex-wrap items-center justify-center gap-12">
-      {project.map((item, index) => {
-        return (
-          <div key={item.id}>
+    <div className="bg-[#1B1F24]">
+      <div className="w-10/12 m-auto py-12 md:py-24 lg:py-40">
+        <div className="flex flex-wrap items-center justify-center">
+          <Masonry
+            breakpointCols={breakpointColumnsObj}
+            className="flex lg:w-[85%]"
+            columnClassName=""
+          >
             <p
-              onClick={() => {
-                setOpenModal(true), setSelectedProject(index);
-              }}
-              className="rounded-lg font-semibold bg-primary p-4 text-base md:text-lg cursor-pointer hover:scale-110 hover:transition rounded-2xl duration-300 ease-out"
+              className="p-4 md:p-8 font-bold lg:h-64 
+            lg:w-72 text-2xl md:text-4xl lg:text-5xl flex items-center justify-center"
             >
-              {item.name}
+              Project Gallery
             </p>
+            {project.map((item) => {
+              return (
+                <div className="m-2 rounded-2xl p-4 bg-white" key={item.id}>
+                  <img src={item.image} alt={item.description} />
+                </div>
+              );
+            })}
+          </Masonry>
+        </div>
+        <div className="my-28 lg:my-48 mx-auto  text-center md:w-1/2 xl:w-[50ch]">
+          <q className="text-3xl md:text-4xl lg:text-5xl  text-white font-bold">
+            {" "}
+            I am commited to getting this done
+          </q>
+        </div>
 
-            {openModal && selectedProject === index && (
-              <Modal
-                item={item}
-                handleModalChange={() => setOpenModal(false)}
-              />
-            )}
-          </div>
-        );
-      })}
+        <Blog />
+        <div className="pt-6">
+          <button
+            className="text-sm lg:text-lg font-bold text-black 
+          block text-center w-64 mt-12 lg:mt-24 mx-auto hover:bg-black hover:text-white bg-white p-3 md:p-4"
+          >
+            See what i have done
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

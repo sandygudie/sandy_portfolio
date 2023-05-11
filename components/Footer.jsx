@@ -2,100 +2,76 @@
 import React from "react";
 import { MdEmail } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { AiOutlineMedium } from "react-icons/ai";
 
 import { useForm, ValidationError } from "@formspree/react";
 
 function Footer() {
+  const links = [
+    {
+      id: 0,
+      icon: <MdEmail />,
+      link: "mailto:sandygoodnews@gmail.com",
+    },
+    {
+      id: 1,
+      icon: <FaGithub />,
+      link: "https://github.com/sandygudie",
+    },
+    {
+      id: 2,
+      icon: <FaLinkedinIn />,
+      link: "https://www.linkedin.com/in/goodnews-sandy-613936179/",
+    },
+    {
+      id: 3,
+      icon: <AiOutlineMedium />,
+      link: "https://sandygoody.medium.com/",
+    },
+  ];
   const [state, handleSubmit] = useForm("mlevprop");
-
-  // window.onbeforeunload = () => {
-  //   for (const form of document.getElementsByTagName("form")) {
-  //     form.reset();
-  //   }
-  // };
   if (state.succeeded) {
     for (const form of document.getElementsByTagName("form")) {
       form.reset();
     }
   }
   return (
-    <div id="contact" className="mt-20 mb-10 mx-auto w-10/12">
-      <h1 className="text-center font-bold py-2 text-primary text-2xl md:text-4xl">
-        Contact
-      </h1>
-      <div className="mt-6 lg:flex gap-x-40 justify-end items-center text-white text-align-center m-auto">
-        <div>
-          <p className="p-4 text-sm font-medium mb-6 shadow-gray-100/20 shadow-md">
-            <MdEmail className="inline pr-2 text-2xl " />{" "}
+    <div id="contact" className="bg-white ">
+      <div className="py-16 lg:py-36 w-4/5 lg:flex gap-x-40 justify-end items-center text-primary-light text-align-center m-auto">
+        <div className="lg:w-1/2">
+          <p className="font-bold text-3xl lg:text-5xl">
+            Looking forward to working with everyone!
+          </p>
+        </div>
+        <div className="pt-8 lg:pt-0">
+          <p className="p-4 text-sm font-bold shadow-primary-light shadow-md">
+            <MdEmail className="inline pr-2 text-2xl" />{" "}
             goodnewssandy@gmail.com
           </p>
-          <p className="p-4 text-sm font-medium  shadow-gray-100/20 shadow-md">
+          <p className="p-4 text-sm font-bold my-6 shadow-primary-light shadow-md">
             {" "}
             <BsFillTelephoneFill className="inline pr-2 text-2xl" /> +234 813
             342 9514
           </p>
+          <div className="p-4 text-sm font-bold shadow-primary-light shadow-md">
+            <div className="items-start gap-2 flex">
+              {links.map((item) => {
+                return (
+                  <a
+                    key={item.id}
+                    className=" border-[1px] border-primary-light p-2 rounded-full hover:text-black hover:border-black"
+                    href={item.link}
+                  >
+                    {item.icon}
+                  </a>
+                );
+              })}
+            </div>
+          </div>
         </div>
-        <form
-          className="mt-8 md:mt-4 w-full lg:w-6/12 flex gap-y-6 flex-col"
-          onSubmit={handleSubmit}
-        >
-          <div className="w-full">
-            <label className="block text-gray-600 pb-1 font-semibold text-sm">
-              Name
-            </label>
-            <input
-              className="placeholder:text-gray-500  rounded-md w-full  p-4"
-              type="text"
-              name="name"
-              placeholder="Name"
-              required
-            />
-          </div>
-          <div className="w-full">
-            {" "}
-            <label className="block text-gray-600 pb-1 font-semibold text-sm">
-              Email
-            </label>
-            <input
-              className="placeholder:text-gray rounded-md w-full p-4"
-              type="email"
-              name="Email"
-              placeholder="Email address"
-              required
-            />
-          </div>
-          <div className="w-full">
-            <label className="block text-gray-600 pb-1 font-semibold text-sm">
-              Message
-            </label>
-            <textarea
-              required
-              placeholder="Drop a message!"
-              id="message"
-              name="message"
-              className="placeholder:text-gray text-base w-full  h-48 bg-white p-2 rounded-lg"
-            />
-          </div>
-          <div className="text-center">
-            <input
-              className="text-white rounded-full w-48  py-3 bg-primary font-semibold text-base hover:bg-tourquise/80"
-              type="submit"
-              value={state.submitting ? "Sending..." : "Submit"}
-            />
-            {state.errors ? (
-              <p className="text-[#b54e4e] mt-4 text-center font-bold text-sm">
-                {state.errors[0]?.message}
-              </p>
-            ) : state.succeeded ? (
-              <p className="text-base mt-4 text-center font-bold text-tourquise">
-                {" "}
-                Message Sent!
-              </p>
-            ) : null}
-          </div>
-        </form>
       </div>
-      <p className="text-center pt-2 mt-20 text-sm">
+      <p className=" text-primary-light font-bold text-center py-6 mt-8 text-sm">
         All rights reserved. {new Date().getFullYear()}
       </p>
     </div>

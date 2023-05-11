@@ -2,13 +2,15 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import Profile from "../components/Profile";
-import Header from "../components/Header";
+// import Header from "../components/Header";
+import Projects from "../components/Projects";
 import About from "../components/About";
 import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
 import "animate.css";
 import { AiFillThunderbolt } from "react-icons/ai";
 import { createClient } from "next-sanity";
+import Blog from "../components/Blog";
 
 const Experience = dynamic(() => import("../components/Experience"));
 
@@ -22,7 +24,7 @@ export default function Home({ opensourcedata }) {
   }, []);
 
   return (
-    <div>
+    <>
       <Head>
         <title>Goodnews Sandy Portfolio</title>
         <meta name="description" content="Goodnews Sandy Portfolio" />
@@ -53,16 +55,18 @@ export default function Home({ opensourcedata }) {
           </div>
         ) : (
           <>
-            <Header />
+            {/* <Header /> */}
             <Profile />
             <About />
-            <Experience opensourcedata={opensourcedata} />
+            <Projects />
+            {/* <Experience opensourcedata={opensourcedata} /> */}
+       
             <Footer />
             <ScrollToTop />
           </>
         )}
       </main>
-    </div>
+    </>
   );
 }
 

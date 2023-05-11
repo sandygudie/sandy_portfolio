@@ -5,24 +5,24 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "hsl(0deg 84% 60%)",
-        secondary: "hsl(220deg 26% 14%)",
-        tourquise: "hsl(171deg 47% 63%)",
+        primary: "hsl(21.6deg 52.45% 28.04%)",
+        secondary: "hsl(213.33deg 14.29% 12.35%)",
+        "primary-light":"hsl(35.56deg 52.43% 40.39%)",
         dark: "hsl(0deg 0% 0%)",
         white: "hsl(0deg 0% 100%)",
       },
       screens: {
         sm: "480px",
         md: "768px",
-        lg: "1024px",
-        xl: "1280px",
+       lg: "1025px",
+        xl: "1500px",
       },
       translate: {
         "2/4": "-50%",
       },
 
       fontFamily: {
-       
+  
       },
       boxShadow: {
         "3xl":
