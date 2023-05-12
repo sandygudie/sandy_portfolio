@@ -104,7 +104,7 @@ function Projects() {
         <div className="my-28 lg:my-48 mx-auto  text-center md:w-1/2 xl:w-[50ch]">
           <q className="text-3xl md:text-4xl lg:text-5xl  text-white font-bold">
             {" "}
-            I am commited to getting this done
+            I am commited to getting thing done
           </q>
         </div>
         <Blog />

@@ -35,8 +35,7 @@ export default function OpenSource() {
       >
         {opensourcedata.map((item) => {
           return (
-            <div  data-aos="zoom-in"   data-aos-dalay="2000"
-            data-aos-duration="2500" className="m-2 w-28 lg:w-48" key={item._id}>
+            <div className="m-2 w-28 lg:w-48" key={item._id}>
               <a href={item.link} rel="noreferrer" target="_blank">
                 <img
                   src={item.imageUrl}
