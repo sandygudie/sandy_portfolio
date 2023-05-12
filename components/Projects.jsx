@@ -1,13 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from "react";
+import React  from "react";
 import Masonry from "react-masonry-css";
 import Blog from "./Blog";
+import OpenSource from "./OpenSource";
 
 function Projects() {
   const breakpointColumnsObj = {
     default: 3,
     1100: 3,
-    700: 2,
+   700: 2,
     // 500: 1
   };
 
@@ -72,7 +73,7 @@ function Projects() {
         <div className="flex flex-wrap items-center justify-center">
           <Masonry
             breakpointCols={breakpointColumnsObj}
-            className="flex lg:w-[85%]"
+            className="flex w-full lg:w-[95%]"
             columnClassName=""
           >
             <p
@@ -83,8 +84,13 @@ function Projects() {
             </p>
             {project.map((item) => {
               return (
-                <div className="m-2 rounded-2xl p-4 bg-white" key={item.id}>
+                <div data-aos="zoom-in"
+                // data-aos-dalay="500"
+                data-aos-duration="1200"
+                className="m-1 lg:m-3 rounded-2xl p-4 bg-white hover:scale-110 hover:transition duration-300 ease-out" key={item.id}>
+                  <a href={item.link}  rel="noreferrer" target="_blank">
                   <img src={item.image} alt={item.description} />
+                  </a>
                 </div>
               );
             })}
@@ -96,16 +102,8 @@ function Projects() {
             I am commited to getting this done
           </q>
         </div>
-
         <Blog />
-        <div className="pt-6">
-          <button
-            className="text-sm lg:text-lg font-bold text-black 
-          block text-center w-64 mt-12 lg:mt-24 mx-auto hover:bg-black hover:text-white bg-white p-3 md:p-4"
-          >
-            See what i have done
-          </button>
-        </div>
+        <OpenSource />
       </div>
     </div>
   );

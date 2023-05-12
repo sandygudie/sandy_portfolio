@@ -61,7 +61,7 @@ export default function Blog() {
   return (
     <div className="">
       <div className="flex items-center justify-between flex-col-reverse lg:flex-row">
-        <div className="md:w-full lg:w-[70%] ">
+        <div className="md:w-full lg:w-[60%] ">
           <Masonry
             breakpointCols={breakpointColumnsObj}
             className="flex"
@@ -70,9 +70,12 @@ export default function Blog() {
             {articles.map((item) => {
               return (
                 <div
+                data-aos="zoom-in"
+                data-aos-delay="100"
+                data-aos-duration="2000"
                   className="lg:w-[20em] xl:w-[90%]
                 hover:scale-110 hover:transition duration-300 ease-out
-                 m-2 md:m-4  rounded-2xl shadow-2xl bg-secondary"
+                 m-2 md:m-3 rounded-2xl shadow-2xl bg-secondary"
                   key={item.id}
                 >
                   <a href={item.link} rel="noreferrer" target="_blank">
@@ -96,9 +99,9 @@ export default function Blog() {
             })}
           </Masonry>
         </div>
-        <div className="lg:w-[25%] pb-3 lg:p-0">
+        <div className="lg:w-[20%] pb-3 lg:p-0">
           <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl">
-            My Blogs <span className="hidden md:inline">post on medium</span>
+            My Blog Posts
           </h1>
         </div>
       </div>

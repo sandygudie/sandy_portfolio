@@ -1,26 +1,19 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import Profile from "../components/Profile";
-// import Header from "../components/Header";
 import Projects from "../components/Projects";
 import About from "../components/About";
 import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
-import "animate.css";
-import { AiFillThunderbolt } from "react-icons/ai";
+// import "animate.css";
+
 import { createClient } from "next-sanity";
-import Blog from "../components/Blog";
 
-const Experience = dynamic(() => import("../components/Experience"));
-
-export default function Home({ opensourcedata }) {
-  const [loading, setLoading] = useState(true);
+export default function Home() {
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
+    setLoading(true);
   }, []);
 
   return (
@@ -48,24 +41,21 @@ export default function Home({ opensourcedata }) {
         />
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
-      <main className="relative">
-        {loading ? (
-          <div className="loader-container bg-secondary">
-            <AiFillThunderbolt className="text-[5em] ping" />
-          </div>
-        ) : (
-          <>
-            {/* <Header /> */}
-            <Profile />
-            <About />
-            <Projects />
-            {/* <Experience opensourcedata={opensourcedata} /> */}
-       
-            <Footer />
-            <ScrollToTop />
-          </>
-        )}
-      </main>
+      {!loading ? (
+        <div className="loader-container ">
+         <div className="bg-primary rounded-full h-10 flex justify-center items-center w-10">
+         <div className="bg-white  animate-spin h-5 w-5 "></div>
+         </div>
+        </div>
+      ) : (
+        <main className="relative">
+          <Profile />
+          <About />
+          <Projects />
+          <Footer />
+          <ScrollToTop />
+        </main>
+      )}
     </>
   );
 }

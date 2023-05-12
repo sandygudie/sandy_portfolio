@@ -37,7 +37,7 @@ function Footer() {
     }
   }
   return (
-    <div id="contact" className="bg-white ">
+    <div className="bg-white">
       <div className="py-16 lg:py-36 w-4/5 lg:flex gap-x-40 justify-end items-center text-primary-light text-align-center m-auto">
         <div className="lg:w-1/2">
           <p className="font-bold text-3xl lg:text-5xl">

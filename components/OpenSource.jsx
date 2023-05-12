@@ -1,50 +1,55 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Image from "next/image";
+import Masonry from "react-masonry-css";
 
-export default function OpenSource({ opensourcedata }) {
+export default function OpenSource() {
+  const opensourcedata = [
+    {
+      id: 0,
+      name: "Open Science community Saudia Arabia",
+      link: "https://osc-ksa.com/",
+      imageUrl: "images/osca-logo.png",
+    },
+
+    {
+      id: 2,
+      name: "The Turning Way",
+      link: "https://the-turing-way.netlify.app/index.html",
+      imageUrl: "images/turingway.png",
+    },
+    {
+      id: 1,
+      name: "Layer 5",
+      link: "https://layer5.io/",
+      imageUrl: "images/layer-logo.png",
+    },
+  ];
   return (
-    <div className="text-center">
-      <div className="my-8 flex justify-center text-justify flex-wrap gap-10">
+    <div className="mt-24 lg:mt-40 pb-3 lg:p-0">
+      <h1 className="font-bold mb-8 lg:mb-12 mx-auto text-center text-2xl md:text-3xl lg:text-4xl">
+        Open Source Communities <span className="hidden md:inline"></span>
+      </h1>
+      <Masonry
+        breakpointCols={2}
+        className="flex items-center justify-center mx-auto w-full md:w-1/3 lg:w-[40%] xl:w-2/6"
+      >
         {opensourcedata.map((item) => {
-          console.log(item.activity);
           return (
-            <a
-              key={item._id}
-              className="hover:scale-110 hover:transition duration-300 ease-out w-[20rem] h-[21rem] overflow-hidden hover:h-full hover:overflow-initial rounded-lg my-6 bg-secondary shadow-lg shadow-gray-500/50 border-red"
-              href={item.link}
-              rel="noreferrer"
-              target="_blank"
-            >
-              <Image
-                src={item.imageUrl}
-                alt="blog-images"
-                width={600}
-                height={500}
-                layout="responsive"
-                objectFit="cover"
-                quality={100}
-                placeholder="blur"
-                blurDataURL="https://media.tenor.com/UnFx-k_lSckAAAAC/amalie-steiness.gif"
-                className="rounded-t-lg "
-              />
-              <div className="p-6 ">
-                <h2 className="text-base text-white font-bold mb-6">
-                  {item.name}
-                </h2>
-
-                {/* <p className="text-sm mt-2">{item.description}</p> */}
-                <div className=" text-[13px] text-gray-500 ">
-                  {item.activity.map((content, i) => (
-                    <p className="text-left mt-2" key={i}>
-                      - {content}
-                    </p>
-                  ))}
-                </div>
-              </div>
-            </a>
+            <div  data-aos="zoom-in"   data-aos-dalay="2000"
+            data-aos-duration="2500" className="m-2 w-28 lg:w-48" key={item._id}>
+              <a href={item.link} rel="noreferrer" target="_blank">
+                <img
+                  src={item.imageUrl}
+                  className="rounded-2xl w-full"
+                  alt={item.name}
+                />
+              </a>
+            </div>
           );
         })}
-      </div>
+      </Masonry>
     </div>
   );
 }
+
+
