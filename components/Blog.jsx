@@ -59,9 +59,14 @@ export default function Blog() {
     700: 2,
   };
   return (
-    <div className="">
+    <div>
       <div className="flex items-center justify-between flex-col-reverse lg:flex-row">
-        <div className="md:w-full lg:w-[60%] ">
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          data-aos-duration="2000"
+          className="!md:w-[80%] lg:w-[65%] "
+        >
           <Masonry
             breakpointCols={breakpointColumnsObj}
             className="flex"
@@ -70,9 +75,6 @@ export default function Blog() {
             {articles.map((item) => {
               return (
                 <div
-                data-aos="zoom-in"
-                data-aos-delay="100"
-                data-aos-duration="2000"
                   className="lg:w-[20em] xl:w-[90%]
                 hover:scale-110 hover:transition duration-300 ease-out
                  m-2 md:m-3 rounded-2xl shadow-2xl bg-secondary"

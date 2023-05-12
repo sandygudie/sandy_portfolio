@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React  from "react";
+import React from "react";
 import Masonry from "react-masonry-css";
 import Blog from "./Blog";
 import OpenSource from "./OpenSource";
@@ -8,7 +8,7 @@ function Projects() {
   const breakpointColumnsObj = {
     default: 3,
     1100: 3,
-   700: 2,
+    700: 2,
     // 500: 1
   };
 
@@ -70,7 +70,12 @@ function Projects() {
   return (
     <div className="bg-[#1B1F24]">
       <div className="w-10/12 m-auto py-12 md:py-24 lg:py-40">
-        <div className="flex flex-wrap items-center justify-center">
+        <div
+          data-aos="zoom-in"
+          // data-aos-dalay="500"
+          data-aos-duration="1200"
+          className="flex flex-wrap items-center justify-center"
+        >
           <Masonry
             breakpointCols={breakpointColumnsObj}
             className="flex w-full lg:w-[95%]"
@@ -84,12 +89,12 @@ function Projects() {
             </p>
             {project.map((item) => {
               return (
-                <div data-aos="zoom-in"
-                // data-aos-dalay="500"
-                data-aos-duration="1200"
-                className="m-1 lg:m-3 rounded-2xl p-4 bg-white hover:scale-110 hover:transition duration-300 ease-out" key={item.id}>
-                  <a href={item.link}  rel="noreferrer" target="_blank">
-                  <img src={item.image} alt={item.description} />
+                <div
+                  className="m-1 lg:m-3 rounded-2xl p-4 bg-white hover:scale-110 hover:transition duration-300 ease-out"
+                  key={item.id}
+                >
+                  <a href={item.link} rel="noreferrer" target="_blank">
+                    <img src={item.image} alt={item.description} />
                   </a>
                 </div>
               );
