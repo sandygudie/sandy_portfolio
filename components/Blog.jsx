@@ -63,8 +63,8 @@ export default function Blog() {
       <div className="flex items-center justify-between flex-col-reverse lg:flex-row">
         <div
           data-aos="zoom-in"
-          data-aos-delay="100"
-          data-aos-duration="2000"
+         
+          data-aos-duration="800"
           className="!md:w-[80%] lg:w-[65%] "
         >
           <Masonry

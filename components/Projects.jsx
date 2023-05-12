@@ -72,8 +72,7 @@ function Projects() {
       <div className="w-10/12 m-auto py-12 md:py-24 lg:py-40">
         <div
           data-aos="zoom-in"
-          // data-aos-dalay="500"
-          data-aos-duration="1200"
+          data-aos-duration="800"
           className="flex flex-wrap items-center justify-center"
         >
           <Masonry
