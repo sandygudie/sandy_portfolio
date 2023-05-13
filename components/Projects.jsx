@@ -73,6 +73,7 @@ function Projects() {
         <div
           data-aos="zoom-in"
           data-aos-duration="800"
+          data-aos-delay="0"
           className="flex flex-wrap items-center justify-center"
         >
           <Masonry
