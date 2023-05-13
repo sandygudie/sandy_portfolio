@@ -15,7 +15,7 @@ export default function Blog() {
     {
       id: 0,
 
-      description: "Twin Macro: Combine TailwindCSS and Material-UI theme",
+      description: "Twin Macro:Combine TailwindCSS and Material-UI theme",
       link: "https://medium.com/@sandygoody/vite-twin-macro-d27a5f89df06",
       images: "images/blog/twinmacro.png",
       dateCreated: "October 1, 2022",
@@ -24,7 +24,7 @@ export default function Blog() {
     },
     {
       id: 4,
-      description: "Unit Testing with Jest for React Applications",
+      description: "Unit Test with Jest for React Applications",
       link: "https://sandygoody.medium.com/unit-testing-7799b753b486",
       images: "images/blog/unittesting.png",
       dateCreated: "December 16th, 2021",

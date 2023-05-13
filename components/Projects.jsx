@@ -79,7 +79,6 @@ function Projects() {
           <Masonry
             breakpointCols={breakpointColumnsObj}
             className="flex w-full lg:w-[95%]"
-            columnClassName=""
           >
             <p
               className="p-4 md:p-8 font-bold lg:h-64 
