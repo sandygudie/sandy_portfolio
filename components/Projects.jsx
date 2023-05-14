@@ -18,8 +18,7 @@ function Projects() {
       name: "Moocs",
       description: "A task management board application.",
       tools: ["Vite(ReactJs)", "TypeScript", "TailwindCSS", "Redux Toolkit"],
-      link: "https://kanban-management-app.netlify.app/",
-      Github_link: "https://github.com/sandygudie/Kanban-App",
+      link: "https://moocs-client.netlify.app/",
       image: "images/mooc.PNG",
     },
     {
@@ -27,8 +26,8 @@ function Projects() {
       name: "QuizBase",
       description: "A task management board application.",
       tools: ["Vite(ReactJs)", "TypeScript", "TailwindCSS", "Redux Toolkit"],
-      link: "https://kanban-management-app.netlify.app/",
-      Github_link: "https://github.com/sandygudie/Kanban-App",
+      link: "https://quizbase.netlify.app/",
+
       image: "images/QuizBase.png",
     },
 
