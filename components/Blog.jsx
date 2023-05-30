@@ -1,13 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Image from "next/image";
-import solidityImage from "../public/images/blog/solidity.png";
-import viteImage from "../public/images/blog/vite.jpg";
-import githubactionImage from "../public/images/blog/github-action.jpg";
-import unittestingImage from "../public/images/blog/unittesting.png";
-import wordpressImage from "../public/images/blog/wordpress.jpg";
-import twinmacroImage from "../public/images/blog/twinmacro.png";
-import linttoolImage from "../public/images/blog/lint.png";
 import Masonry from "react-masonry-css";
 
 export default function Blog() {
@@ -51,10 +43,19 @@ export default function Blog() {
       content:
         "WordPress is a content management system that makes it easy to build websites and manage content without writing codes.",
     },
+    {
+      id: 7,
+      description: "Accessibility in Web development.",
+      link: "https://sandygoody.medium.com/accessibility-in-web-development-e50abfeab1c0",
+      images: "images/blog/lint.png",
+      dateCreated: "March 14th, 2023",
+      content:
+        "WordPress is a content management system that makes it easy to build websites and manage content without writing codes.",
+    },
   ];
 
   const breakpointColumnsObj = {
-    default: 2,
+    default: 3,
     1100: 2,
     700: 2,
   };
@@ -63,9 +64,9 @@ export default function Blog() {
       <div className="flex items-center justify-between flex-col-reverse lg:flex-row">
         <div
           data-aos="zoom-in"
-          data-aos-duration="500"
+          data-aos-duration="800"
           data-aos-delay="0"
-          className="!md:w-[80%] lg:w-[65%] "
+          className="!md:w-[80%] lg:w-full "
         >
           <Masonry
             breakpointCols={breakpointColumnsObj}
@@ -75,9 +76,9 @@ export default function Blog() {
             {articles.map((item) => {
               return (
                 <div
-                  className="lg:w-[20em] xl:w-[90%]
+                  className="lg:w-[22em] xl:w-[90%]
                 hover:scale-110 hover:transition duration-300 ease-out
-                 m-2 md:m-3 rounded-2xl shadow-2xl bg-secondary"
+                 m-2 md:mx-3 my-6 rounded-2xl shadow-2xl bg-secondary"
                   key={item.id}
                 >
                   <a href={item.link} rel="noreferrer" target="_blank">
@@ -99,12 +100,12 @@ export default function Blog() {
                 </div>
               );
             })}
+            <div className="lg:w-[40%] m-auto h-64 pb-3 lg:p-0 flex items-center justify-center ">
+              <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl text-center">
+                My Blog Posts
+              </h1>
+            </div>
           </Masonry>
-        </div>
-        <div className="lg:w-[20%] pb-3 lg:p-0">
-          <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl">
-            My Blog Posts
-          </h1>
         </div>
       </div>
     </div>

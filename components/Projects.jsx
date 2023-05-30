@@ -9,7 +9,6 @@ function Projects() {
     default: 3,
     1100: 3,
     700: 2,
-    // 500: 1
   };
 
   const project = [
@@ -68,7 +67,7 @@ function Projects() {
 
   return (
     <div className="bg-[#1B1F24]">
-      <div className="w-10/12 m-auto py-12 md:py-24 lg:py-40">
+      <div className="w-11/12 m-auto py-12 md:py-24 lg:py-40">
         <div
           data-aos="zoom-in"
           data-aos-duration="800"
@@ -88,7 +87,7 @@ function Projects() {
             {project.map((item) => {
               return (
                 <div
-                  className="m-1 lg:m-3 rounded-2xl p-4 bg-white hover:scale-110 hover:transition duration-300 ease-out"
+                  className="m-1 lg:mx-3 my-6 rounded-2xl p-4 bg-white hover:scale-110 hover:transition duration-300 ease-out"
                   key={item.id}
                 >
                   <a href={item.link} rel="noreferrer" target="_blank">
@@ -99,8 +98,8 @@ function Projects() {
             })}
           </Masonry>
         </div>
-        <div className="my-28 lg:my-48 mx-auto  text-center md:w-1/2 xl:w-[50ch]">
-          <q className="text-3xl md:text-4xl lg:text-5xl  text-white font-bold">
+        <div className="my-28 lg:my-48 mx-auto text-center md:w-1/2 xl:w-[50ch]">
+          <q className="text-3xl md:text-4xl lg:text-5xl text-white font-bold">
             {" "}
             I am commited to getting thing done
           </q>

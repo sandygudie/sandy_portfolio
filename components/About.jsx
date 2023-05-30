@@ -2,10 +2,10 @@ import React from "react";
 
 function About() {
   return (
-    <div className="bg-white py-16 md:py-24 lg:py-40 w-full">
-      <div className="w-10/12 m-auto">
+    <div className="bg-white py-16 md:py-24 lg:py-38 w-full">
+      <div className="w-11/12 m-auto">
         <div className="flex flex-col-reverse items-center gap-10 md:gap-20 lg:flex-row mt-4">
-          <div className="text-justify basis-[50%] leading-8 text-base">
+          <div className="text-justify basis-[50%] leading-10 text-[17px]">
             <div className="px-0 lg:px-8 rounded-lg text-black">
               <p>
                 I am an experienced{" "}

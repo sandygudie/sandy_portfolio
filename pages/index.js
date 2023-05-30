@@ -43,9 +43,9 @@ export default function Home() {
       </Head>
       {!loading ? (
         <div className="loader-container ">
-         <div className="bg-primary rounded-full h-10 flex justify-center items-center w-10">
-         <div className="bg-white  animate-spin h-5 w-5 "></div>
-         </div>
+          <div className="bg-primary rounded-full h-10 flex justify-center items-center w-10">
+            <div className="bg-white  animate-spin h-5 w-5 "></div>
+          </div>
         </div>
       ) : (
         <main className="relative">
