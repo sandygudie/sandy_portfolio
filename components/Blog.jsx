@@ -100,7 +100,7 @@ export default function Blog() {
                 </div>
               );
             })}
-            <div className="lg:w-[40%] m-auto h-64 pb-3 lg:p-0 flex items-center justify-center ">
+            <div className="w-[40%] m-auto h-64 pb-3 lg:p-0 flex items-center justify-center">
               <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl text-center">
                 My Blog Posts
               </h1>

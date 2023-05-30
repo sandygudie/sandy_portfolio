@@ -48,7 +48,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="w-full text-center md:w-3/5 lg:w-[30ch]">
+          <div className="text-center w-3/5 lg:w-[30ch]">
             <q className="text-3xl md:text-5xl text-black font-bold">
               {" "}
               I build with purpose
