@@ -10,10 +10,10 @@ function ScrollToTop() {
   return (
     <div
       onClick={scrolltoTop}
-      className="absolute bottom-5 md:bottom-20 left-5 md:left-20"
+      className="absolute bottom-5 md:bottom-10 left-5"
     >
-      <div className="scrolltoTop bg-primary-light rounded-full p-2 hover:bg-primary-light">
-        <div className="arrowtop">
+      <div className="scrolltoTop rounded-full p-1 hover:bg-primary-light">
+        <div className=" arrowtop">
           <MdOutlineKeyboardArrowUp className="text-xl" />
           <MdOutlineKeyboardArrowUp className="text-xl" />
           <MdOutlineKeyboardArrowUp className="text-xl" />

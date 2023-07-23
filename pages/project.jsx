@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Masonry from "react-masonry-css";
-import Blog from "./Blog";
-import OpenSource from "./OpenSource";
 
-function Projects() {
+// import OpenSource from "./OpenSource";
+
+export default function Project() {
   const breakpointColumnsObj = {
     default: 2,
     1100: 2,
@@ -12,6 +12,21 @@ function Projects() {
   };
 
   const project = [
+    {
+      id: 7,
+      name: "SportBase",
+      description: "A task management board application.",
+      tools: [
+        "Nextjs",
+        "TypeScript",
+        "TailwindCSS",
+        "Sanity",
+        "MongoDB",
+        "Stripe",
+      ],
+      link: "https://sportbase.netlify.app/",
+      image: "images/sportbase.PNG",
+    },
     {
       id: 3,
       name: "Moocs",
@@ -29,7 +44,14 @@ function Projects() {
 
       image: "images/QuizBase.png",
     },
-
+    {
+      id: 8,
+      name: "QuizApp",
+      description: "A task management board application.",
+      tools: ["Vite(ReactJs)", "TypeScript", "TailwindCSS", "Redux Toolkit"],
+      link: "https://quizbase.netlify.app/",
+      image: "images/Quizapp.png",
+    },
     {
       id: 0,
       name: "Kanban Management App",
@@ -66,8 +88,11 @@ function Projects() {
   ];
 
   return (
-    <div className="bg-[#1B1F24]">
-      <div className="w-11/12 m-auto py-12 md:py-24 lg:py-40">
+    <div className="">
+      <div className="w-11/12 md:w-10/12 m-auto py-24 lg:py-40">
+        <p className="pb-12 font-bold text-2xl md:text-4xl lg:text-5xl flex items-center justify-center">
+          Project Gallery
+        </p>
         <div
           data-aos="zoom-in"
           data-aos-duration="800"
@@ -78,32 +103,27 @@ function Projects() {
             breakpointCols={breakpointColumnsObj}
             className="flex w-full lg:w-[95%]"
           >
-           
             {project.map((item) => {
               return (
                 <div
-                  className="m-1 lg:mx-3 my-6 rounded-2xl p-4 bg-white hover:scale-110 hover:transition duration-300 ease-out"
+                  className="m-1 lg:mx-3 my-6 rounded-2xl  bg-white hover:scale-110 hover:transition duration-300 ease-out"
                   key={item.id}
                 >
                   <a href={item.link} rel="noreferrer" target="_blank">
-                    <img src={item.image} alt={item.description} />
+                    <img
+                      src={item.image}
+                      className="rounded-xl"
+                      alt={item.description}
+                    />
                   </a>
                 </div>
               );
             })}
           </Masonry>
         </div>
-        <div className="my-28 lg:my-48 mx-auto text-center md:w-1/2 xl:w-[50ch]">
-          <q className="text-3xl md:text-4xl lg:text-5xl text-white font-bold">
-            {" "}
-            I am commited to getting thing done
-          </q>
-        </div>
-        <Blog />
-        <OpenSource />
+        {/*      
+        <OpenSource /> */}
       </div>
     </div>
   );
 }
-
-export default Projects;

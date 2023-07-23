@@ -1,21 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
-import Profile from "../components/Profile";
-import Projects from "../components/Projects";
-import About from "../components/About";
-import Footer from "../components/Footer";
-import ScrollToTop from "../components/ScrollToTop";
-// import "animate.css";
-
 import { createClient } from "next-sanity";
 
 export default function Home() {
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    setLoading(true);
-  }, []);
-
   return (
     <>
       <Head>
@@ -41,21 +28,61 @@ export default function Home() {
         />
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
-      {!loading ? (
-        <div className="loader-container ">
-          <div className="bg-primary rounded-full h-10 flex justify-center items-center w-10">
-            <div className="bg-white  animate-spin h-5 w-5 "></div>
+
+      <main className=" relative">
+        <div className="h-screen text-white">
+          <div className="w-10/12 py-12 lg:py-0 lg:w-10/12 max-w-10/12 mx-auto h-full flex flex-col-reverse items-center justify-center ">
+            <div
+              data-aos="zoom-out"
+              data-aos-duration="800"
+              className="font-semibold lg:text-left text-center"
+            >
+              <h1 className="font-bold text-center mb-8  text-3xl md:text-6xl lg:text-7xl xl:text-8xl ">
+                Goodnews Sandy
+              </h1>
+              <div className="md:w-9/12 m-auto text-justify leading-10 text-[17px]">
+                <div className="px-0 lg:px-8 ">
+                  <p>
+                    An experienced{" "}
+                    <span className="text-[#9D5431] font-bold">
+                      full-stack developer
+                    </span>{" "}
+                    ,
+                    <span className="text-[#9D5431] font-bold">
+                      {" "}
+                      tech instructor
+                    </span>{" "}
+                    and
+                    <span className="text-[#9D5431] font-bold"> writer</span>.
+                    {"  "} I enjoy building web-based applications that leaves a
+                    lasting impression on users. I contribute to Open Source and
+                    write about my work on{" "}
+                    <a
+                      href="https://sandygoody.medium.com/"
+                      rel="noreferrer"
+                      target="_blank"
+                      className="text-[#9D5431] font-bold underline"
+                    >
+                      medium.
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <div className=" mx-auto mt-12 w-64">
+                <a
+                  className="w-full text-sm md:text-lg block text-center p-3 font-extrabold bg-white text-secondary hover:bg-secondary hover:text-white"
+                  href="https://docs.google.com/document/d/1TGO4P6XlqEZfvw5tUH4uoEaLKvWILtxAAinyAPIGC8U/edit?usp=sharing"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Resume
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      ) : (
-        <main className="relative">
-          <Profile />
-          <About />
-          <Projects />
-          <Footer />
-          <ScrollToTop />
-        </main>
-      )}
+      </main>
     </>
   );
 }
