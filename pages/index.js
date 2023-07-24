@@ -41,7 +41,7 @@ export default function Home() {
                 Goodnews Sandy
               </h1>
                 <div className="md:w-9/12 m-auto text-justify text-sm md:text-[17px] lg:text-lg">
-                  <p className="leading-loose">
+                  <p className="leading-[3em]">
                     An experienced{" "}
                     <span className="text-[#9D5431] font-bold">
                       full-stack developer

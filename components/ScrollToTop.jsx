@@ -10,7 +10,7 @@ function ScrollToTop() {
   return (
     <div
       onClick={scrolltoTop}
-      className="absolute bottom-5 md:bottom-10 left-5"
+      className="absolute bottom-10 left-5"
     >
       <div className="scrolltoTop rounded-full p-1 hover:bg-primary-light">
         <div className=" arrowtop">

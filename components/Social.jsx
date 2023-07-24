@@ -27,7 +27,7 @@ export default function Social() {
     },
   ];
   return (
-    <div className="absolute md:fixed bottom-5 left-28 md:left-5 md:top-1/3 items-start gap-2 flex md:flex-col">
+    <div className="absolute md:fixed bottom-10 left-28 md:left-5 md:top-1/3 items-start gap-2 flex md:flex-col">
       {links.map((item) => {
         return (
           <a
