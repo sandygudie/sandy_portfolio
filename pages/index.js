@@ -31,11 +31,11 @@ export default function Home() {
 
       <main className="relative">
         <div className="h-screen text-white">
-          <div className="w-10/12 py-12 lg:py-0 lg:w-10/12 max-w-10/12 mx-auto h-full flex flex-col-reverse items-center justify-center ">
+          <div className="w-10/12 py-12 lg:py-0 lg:w-10/12 max-w-10/12 mx-auto h-[95%] md:h-full flex flex-col-reverse items-center justify-center ">
             <div
               data-aos="zoom-out"
               data-aos-duration="800"
-              className="font-semibold lg:text-left text-center"
+              className="font-semibold lg:text-left over-flow-hidden text-center"
             >
               <h1 className="font-bold text-center mb-8  text-3xl md:text-6xl lg:text-7xl xl:text-8xl ">
                 Goodnews Sandy
