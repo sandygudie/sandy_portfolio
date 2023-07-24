@@ -1,17 +1,13 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import Link from "next/link";
 import * as React from "react";
 
 export default function Custom404() {
   return (
-    <div className="w-5/6 fixed left-2/4 top-2/4 text-2xl font-bold translate-x-2/4 translate-y-2/4">
-      <h1>404: Not Found</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-      <Link href={"/"} className="text-red-500 text-sm">
-        <>
-          {" "}
-          Return to <span className="text-primary">Home </span>Page
-        </>
-      </Link>
+    <div className="w-5/6 flex flex-col items-center  mx-auto justify-center h-screen">
+      <h1 className="text-3xl md:text-6xl text-red-500 mb-4">404: Not Found</h1>
+      <p className="text-sm">You just hit a route that doesn&#39;t exist... the sadness.</p>
+     
     </div>
   );
 }
