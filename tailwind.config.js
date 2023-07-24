@@ -5,11 +5,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "hsl(21.6deg 52.45% 28.04%)",
+        primary: "#1B1F24",
         secondary: "hsl(213.33deg 14.29% 12.35%)",
         "primary-light":"#9D5431",
         dark: "hsl(0deg 0% 0%)",
         white: "hsl(0deg 0% 100%)",
+        "secondary-white": "hsl(0deg 9.18% 87.86%)",
       },
       screens: {
         sm: "480px",

@@ -96,7 +96,7 @@ export default function Blog() {
                         <p className="text-[10px] md:text-base">
                           {item.description}.
                         </p>
-                        <p className="text-[10px] mt-2 mb-6 text-gray-500 font-extrabold">
+                        <p className="text-[10px] my-2  text-gray-500 font-extrabold">
                           {item.dateCreated}
                         </p>
                       </div>

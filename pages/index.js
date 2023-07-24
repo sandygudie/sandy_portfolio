@@ -29,7 +29,7 @@ export default function Home() {
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
 
-      <main className=" relative">
+      <main className="relative">
         <div className="h-screen text-white">
           <div className="w-10/12 py-12 lg:py-0 lg:w-10/12 max-w-10/12 mx-auto h-full flex flex-col-reverse items-center justify-center ">
             <div
@@ -40,9 +40,8 @@ export default function Home() {
               <h1 className="font-bold text-center mb-8  text-3xl md:text-6xl lg:text-7xl xl:text-8xl ">
                 Goodnews Sandy
               </h1>
-              <div className="md:w-9/12 m-auto text-justify leading-10 text-[17px]">
-                <div className="px-0 lg:px-8 ">
-                  <p>
+                <div className="md:w-9/12 m-auto text-justify text-sm md:text-[17px] lg:text-lg">
+                  <p className="leading-loose">
                     An experienced{" "}
                     <span className="text-[#9D5431] font-bold">
                       full-stack developer
@@ -67,7 +66,6 @@ export default function Home() {
                     </a>
                   </p>
                 </div>
-              </div>
 
               <div className=" mx-auto mt-12 w-64">
                 <a
