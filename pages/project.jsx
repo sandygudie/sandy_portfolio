@@ -11,6 +11,15 @@ export default function Project() {
 
   const project = [
     {
+      id: 5,
+      name: "Kanban",
+      description: "A Saas project management board ",
+      tools: ["Vite(ReactJs)", "TypeScript", "TailwindCSS", "Redux Toolkit"],
+      link: "https://kanban-management-app.netlify.app/",
+      image: "images/kanban.PNG",
+    },
+    
+    {
       id: 1,
       name: "SportBase",
       description: "Shop all your sport needs.",
@@ -34,6 +43,33 @@ export default function Project() {
       image: "images/mooc.PNG",
     },
     {
+      id: 6,
+      name: "Invoice App",
+      description: "Manage your invoices",
+      tools: [
+        "React",
+        "Typescript",
+        "TailwindCSS",
+        "Framer-motion",
+        "Formik-yup",
+      ],
+      link: " https://app-invoice.netlify.app/",
+      image: "images/Invoice.jpg",
+    },
+    {
+      id: 9,
+      name: "CountryName-flag",
+      description: "React NPM package for getting countryname,flag and countrycode",
+      tools: [
+        "Parcel",
+        "Typescript",
+        "Eslint",
+        "NPM"
+      ],
+      link: " https://www.npmjs.com/package/react-countryname-flag",
+      image: "images/npm-package.png",
+    },
+    {
       id: 3,
       name: "QuizBase",
       description: "Rest API for programming quizzes",
@@ -49,29 +85,6 @@ export default function Project() {
       link: "https://app-quizs.netlify.app/",
       image: "images/Quizapp.png",
     },
-    {
-      id: 5,
-      name: "Kanban",
-      description: "A Saas project management board ",
-      tools: ["Vite(ReactJs)", "TypeScript", "TailwindCSS", "Redux Toolkit"],
-      link: "https://kanban-management-app.netlify.app/",
-      image: "images/kanban.PNG",
-    },
-    {
-      id: 6,
-      name: "Invoice App",
-      description: "Manage your invoices",
-      tools: [
-        "React",
-        "Typescript",
-        "TailwindCSS",
-        "Framer-motion",
-        "Formik-yup",
-      ],
-      link: " https://app-invoice.netlify.app/",
-      image: "images/Invoice.jpg",
-    },
-
     {
       id: 7,
       name: "Defiants",
