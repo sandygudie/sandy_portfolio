@@ -16,7 +16,7 @@ export default function Project() {
         <p className="pb-12 font-bold text-2xl md:text-4xl  flex items-center justify-center">
           Project Gallery
         </p>
-        <div className="flex items-center gap-3 justify-center">
+        <div className="flex items-center gap-3 justify-center flex-wrap">
           <button  className={`${tab==="frontend"? "bg-primary":"border text-primary hover:bg-primary hover:text-white border-primary"}  rounded-md font-bold w-36 py-2.5`} onClick={()=> setTab("frontend")}>Frontend</button>
           <button className={`${tab==="backend"? "bg-primary":"border text-primary hover:bg-primary hover:text-white border-primary"}  rounded-md font-bold w-36 py-2.5`} onClick={()=> setTab("backend")}>Backend</button>
           <button className={`${tab==="test"? "bg-primary":"border text-primary hover:bg-primary hover:text-white border-primary"}  rounded-md font-bold w-36 py-2.5`} onClick={()=> setTab("test")}>Test</button>
