@@ -5,9 +5,9 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 
 export default function Navbar() {
   const router = useRouter();
-  console.log(router.pathname);
+
   return (
-    <div className="w-full z-40 bg-primary fixed top-0">
+    <div className="w-full z-40 bg-secondary fixed top-0">
       <div className="gap-8 flex item-center md:justify-between justify-center py-8 md:pl-8 md:pr-20">
         <div className="hidden md:flex text-xs gap-2 item-center">
           <BsFillTelephoneFill className="text-sm" />{" "}
@@ -16,7 +16,7 @@ export default function Navbar() {
         <div className="flex item-center text-xs gap-16 md:gap-8">
           {[
             { name: "Home", link: "/" },
-            { name: "Project", link: "/project" },
+            { name: "Projects", link: "/projects" },
             { name: "Blog", link: "/blog" },
           ].map((ele, index) => {
             return (

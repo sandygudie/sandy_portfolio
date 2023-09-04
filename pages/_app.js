@@ -25,9 +25,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       {!loading ? (
-        <div className="loader-container ">
-          <div className="bg-primary rounded-full h-10 flex justify-center items-center w-10">
-            <div className="bg-white  animate-spin h-5 w-5 "></div>
+        <div className="loader-container">
+          <div className="bg-primary rounded-full h-20 flex justify-center items-center w-20">
+            <div className="bg-white animate-spin h-10 w-10"></div>
           </div>
         </div>
       ) : (
