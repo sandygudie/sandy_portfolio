@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Frontend from "../components/Frontend";
 import Backend from "../components/Backend";
-import Test from "../components/test";
+import Test from "../components/Test";
 
 
 export default function Project() {
