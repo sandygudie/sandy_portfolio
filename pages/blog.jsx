@@ -11,8 +11,7 @@ export default function Blog() {
       link: "https://medium.com/@sandygoody/vite-twin-macro-d27a5f89df06",
       images: "images/blog/twinmacro.png",
       dateCreated: "October 1, 2022",
-      content:
-        "How do you combine the TailwindCSS theme with Material-UI in an Application? In other words, how do I make MUI theme work with TailwindCSS classes?",
+      
     },
     {
       id: 4,
@@ -20,8 +19,7 @@ export default function Blog() {
       link: "https://sandygoody.medium.com/unit-testing-7799b753b486",
       images: "images/blog/unittesting.png",
       dateCreated: "December 16th, 2021",
-      content:
-        "Testing is an important aspect of building a reliable app, especially in large-scale apps developed by different people. Though it’s quite impossible to have 100% error-free apps, with testing",
+      
     },
 
     {
@@ -30,8 +28,7 @@ export default function Blog() {
       link: "https://sandygoody.medium.com/ci-cd-pipeline-with-react-app-using-github-actions-1b219d4e162f",
       images: "images/blog/github-action.jpg",
       dateCreated: "October 29th, 2021",
-      content:
-        "In this tutorial, I will illustrate how to handle Continuous Integration and deployment using GitHub actions.",
+      
     },
 
     {
@@ -40,8 +37,7 @@ export default function Blog() {
       link: "https://sandygoody.medium.com/installing-wordpress-cc634e51fa71",
       images: "images/blog/wordpress.jpg",
       dateCreated: "January 14th, 2021",
-      content:
-        "WordPress is a content management system that makes it easy to build websites and manage content without writing codes.",
+      
     },
     {
       id: 7,
@@ -49,8 +45,15 @@ export default function Blog() {
       link: "https://sandygoody.medium.com/accessibility-in-web-development-e50abfeab1c0",
       images: "images/blog/lint.png",
       dateCreated: "March 14th, 2023",
-      content:
-        "WordPress is a content management system that makes it easy to build websites and manage content without writing codes.",
+      
+    },
+    {
+      id: 7,
+      description: "localization in React Apps using LinguiJS and Crowdin.",
+      link: "https://medium.com/@sandygoody/how-to-set-up-localisation-in-react-app-using-linguijs-and-crowdin-f10c26b7ee38",
+      images: "images/blog/localisation.webp",
+      dateCreated: "june 7th, 2023",
+     
     },
   ];
 
@@ -61,7 +64,7 @@ export default function Blog() {
   };
   return (
     <div className="">
-      <div className="w-11/12 md:w-10/12 m-auto py-24 lg:py-40">
+      <div className="w-11/12 md:w-10/12 m-auto py-28">
         <h1 className="pb-12 font-bold text-2xl md:text-4xl flex items-center justify-center">
           Blog posts
         </h1>
@@ -107,6 +110,10 @@ export default function Blog() {
             </Masonry>
           </div>
         </div>
+        <div className="mt-24 text-center">
+        <a href="https://sandygoody.medium.com" target="_blank" className="border border-primary  hover:bg-primary hover:text-white py-3 px-8 text-primary rounded-lg" rel="noreferrer">Read More</a>
+        </div>
+       
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <div className="w-full z-40 bg-secondary fixed top-0">
-      <div className="gap-8 flex item-center md:justify-between justify-center py-8 md:pl-8 md:pr-20">
+      <div className="gap-8 flex item-center md:justify-between justify-center py-10 md:pl-8 md:pr-20">
         <div className="hidden md:flex text-xs gap-2 item-center">
           <BsFillTelephoneFill className="text-sm" />{" "}
           <span className="tracking-widest">+2348133429514</span>
@@ -27,7 +27,7 @@ export default function Navbar() {
               router.pathname == ele.link
                 ? "text-primary-light"
                 : "hover:text-primary-light"
-            } tracking-widest
+            } tracking-widest text-base
            `}
                 href={ele.link}
               >

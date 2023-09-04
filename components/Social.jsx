@@ -31,6 +31,8 @@ export default function Social() {
       {links.map((item) => {
         return (
           <a
+          rel="noreferrer"
+          target="_blank"
             key={item.id}
             className="border-[1px] text-sm border-[#9D5431] p-2 rounded-full hover:text-[#9D5431] hover:border-white"
             href={item.link}

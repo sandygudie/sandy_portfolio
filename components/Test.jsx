@@ -12,7 +12,7 @@ export default function Test() {
         {
           id: 1,
           name: "Mainstack-ui",
-          tools: ["Vite(ReactJs)", "TypeScript", "TailwindCSS"],
+          tools: ["Vite(ReactJs)", "TypeScript", "TailwindCSS","API"],
           link: "https://mainstack-ui-test.netlify.app/",
           image: "images/mainstack.png",
         },
@@ -76,7 +76,6 @@ export default function Test() {
                         <div className="flex flex-col justify-end h-full">
                           {" "}
                           <p className=" w-48 md:full text-sm md:text-xl font-extrabold pb-2">{item.name}</p>
-                          <p className="text-[8px] md:text-xs font-thin ">{item.description}.</p>
                           <div className="hidden mt-2 md:flex gap-2 items-center">
                             {item.tools.map((ele, index) => (
                               <p

@@ -41,14 +41,7 @@ export default function Frontend() {
           link: "https://sportbase.netlify.app/",
           image: "images/sportbase.PNG",
         },
-        {
-          id: 2,
-          name: "Open Innovation",
-          description: "MOOCs to learn Open Science Courses.",
-          tools: ["Vite(ReactJs)", "TypeScript", "Sass"],
-          link: "https://moocs-client.netlify.app/",
-          image: "images/mooc.PNG",
-        },
+       
         {
           id: 6,
           name: "Invoice App",
