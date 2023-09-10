@@ -22,7 +22,7 @@ export default function Frontend() {
           name: "DevLinks",
           description: "Manage your social links in one place",
           tools: ["VueJs", "TypeScript", "TailwindCSS"],
-          link: "devlinks-client.onrender.com/login",
+          link: "https://devlinks-client.onrender.com/login",
           image: "images/devlinks.PNG",
         },
         
