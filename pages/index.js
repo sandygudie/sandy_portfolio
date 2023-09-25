@@ -8,12 +8,13 @@ export default function Home() {
       <Head>
         <title>Goodnews Sandy Portfolio</title>
         <meta name="description" content="Experienced fullstack developer" />
+        <meta name="keywords" content="software developer, react developer , backend developer, web development, web developer, open source contributor, frontend developer,fullstack developer" />
         <link rel="icon" href="/logo.svg" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
           href="/apple-touch-icon.png"
-        />
+        /> 
         <link
           rel="icon"
           type="image/png"
@@ -109,3 +110,5 @@ export async function getStaticProps() {
   };
 }
 
+
+// use react helmet for SEO
