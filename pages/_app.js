@@ -33,8 +33,9 @@ function MyApp({ Component, pageProps }) {
       ) : (
         <div className="relative">
           <Navbar />
-          <Social />
+
           <Component {...pageProps} />
+          <Social />
           <ScrollToTop />
         </div>
       )}

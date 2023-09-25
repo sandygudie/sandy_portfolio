@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Head from "next/head";
 import React from "react";
 import Masonry from "react-masonry-css";
 
@@ -63,6 +64,14 @@ export default function Blog() {
     700: 2,
   };
   return (
+    <>
+    <Head>
+      <title>Goodnews Sandy Blog</title>
+      <meta
+        name="description"
+        content="Goodnews Sandy blog posts"
+      />
+    </Head>
     <div className="">
       <div className="w-11/12 md:w-10/12 m-auto py-28">
         <h1 className="pb-12 font-bold text-2xl md:text-4xl flex items-center justify-center">
@@ -116,5 +125,6 @@ export default function Blog() {
        
       </div>
     </div>
+    </>
   );
 }

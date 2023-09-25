@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Head from "next/head";
 import { createClient } from "next-sanity";
 
@@ -108,6 +108,4 @@ export async function getStaticProps() {
     revalidate: 60,
   };
 }
-// Todo
-// Use dynamic pages to explain more about each project
-// Add animation
+
