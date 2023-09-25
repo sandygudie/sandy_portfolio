@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Head>
         <title>Goodnews Sandy Portfolio</title>
-        <meta name="description" content="Goodnews Sandy Portfolio" />
+        <meta name="google-site-verification" content="2KZ1ZSwJm4Xaa_x5JyArxBC_MjCOIBytB7-3wAzIv54" />
         <link rel="icon" href="/logo.svg" />
         <link
           rel="apple-touch-icon"
