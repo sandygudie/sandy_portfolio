@@ -1,5 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Kanit:wght@200;300;400;500;600;700&display=swap"); */
 
 @tailwind base;
 @tailwind components;
@@ -11,48 +9,48 @@ body {
 }
 
 @font-face {
-  font-family: "QanelasSoft";
+  font-family: "Rubik";
   font-weight: 300;
-  src: url("./fonts/OpenSauceSans-Light.ttf") format("truetype");
+  src: url("./fonts/Rubik-Light.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
-  font-family: "QanelasSoft";
+  font-family: "Rubik";
   font-weight: 400;
-  src: url("./fonts/OpenSauceSans-Regular.ttf") format("truetype");
+  src: url("./fonts/Rubik-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "OpenSauceSans";
+  font-family: "Rubik";
   font-weight: 500;
-  src: url("./fonts/OpenSauceSans-Medium.ttf") format("truetype");
+  src: url("./fonts/Rubik-Medium.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "OpenSauceSans";
+  font-family: "Rubik";
   font-weight: 600;
-  src: url("./fonts/OpenSauceSans-SemiBold.ttf") format("truetype");
+  src: url("./fonts/Rubik-SemiBold.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "OpenSauceSans";
+  font-family: "Rubik";
   font-weight: 700;
-  src: url("./fonts/OpenSauceSans-Bold.ttf") format("truetype");
+  src: url("./fonts/Rubik-Bold.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
-  font-family: "OpenSauceSans";
+  font-family: "Rubik";
   font-weight: 800;
-  src: url("./fonts/OpenSauceSans-ExtraBold.ttf") format("truetype");
+  src: url("./fonts/Rubik-ExtraBold.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
-  font-family: "OpenSauceSans";
+  font-family: "Rubik";
   font-weight: 900;
-  src: url("./fonts/OpenSauceSans-Black.ttf") format("truetype");
+  src: url("./fonts/Rubik-Black.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -63,22 +61,19 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: "OpenSauceSans", "Open Sans", sans-serif;
+  font-family: "Rubik", "Open Sans", sans-serif;
 
 }
 body{
-  background-color: #1B1F24;
+  padding: 2em;
+  background-color: #000;
 }
 input,
 textarea {
   outline: none;
   color: black;
 }
-/* .background-grid {
-  background-image: linear-gradient(#1c7cbb 1.5px, transparent 1.5px, transparent calc(100% - 1.5px), #1c7cbb calc(100% - 1.5px)), linear-gradient(90deg, #1c7cbb 1.5px, transparent 1.5px, transparent calc(100% - 1.5px), #1c7cbb calc(100% - 1.5px));
-  background-size: 10% 10%;
-  border: 1.5px solid #1c7cbb;
-} */
+
 .loader-container {
   width: 100%;
   height: 100vh;

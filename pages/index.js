@@ -1,6 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import { createClient } from "next-sanity";
+import AboutMe from "../components/AboutMe";
+import Project from "../components/Project";
 
 export default function Home() {
   return (
@@ -32,43 +34,33 @@ export default function Home() {
 
       <main className="relative">
         <div className="h-screen text-white">
-          <div className="w-10/12 py-12 lg:py-0 lg:w-10/12 max-w-10/12 mx-auto h-[95%] md:h-full flex flex-col-reverse items-center justify-center ">
+          <div className="py-20 lg:py-0 h-[95%] md:h-full flex flex-col-reverse items-center justify-center ">
             <div
               data-aos="zoom-out"
               data-aos-duration="800"
-              className="font-semibold lg:text-left over-flow-hidden text-center"
+              className="text-left over-flow-hidden"
             >
-              <h1 className="font-bold text-center mb-8  text-3xl md:text-6xl lg:text-7xl xl:text-8xl ">
-                Goodnews Sandy
+              <h1 className="font-bold mb-8 text-[8rem] leading-[6.5rem]">
+               CREATIVE DEVELOPER
               </h1>
-                <div className="md:w-9/12 m-auto text-justify text-sm md:text-[17px] lg:text-lg">
-                  <p className="leading-[3em]">
-                    An experienced{" "}
-                    <span className="text-[#9D5431] font-bold">
+               
+                  <p className="w-5/12 text-3xl font-light">
+                    I m an experienced{" "}
+                    <span className="text-[#9D5431]">
                       full-stack developer
                     </span>{" "}
                     ,
-                    <span className="text-[#9D5431] font-bold">
+                    <span className="text-[#9D5431] ">
                       {" "}
                       tech instructor
                     </span>{" "}
                     and
-                    <span className="text-[#9D5431] font-bold"> writer</span>.
-                    {"  "} I enjoy building web-based applications that leaves a
-                    lasting impression on users. I contribute to Open Source and
-                    write about my work on{" "}
-                    <a
-                      href="https://sandygoody.medium.com/"
-                      rel="noreferrer"
-                      target="_blank"
-                      className="text-[#9D5431] font-bold underline"
-                    >
-                      medium.
-                    </a>
+                    <span className="text-[#9D5431]"> writer</span>.
+                   
                   </p>
-                </div>
+    
 
-              <div className=" mx-auto mt-12 w-64">
+              {/* <div className=" mx-auto mt-12 w-64">
                 <a
                   className="w-full text-sm md:text-lg block text-center p-3 font-extrabold bg-white text-secondary hover:bg-secondary hover:text-white"
                   href="https://docs.google.com/document/d/1TGO4P6XlqEZfvw5tUH4uoEaLKvWILtxAAinyAPIGC8U/edit?usp=sharing"
@@ -77,10 +69,12 @@ export default function Home() {
                 >
                   Resume
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
+        <AboutMe/>
+        <Project/>
       </main>
     </>
   );
