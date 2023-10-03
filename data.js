@@ -19,7 +19,7 @@ export const projects = [
     name: "DevLinks",
     description: "Devlinks is a monorepo, full stack development. Devlink manages all your social links in one place. it makes sharing links easy.",
     tools: ["VueJs", "TypeScript", "TailwindCSS","mySQL","Nodejs","ExpressJS"],
-    link: "https://devlinks-client.onrender.com/login",
+    link: "https://devlinks-murex.vercel.app/",
     image: "/images/devlinks.svg",
     githubLink:"https://github.com/sandygudie/devlinks"
   },

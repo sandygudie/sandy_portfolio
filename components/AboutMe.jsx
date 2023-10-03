@@ -20,7 +20,7 @@ export default function AboutMe() {
           interactive. With  deep knowledge of user experience and design
            patterns, I build applications using  high-quality code that is easy to maintain and scalable. 
            I always exceed my clients expectations and deliver
-          exceptional results every time. 
+          exceptional results. 
         </p>
         <br/>
 <p>I enjoy writing and sharing my
