@@ -14,7 +14,7 @@ export default function AboutMe() {
           and organizations achieve their goals through effective and efficient
           web development solutions.
         </p> */}
-        <p className="">
+        <p className="leading-[3rem]">
           My name is Goodnews Sandy, I am an experience fullstack devloper . I
           build innovative web applications that are user friendly and
           interactive. My goal is to exceed my clients expectations and deliver
