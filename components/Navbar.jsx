@@ -1,18 +1,23 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import React from "react";
-import { useRouter } from "next/router";
 
 
 export default function Navbar() {
-  const router = useRouter();
-
   return (
-    <div className="w-full z-40 bg-black fixed top-0">
-      <div className="gap-8 flex item-center md:justify-between justify-center py-4">
-        <div className="hidden md:flex text-xs gap-2 item-center">
+    <div className="w-full px-6 md:px-12 z-40 bg-black fixed top-0">
+      <div className="w-full flex justify-between py-6 gap-2 items-center">
+        <span className="tracking-[0.4rem] sm:text-base md:text-lg font-medium">
+          GOODNEWS SANDY
+        </span>
 
-          <span className="tracking-[0.4rem] text-lg font-medium">GS</span>
-        </div>
+        <a
+          className="w-20 md:w-36 text-xs md:text-base block text-center p-2 md:p-3 text-white border-gray-100 border hover:bg-white hover:text-black"
+          href="https://docs.google.com/document/d/1TGO4P6XlqEZfvw5tUH4uoEaLKvWILtxAAinyAPIGC8U/edit?usp=sharing"
+          rel="noreferrer"
+          target="_blank"
+        >
+          RESUME
+        </a>
       </div>
     </div>
   );

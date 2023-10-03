@@ -1,171 +1,99 @@
 import Image from "next/image";
 import React from "react";
-import Masonry from "react-masonry-css";
+import { projects } from "../data";
+import { BsArrowRight } from "react-icons/bs";
+import { HiExternalLink } from "react-icons/hi";
+import { FaGithub } from "react-icons/fa";
 
-export default function Project() {
-  const breakpointColumnsObj = {
-    default: 2,
-    1100: 2,
-    700: 2,
+export default function Project({ viewProjects, setViewProjects }) {
+  const scrolltoTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
-  const project = [
-    {
-      id: 5,
-      name: "Kanban",
-      description: "A Saas project management board",
-      tools: ["Vite(ReactJs)", "TypeScript", "TailwindCSS", "Redux Toolkit"],
-      link: "https://kanban-management-app.netlify.app/",
-      image: "/images/kanban.svg",
-    },
-    {
-      id: 10,
-      name: "DevLinks",
-      description: "Manage your social links in one place",
-      tools: ["VueJs", "TypeScript", "TailwindCSS"],
-      link: "https://devlinks-client.onrender.com/login",
-      image: "/images/devlinks.svg",
-    },
-
-    {
-      id: 1,
-      name: "SportBase",
-      description: "Shop all your sport needs.",
-      tools: [
-        "Nextjs",
-        "TypeScript",
-        "TailwindCSS",
-        "Sanity",
-        "MongoDB",
-        "Stripe",
-      ],
-      link: "https://sportbase.netlify.app/",
-      image: "/images/sportbase.svg",
-    },
-
-    {
-      id: 6,
-      name: "Invoice App",
-      description: "Manage your invoices",
-      tools: [
-        "React",
-        "Typescript",
-        "TailwindCSS",
-        "Framer-motion",
-        "Formik-yup",
-      ],
-      link: " https://app-invoice.netlify.app/",
-      image: "/images/Invoice.jpg",
-    },
-    {
-      id: 9,
-      name: "CountryName-flag",
-      description:
-        "React NPM package for getting countryname,flag and countrycode",
-      tools: ["Parcel", "Typescript", "Eslint", "NPM"],
-      link: " https://www.npmjs.com/package/react-countryname-flag",
-      image: "/images/npm-package.png",
-    },
-
-    {
-      id: 4,
-      name: "QuizApp",
-      description: "Test your knowledge of popular programming languages.",
-      tools: ["Nextjs", "TypeScript", "TailwindCSS"],
-      link: "https://app-quizs.netlify.app/",
-      image: "/images/quizapp.png",
-    },
-    {
-      id: 7,
-      name: "Defiants",
-      description: "Empowering Web3 communities",
-      tools: ["NextJs", "TailwindCSS", "Sanity.io"],
-      link: "https://defiants-defiants.vercel.app/",
-      image: "/images/defiants.svg",
-    },
-    {
-      id: 8,
-      name: "My Networth",
-      description: "Track all your assests in one place",
-      tools: ["HTML", "SCSS", "Javascript"],
-      link: "https://mynetworth.netlify.app/",
-      image: "/images/networth.svg",
-    },
-    {
-      id: 8,
-      name: "Launmax",
-      description: "Fast Laundry Service for Lagos Residents",
-      tools: ["HTML", "SCSS", "Javascript"],
-      link: " https://launmax.netlify.app/",
-      image: "/images/lunmax.svg",
-    },
-  ];
   return (
-    <div className="mt-32">
-      <h2 className="text-6xl">MY WORK</h2>
+    <section id="project" className="mt-48  px-6 md:px-12 ">
+      <div className="flex items-center justify-between">
+        <h2 className="text-4xl md:text-6xl">MY WORK</h2>
+        <hr className="border-gray border w-full" />
+      </div>
 
-      <div className="w-12/12 flex flex-wrap gap-8 items-center justify-center m-auto pb-12">
-        {/* <Masonry
-          breakpointCols={breakpointColumnsObj}
-          className="flex flex-wrap items-center justify-between w-full"
-        > */}
-        {project.map((item) => {
+      <div className="w-12/12 flex flex-wrap gap-x-6 md:gap-12 items-center justify-between lg:justify-center m-auto pb-12">
+        {projects.map((item, i) => {
           return (
-            <div
-              className="group relative h-auto w-[45%] mt-12 lg:mx-6"
-              key={item.id}
-            >
-              <Image
-                src={item.image}
-                alt="Photo"
-                width={0}
-                height={0}
-                sizes="100vw"
-                loading="lazy"
-                layout="responsive"
-                objectFit="cover"
-                className="transition-transform ease-in delay-100 hover:scale-110 duration-200"
+            (!viewProjects ? i <= 3 : i <= projects.length) && (
+              <a   rel="noreferrer"
+              target="_blank"
+              href={item.link}
+                className="group relative h-auto w-full md:w-[45%] lg:w-[40%] mt-8  md:mt-12 lg:mx-6"
                 key={item.id}
-                // placeholder="blur"
-                // blurDataURL="https://media.tenor.com/UnFx-k_lSckAAAAC/amalie-steiness.gif"
-              />
-
-              <a
-                href={item.link}
-                className="w-full"
-                rel="noreferrer"
-                target="_blank"
               >
-                <div className="pt-4">
-                  {" "}
-                  <p className="w-48 md:w-full text-sm md:text-xl font-bold">
-                    {item.name}
-                  </p>
-                  <p className="text-[8px] md:text-base font-thin ">
-                    {item.description}.
-                  </p>
-                  <div className="hidden mt-2 md:flex gap-2 items-center">
-                    {item.tools.map((ele, index) => (
-                      <p
-                        className="text-[10px] w-fit px-2 py-1 text-dark bg-white rounded-full"
-                        key={index}
-                      >
-                        {ele}
+                <Image
+                  src={item.image}
+                  alt="Photo"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  loading="lazy"
+                  layout="responsive"
+                  objectFit="cover"
+                  className="transition-transform ease-in delay-100 hover:scale-110 duration-200"
+                  key={item.id}
+                  // placeholder="blur"
+                  // blurDataURL="https://media.tenor.com/UnFx-k_lSckAAAAC/amalie-steiness.gif"
+                />
+
+                <div
+             
+                  className="w-full"
+                
+                >
+                  <div className="pt-4">
+                    {" "}
+                    <div className="flex items-center justify-between">
+                      <p className="w-48 md:w-full text-sm md:text-2xl font-medium">
+                        {item.name}
                       </p>
-                    ))}
+                      <div className="flex items-center gap-4">
+                        <a  rel="noreferrer" target="_blank" href={item.link}>
+                          <HiExternalLink className="md:text-xl text-gray-100" />
+                        </a>
+                        <a href={item.githubLink}  rel="noreferrer" target="_blank">
+                          {" "}
+                          <FaGithub className="text-sm md:text-lg text-gray-100" />
+                        </a>
+                      </div>
+                    </div>
+                    <p className="text-sm md:text-base font-thin ">
+                      {item.description}
+                    </p>
+                    {viewProjects &&<div className="hidden mt-2 md:flex gap-2 items-center flex-wrap">
+                      {item.tools.map((ele, index) => (
+                        <p
+                          className="text-[12px] w-fit px-2 py-1 text-white bg-gray-100 rounded-full"
+                          key={index}
+                        >
+                          {ele}
+                        </p>
+                      ))}
+                    </div>}
                   </div>
                 </div>
               </a>
-            </div>
+            )
           );
         })}
-        {/* </Masonry> */}
       </div>
 
-      <div className="text-center">
-        <button className="border rounded-full w-36 h-36  p-8 text-sm">
-          View more projects
-        </button>
-      </div>
-    </div>
+      {!viewProjects && (
+        <div className="my-8 text-center">
+          <button
+            onClick={() => (setViewProjects(true), scrolltoTop())}
+            className="border border-gray-100 hover:text-black hover:bg-white text-gray-100 rounded-full w-24 h-24 md:w-36 md:h-36 md:p-8 text-xs md:text-sm"
+          >
+            View More Projects
+            <BsArrowRight className="md:text-3xl mx-auto" />
+          </button>
+        </div>
+      )}
+    </section>
   );
 }

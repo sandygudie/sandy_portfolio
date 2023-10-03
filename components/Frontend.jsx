@@ -15,7 +15,7 @@ export default function Frontend() {
           description: "A Saas project management board",
           tools: ["Vite(ReactJs)", "TypeScript", "TailwindCSS", "Redux Toolkit"],
           link: "https://kanban-management-app.netlify.app/",
-          image: "images/kanban.PNG",
+          image: "images/kanban.svg",
         },
         {
           id: 10,
@@ -23,7 +23,7 @@ export default function Frontend() {
           description: "Manage your social links in one place",
           tools: ["VueJs", "TypeScript", "TailwindCSS"],
           link: "https://devlinks-client.onrender.com/login",
-          image: "images/devlinks.PNG",
+          image: "images/devlinks.svg",
         },
         
         {
@@ -39,7 +39,7 @@ export default function Frontend() {
             "Stripe",
           ],
           link: "https://sportbase.netlify.app/",
-          image: "images/sportbase.PNG",
+          image: "images/sportbase.svg",
         },
        
         {
@@ -54,7 +54,7 @@ export default function Frontend() {
             "Formik-yup",
           ],
           link: " https://app-invoice.netlify.app/",
-          image: "images/Invoice.jpg",
+          image: "images/invoice.png",
         },
         {
           id: 9,
@@ -76,7 +76,7 @@ export default function Frontend() {
           description: "Test your knowledge of popular programming languages.",
           tools: ["Nextjs", "TypeScript", "TailwindCSS"],
           link: "https://app-quizs.netlify.app/",
-          image: "images/Quizapp.png",
+          image: "images/quizapp.png",
         },
         {
           id: 7,
@@ -84,7 +84,7 @@ export default function Frontend() {
           description: "Empowering Web3 communities",
           tools: ["NextJs", "TailwindCSS", "Sanity.io"],
           link: "https://defiants-defiants.vercel.app/",
-          image: "images/defiants.PNG",
+          image: "images/defiants.svg",
         },
         {
           id: 8,
@@ -92,7 +92,7 @@ export default function Frontend() {
           description: "Track all your assests in one place",
           tools: ["HTML", "SCSS", "Javascript"],
           link: "https://mynetworth.netlify.app/",
-          image: "images/Networth.PNG",
+          image: "images/networth.svg",
         },
         {
           id: 8,
@@ -100,7 +100,7 @@ export default function Frontend() {
           description: "Fast Laundry Service for Lagos Residents",
           tools: ["HTML", "SCSS", "Javascript"],
           link: " https://launmax.netlify.app/",
-          image: "images/Launmax.PNG",
+          image: "images/lunmax.svg",
         },
       ];
     
@@ -108,9 +108,7 @@ export default function Frontend() {
 
           <div className="w-12/12  m-auto py-12">
             <div
-              data-aos="zoom-in"
-              data-aos-duration="800"
-              data-aos-delay="0"
+              
               className="flex flex-wrap items-center justify-center"
             >
               <Masonry

@@ -35,9 +35,7 @@ export default function Backend() {
         
         <div className="w-12/12  m-auto py-12"> 
             <div
-              data-aos="zoom-in"
-              data-aos-duration="800"
-              data-aos-delay="0"
+             
               className="flex flex-wrap items-center justify-center"
             >
               <Masonry

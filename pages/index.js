@@ -1,22 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import { createClient } from "next-sanity";
 import AboutMe from "../components/AboutMe";
 import Project from "../components/Project";
+import AllProjects from "../components/AllProjects";
+import Footer from "../components/Footer";
+import Blog from "../components/Blog";
+import { HiOutlineArrowDown } from "react-icons/hi";
+import OpenSource from "../components/OpenSource";
 
 export default function Home() {
+  const [viewProjects, setViewProjects] = useState(false);
+
   return (
     <>
       <Head>
         <title>Goodnews Sandy Portfolio</title>
         <meta name="description" content="Experienced fullstack developer" />
-        <meta name="keywords" content="software developer, react developer , backend developer, web development, web developer, open source contributor, frontend developer,fullstack developer" />
+        <meta
+          name="keywords"
+          content="software developer, react developer , backend developer, web development, web developer, open source contributor, frontend developer,fullstack developer"
+        />
         <link rel="icon" href="/logo.svg" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
           href="/apple-touch-icon.png"
-        /> 
+        />
         <link
           rel="icon"
           type="image/png"
@@ -32,76 +42,55 @@ export default function Home() {
         <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
 
-      <main className="relative">
-        <div className="h-screen text-white">
-          <div className="py-20 lg:py-0 h-[95%] md:h-full flex flex-col-reverse items-center justify-center ">
+      <main className="">
+        {!viewProjects ? (
+          <div>
             <div
               data-aos="zoom-out"
               data-aos-duration="800"
-              className="text-left over-flow-hidden"
+              className="pt-40 px-6 lg:px-12  text-left over-flow-hidden"
             >
-              <h1 className="font-bold mb-8 text-[8rem] leading-[6.5rem]">
-               CREATIVE DEVELOPER
+              <h1 className="font-bold lg:mb-8 text-[2.5rem] md:text-[6rem] lg:text-[8rem] leading-[3.5rem] md:leading-[6.5rem]">
+                CREATIVE DEVELOPER
               </h1>
-               
-                  <p className="w-5/12 text-3xl font-light">
-                    I m an experienced{" "}
-                    <span className="text-[#9D5431]">
-                      full-stack developer
-                    </span>{" "}
-                    ,
-                    <span className="text-[#9D5431] ">
-                      {" "}
-                      tech instructor
-                    </span>{" "}
-                    and
-                    <span className="text-[#9D5431]"> writer</span>.
-                   
-                  </p>
-    
 
-              {/* <div className=" mx-auto mt-12 w-64">
+              <p className="w-full md:text-3xl font-light">
+                <span className="text-gray-100">Full-stack developer</span> ,
+                <span className="text-gray-100"> tech instructor</span> and
+                <span className="text-gray-100"> writer</span>.
+              </p>
+              <div className="flex justify-center mt-20">
                 <a
-                  className="w-full text-sm md:text-lg block text-center p-3 font-extrabold bg-white text-secondary hover:bg-secondary hover:text-white"
-                  href="https://docs.google.com/document/d/1TGO4P6XlqEZfvw5tUH4uoEaLKvWILtxAAinyAPIGC8U/edit?usp=sharing"
-                  rel="noreferrer"
-                  target="_blank"
+                  href="#aboutme"
+                  className=" w-20 h-20 md:w-24 md:h-24 flex flex-col hover:bg-white group border border-gray-100 rounded-full justify-center items-center"
                 >
-                  Resume
+                  <HiOutlineArrowDown className=" text-xl md:text-3xl group-hover:text-black" />
                 </a>
-              </div> */}
+              </div>
             </div>
+
+            <div id="aboutme">
+              <AboutMe />
+            </div>
+            <Project
+              viewProjects={viewProjects}
+              setViewProjects={setViewProjects}
+            />
+            <Blog />
+            <OpenSource />
+
+            <hr className="border-gray border-t-none" />
+            <Footer />
           </div>
-        </div>
-        <AboutMe/>
-        <Project/>
+        ) : (
+          <AllProjects
+            viewProjects={viewProjects}
+            setViewProjects={setViewProjects}
+          />
+        )}
       </main>
     </>
   );
-}
-
-const client = createClient({
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
-  dataset: "production",
-  apiVersion: "2022-03-25",
-  useCdn: false,
-});
-
-export async function getStaticProps() {
-  const opensourcedata = await client.fetch(`*[_type == "open-source"]{
-    name,
-  link,
-  _id,
-  description,
-    "imageUrl": image.asset->url,
-    activity
-  }`);
-  return {
-    props: {
-      opensourcedata,
-    },
-    revalidate: 60,
-  };
 }
 
 

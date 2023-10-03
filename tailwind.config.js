@@ -10,6 +10,8 @@ module.exports = {
         "primary-light":"#9D5431",
         dark: "hsl(0deg 0% 0%)",
         white: "hsl(0deg 0% 100%)",
+       gray: "rgba(45, 52, 63, 0.4)",
+        "gray-100": "rgba(255,255,255,.5)",
         "secondary-white": "hsl(0deg 9.18% 87.86%)",
       },
       screens: {

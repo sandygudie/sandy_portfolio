@@ -9,38 +9,50 @@ export default function Social() {
       id: 0,
       icon: <MdEmail />,
       link: "mailto:goodnewssandy@gmail.com",
+      name: "goodnewssandy@gmail.com",
     },
     {
       id: 1,
       icon: <FaGithub />,
       link: "https://github.com/sandygudie",
+      name: "github.com/sandygudie",
     },
     {
       id: 2,
       icon: <FaLinkedinIn />,
       link: "https://www.linkedin.com/in/goodnews-sandy-613936179/",
+      name: "linkedin.com/in/goodnews-sandy-613936179",
     },
     {
       id: 3,
       icon: <AiOutlineMedium />,
       link: "https://sandygoody.medium.com/",
+      name: "sandygoody.medium.com",
     },
   ];
   return (
-    <div className="absolute md:fixed bottom-10 left-28 md:left-5 md:top-1/3 items-start gap-2 flex md:flex-col">
-      {links.map((item) => {
-        return (
-          <a
-          rel="noreferrer"
-          target="_blank"
-            key={item.id}
-            className="border-[1px] text-sm border-[#9D5431] p-2 rounded-full hover:text-[#9D5431] hover:border-white"
-            href={item.link}
-          >
-            {item.icon}
-          </a>
-        );
-      })}
+    <div>
+
+      <div className="mt-4 items-start gap-2 flex justify-center ">
+        {links.map((item) => {
+          return (
+            <a
+              rel="noreferrer"
+              target="_blank"
+              key={item.id}
+              className="flex text-sm hover:underline items-center gap-4 "
+              href={item.link}
+            >
+              <span className="border-[1px] text-white text-sm border-white p-2 rounded-full hover:bg-white hover:text-black hover:border-white">
+                {" "}
+                {item.icon}{" "}
+              </span>
+
+            </a>
+          );
+        })}
+      </div>
+      
     </div>
   );
 }

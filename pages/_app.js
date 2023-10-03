@@ -4,8 +4,7 @@ import TagManager from "react-gtm-module";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "../components/Navbar";
-import ScrollToTop from "../components/ScrollToTop";
-import Social from "../components/Social";
+
 
 const tagManagerArgs = {
   gtmId: "GTM-MDDHDL8",
@@ -31,11 +30,10 @@ function MyApp({ Component, pageProps }) {
           </div>
         </div>
       ) : (
-        <div className="relative">
+        <div className="">
           <Navbar />
           <Component {...pageProps} />
-          {/* <Social />
-          <ScrollToTop /> */}
+         
         </div>
       )}
     </>
