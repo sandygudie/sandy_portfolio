@@ -7,7 +7,7 @@ export default function AboutMe() {
         <h2 className="text-4xl md:text-6xl">ABOUT ME</h2>
         <hr className="border-gray border w-full" />
       </div>
-      <div className="mt-8 lg:pl-32 lg:pr-8 text-lg md:text-xl text-justify leading-loose">
+      <div className="mt-8 lg:pl-32 lg:pr-8 text-lg text-justify leading-loose">
         {/* <p>
           I am a passionate web developer with 15 year of experience in creating
           custom websites and web applications. My mission is to help businesses
@@ -15,17 +15,20 @@ export default function AboutMe() {
           web development solutions.
         </p> */}
         <p className="leading-[3rem]">
-          My name is Goodnews Sandy, I am an experience fullstack devloper . I
-          build innovative web applications that are user friendly and
-          interactive. My goal is to exceed my clients expectations and deliver
-          exceptional results every time. I enjoy writing and sharing my
-          knowledge, I have a couple of articles on <a className="underline" href="sandygoody.medium.com">Medium</a>. I mentor upcoming
-          beginners to learn software development skills.
+          My name is Goodnews Sandy, I am an experience fullstack devloper with expertise in
+          building innovative web applications that are user friendly and
+          interactive. With  deep knowledge of user experience and design
+           patterns, I build applications using  high-quality code that is easy to maintain and scalable. 
+           I always exceed my clients expectations and deliver
+          exceptional results every time. 
         </p>
-
+        <br/>
+<p>I enjoy writing and sharing my
+          knowledge, I have a couple of articles on <a className="underline" href="sandygoody.medium.com">Medium</a>. I also mentor upcoming
+          beginners to learn software development skills.</p>
         <div>
           <div className="flex-col md:flex-row flex items-start justify-between gap-8">
-            <div className="basis-1/2 text-gray-100 text-lg">
+            <div className="leading-[2rem] basis-1/2 text-gray-100 text-lg">
               {" "}
               <h3 className="text-xl text-white font-medium mt-8">Services</h3>
               <p>Web Development</p>
@@ -37,7 +40,7 @@ export default function AboutMe() {
               <p>Community and </p>
               <p>Speaking Engagement</p>
             </div>
-            <div className="basis-1/2 text-lg text-gray-100">
+            <div className="leading-[2rem] basis-1/2 text-lg text-gray-100">
               <h3 className="text-xl text-white font-medium mt-8">
                 Technologies I Use
               </h3>
@@ -49,7 +52,7 @@ export default function AboutMe() {
                 NodeJs , ExpressJs , Nestjs, Python , firebase{" "}
               </p>
               <p className="my-2 text-lg">MongoDB , MySQL , Postgrel</p>
-              <p className="my-2 text-lg">Github Actions, Docker</p>
+              <p className="my-2 text-lg">Github Actions, Docker, Cypress</p>
             </div>
           </div>
         </div>
