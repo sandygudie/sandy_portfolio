@@ -15,14 +15,12 @@ export default function AboutMe() {
           web development solutions.
         </p> */}
         <p className="">
-          As a dedicated web developer, I am committed to staying up-to-date
-          with the latest technologies and trends in the industry. I approach
-          each project with enthusiasm, creativity, and a focus on delivering a
-          high-quality end product that meets the unique needs of each client.
-          With a passion for innovation and an eye for detail, I specialize in
-          creating intuitive and user-friendly web experiences. My goal is to
-          not only meet but exceed my clients expectations and deliver
-          exceptional results every time.
+          My name is Goodnews Sandy, I am a an experiend fullstack devloper . I
+          build innovative web applications that are user friendly and
+          interactive. My goal is to exceed my clients expectations and deliver
+          exceptional results every time. I enjoy writing and sharing my
+          knowledge, I have a couple of articles on <a className="underline" href="sandygoody.medium.com">Medium</a>. I mentor upcoming
+          beginners to learn software development skills.
         </p>
 
         <div>
