@@ -37,8 +37,8 @@ export default function Project({ viewProjects, setViewProjects }) {
                   objectFit="cover"
                   className="transition-transform ease-in delay-100 hover:scale-110 duration-200"
                   key={item.id}
-                  // placeholder="blur"
-                  // blurDataURL="https://media.tenor.com/UnFx-k_lSckAAAAC/amalie-steiness.gif"
+                  placeholder="blur"
+                  blurDataURL="https://media.tenor.com/UnFx-k_lSckAAAAC/amalie-steiness.gif"
                 />
 
                 <div
