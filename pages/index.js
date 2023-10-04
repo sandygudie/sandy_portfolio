@@ -61,7 +61,7 @@ export default function Home() {
               </p>
               <p className="md:hidden">
                 <p className="text-lg text-gray-100">Full-stack developer</p>
-                <p className="text-lg text-gray-100"> Tech Instructor</p>
+                <p className="text-lg my-3 text-gray-100"> Tech Instructor</p>
                 <p className="text-lg text-gray-100"> Writer</p>
               </p>
               <div className="flex justify-center mt-20">
