@@ -45,13 +45,13 @@ export default function AboutMe() {
                 Technologies I Use
               </h3>
               <p className="my-2 text-lg">
-                HTML , CSS , Javascript, Jquery, Sass, TailwindCss, Python ,
-                Typescript, React , Vue, Nextjs{" "}
+                HTML , CSS , Javascript,Python , Jquery, Sass, TailwindCSS, Chakara-UI,
+                Typescript, React , Vue, Nextjs, Vite, Webpack, Templating engines(EJS, Handlebars){" "}
               </p>
               <p className="my-2 text-lg">
-                NodeJs , ExpressJs , Nestjs, Python , firebase{" "}
+                NodeJs , ExpressJs , Nestjs, Python , Firebase, Rest API, Apollo GraphQL{" "}
               </p>
-              <p className="my-2 text-lg">MongoDB , MySQL , Postgrel</p>
+              <p className="my-2 text-lg">MongoDB , MySQL , PostgreSQL</p>
               <p className="my-2 text-lg">Github Actions, Docker, Cypress</p>
             </div>
           </div>
