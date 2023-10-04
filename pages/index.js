@@ -54,10 +54,15 @@ export default function Home() {
                 CREATIVE DEVELOPER
               </h1>
 
-              <p className="w-full md:text-3xl font-light">
+              <p className=" hidden md:block w-full md:text-3xl font-light">
                 <span className="text-gray-100">Full-stack developer</span> ,
                 <span className="text-gray-100"> tech instructor</span> and
                 <span className="text-gray-100"> writer</span>.
+              </p>
+              <p className="md:hidden">
+                <p className="text-lg text-gray-100">Full-stack developer</p>
+                <p className="text-lg text-gray-100"> Tech Instructor</p>
+                <p className="text-lg text-gray-100"> Writer</p>
               </p>
               <div className="flex justify-center mt-20">
                 <a
