@@ -11,7 +11,7 @@ export const projects = [
       "formik-yup",
     ],
     link: "https://kanban-management-app.netlify.app/",
-    image: "/images/kanban.svg",
+    image: "/images/kanban.PNG",
     githubLink:"https://github.com/sandygudie/Kanban-App"
   },
   {
@@ -64,9 +64,24 @@ export const projects = [
       "Formik-yup",
     ],
     link: " https://app-invoice.netlify.app/",
-    image: "/images/invoice.jpg",
+    image: "/images/invoice.png",
     githubLink:"https://github.com/sandygudie/Invoice-App"
   },
+  {
+    id: 4,
+    name: "Pomodoro-Stopwatch",
+    description: "A pomodoro timer with control settings.",
+    tools: [
+      "HTML",
+      "Sass",
+      "Webpack",
+      "Javascript",
+    ],
+    link: "https://pomodoro-stopwatch.netlify.app/",
+    image: "/images/pomodoro.png",
+    githubLink:"https://github.com/sandygudie/Pomodoro-Timer"
+  },
+  
   {
     id: 5,
     name: "CountryName-flag",
@@ -93,7 +108,7 @@ export const projects = [
     description: "Rest API for programming Language quiz (Documentation).",
     tools: ["NodeJs", "Express", "MongoDB", "Docusarus"],
     link: "https://quizbase.netlify.app/",
-    image: "/images/QuizBase.png",
+    image: "/images/quizBase.png",
     githubLink:"https://github.com/sandygudie/quiz-api"
   },
   {
@@ -102,7 +117,7 @@ export const projects = [
     description: "Empowering Web3 communities.",
     tools: ["NextJs", "TailwindCSS", "Sanity.io"],
     link: "https://defiants-defiants.vercel.app/",
-    image: "/images/defiants.svg",
+    image: "/images/defiants.png",
   },
   {
     id: 8,
@@ -110,7 +125,7 @@ export const projects = [
     description: "Track all your assests in one place.",
     tools: ["HTML", "SCSS", "Javascript"],
     link: "https://mynetworth.netlify.app/",
-    image: "/images/networth.svg",
+    image: "/images/networth.PNG",
   },
   {
     id: 9,
@@ -118,7 +133,7 @@ export const projects = [
     description: "Fast Laundry Service for Lagos Residents.",
     tools: ["HTML", "SCSS", "Javascript"],
     link: " https://launmax.netlify.app/",
-    image: "/images/lunmax.svg",
+    image: "/images/launmax.PNG",
     githubLink:"https://github.com/sandygudie/launmax"
   },
   

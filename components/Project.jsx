@@ -16,7 +16,7 @@ export default function Project({ viewProjects, setViewProjects }) {
         <hr className="border-gray border w-full" />
       </div>
 
-      <div className="w-12/12 flex flex-wrap gap-x-6 md:gap-12 items-center justify-between lg:justify-center m-auto pb-12">
+      <div className="w-12/12 flex flex-wrap gap-x-6 md:gap-12 items-start justify-between lg:justify-center m-auto pb-12">
         {projects.map((item, i) => {
           return (
             (!viewProjects ? i <= 3 : i <= projects.length) && (
@@ -34,7 +34,7 @@ export default function Project({ viewProjects, setViewProjects }) {
                   sizes="100vw"
                   loading="lazy"
                   layout="responsive"
-                  objectFit="cover"
+                  objectFit="contain"
                   className="transition-transform ease-in delay-100 hover:scale-110 duration-200"
                   key={item.id}
                   placeholder="blur"
@@ -62,7 +62,7 @@ export default function Project({ viewProjects, setViewProjects }) {
                         </a>
                       </div>
                     </div>
-                    <p className="text-sm md:text-base font-thin ">
+                    <p className="text-sm md:text-base font-thin text-gray-100">
                       {item.description}
                     </p>
                     {viewProjects &&<div className="hidden mt-2 md:flex gap-2 items-center flex-wrap">

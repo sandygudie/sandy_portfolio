@@ -7,14 +7,14 @@ export default function AboutMe() {
         <h2 className="text-4xl md:text-6xl">ABOUT ME</h2>
         <hr className="border-gray border w-full" />
       </div>
-      <div className="mt-8 lg:pl-32 lg:pr-8 text-lg text-justify leading-loose">
+      <div className="mt-8 lg:pl-32 lg:pr-8 text-xl text-gray-100 text-justify leading-[2em]">
         {/* <p>
           I am a passionate web developer with 15 year of experience in creating
           custom websites and web applications. My mission is to help businesses
           and organizations achieve their goals through effective and efficient
           web development solutions.
         </p> */}
-        <p className="leading-[3rem]">
+        <p className="leading-[2rem]">
           My name is Goodnews Sandy, I am an experience fullstack devloper with expertise in
           building innovative web applications that are user friendly and
           interactive. With  deep knowledge of user experience and design
