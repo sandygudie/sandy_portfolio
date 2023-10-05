@@ -32,6 +32,7 @@ export default function AboutMe() {
               {" "}
               <h3 className="text-xl text-white font-medium mt-8">Services</h3>
               <p>Web Development</p>
+              <p>Unit Testing</p>
               <p>Devops</p>
               <p>Technical Writing</p>
               <p>Mentoring</p>
@@ -46,11 +47,14 @@ export default function AboutMe() {
               </h3>
               <p className="my-2 text-lg">
                 HTML , CSS , Javascript,Python , Jquery, Sass, TailwindCSS, Chakara-UI,
-                Typescript, React , Vue, Nextjs, Vite, Webpack, Templating engines(EJS, Handlebars){" "}
+                Typescript, React ,Vue, Nextjs, Vite, Webpack, Templating engines(EJS, Handlebars){" "}
               </p>
+              <p>Figma, Canva, PhotoShop</p>
               <p className="my-2 text-lg">
                 NodeJs , ExpressJs , Nestjs, Python , Firebase, Rest API, Apollo GraphQL{" "}
               </p>
+              <p>Npm/Yarn, i18n, Slack, Jira, Asana, Trello,</p>
+              <p>Goggle Analytics, Lighthouse</p>
               <p className="my-2 text-lg">MongoDB , MySQL , PostgreSQL</p>
               <p className="my-2 text-lg">Github Actions, Docker, Cypress</p>
             </div>
