@@ -46,9 +46,10 @@ export default function AboutMe() {
                 Technologies I Use
               </h3>
               <p className="my-2 text-lg">
-                HTML , CSS , Javascript,Python , Jquery, Sass, TailwindCSS, Chakara-UI,
+                HTML , CSS , Javascript,Python , Jquery, 
                 Typescript, React ,Vue, Nextjs, Vite, Webpack, Templating engines(EJS, Handlebars){" "}
               </p>
+              <p>Sass, CSS-in-Js, Styled component, TailwindCSS, Chakara-UI, Material-UI , Twin macro</p>
               <p>Figma, Canva, PhotoShop</p>
               <p className="my-2 text-lg">
                 NodeJs , ExpressJs , Nestjs, Python , Firebase, Rest API, Apollo GraphQL{" "}
