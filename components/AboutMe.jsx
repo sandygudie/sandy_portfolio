@@ -52,17 +52,17 @@ export default function AboutMe() {
                 Technologies I Use
               </h3>
               <p className="my-2 text-lg">
-                HTML , CSS , Javascript, Python, Jquery, Typescript, React, Vue,
-                Nextjs, Vite, Webpack, Templating engines(EJS, Handlebars), Quarto{" "}
+                HTML, CSS, Javascript, Python, Jquery, Typescript, React, Vue,
+                NextJs, Vite, Webpack, Templating-Engines(EJS, Handlebars), Quarto{" "}
               </p>
               <p>
                 Sass, CSS-in-Js, Styled-Component, TailwindCSS, Chakara-UI, Material-UI, Twin macro
               </p>
-              <p>Figma, Canva, PhotoShop</p>
+              <p>Figma, Canva, PhotoShop, Adobe</p>
               <p className="my-2 text-lg">
-                NodeJs, ExpressJs, Nestjs, Firebase, Rest API, Apollo GraphQL{" "}
+                NodeJs, ExpressJs, NestJs, Firebase, Rest-API, Apollo-GraphQL{" "}
               </p>
-              <p>Npm/Yarn, i18n, Slack, Jira, Asana, Trello,</p>
+              <p>Npm/Yarn, i18n, Slack, Jira, Asana, Trello</p>
               <p>Goggle Analytics, Lighthouse</p>
               <p className="my-2 text-lg">MongoDB, MySQL, PostgreSQL</p>
               <p className="my-2 text-lg">Github Actions, Docker, Cypress</p>
