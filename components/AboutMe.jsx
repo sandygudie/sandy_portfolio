@@ -15,17 +15,23 @@ export default function AboutMe() {
           web development solutions.
         </p> */}
         <p className="leading-[2rem]">
-          My name is Goodnews Sandy, I am an experience fullstack devloper with expertise in
-          building innovative web applications that are user friendly and
-          interactive. With  deep knowledge of user experience and design
-           patterns, I build applications using  high-quality code that is easy to maintain and scalable. 
-           I always exceed my clients expectations and deliver
-          exceptional results. 
+          My name is Goodnews Sandy, I am an experience fullstack devloper with
+          expertise in building innovative web applications that are user
+          friendly and interactive. With deep knowledge of user experience and
+          design patterns, I build applications using high-quality code that is
+          easy to maintain and scalable. I always exceed my clients expectations
+          and deliver exceptional results.
         </p>
-        <br/>
-<p>I enjoy writing and sharing my
-          knowledge, I have a couple of articles on <a className="underline" href="sandygoody.medium.com">Medium</a>. I also mentor upcoming
-          beginners to learn software development skills.</p>
+        <br />
+        <p>
+          I enjoy writing and sharing my knowledge, I have a couple of articles
+          on{" "}
+          <a className="underline" href="sandygoody.medium.com">
+            Medium
+          </a>
+          . I also mentor upcoming beginners to learn software development
+          skills.
+        </p>
         <div>
           <div className="flex-col md:flex-row flex items-start justify-between gap-8">
             <div className="leading-[2rem] basis-1/2 text-gray-100 text-lg">
@@ -46,13 +52,16 @@ export default function AboutMe() {
                 Technologies I Use
               </h3>
               <p className="my-2 text-lg">
-                HTML , CSS , Javascript,Python , Jquery, 
-                Typescript, React ,Vue, Nextjs, Vite, Webpack, Templating engines(EJS, Handlebars){" "}
+                HTML , CSS , Javascript,Python , Jquery, Typescript, React ,Vue,
+                Nextjs, Vite, Webpack, Templating engines(EJS, Handlebars). Quarto{" "}
               </p>
-              <p>Sass, CSS-in-Js, Styled component, TailwindCSS, Chakara-UI, Material-UI , Twin macro</p>
+              <p>
+                Sass, CSS-in-Js, Styled component, TailwindCSS, Chakara-UI,
+                Material-UI , Twin macro
+              </p>
               <p>Figma, Canva, PhotoShop</p>
               <p className="my-2 text-lg">
-                NodeJs , ExpressJs , Nestjs, Python , Firebase, Rest API, Apollo GraphQL{" "}
+                NodeJs , ExpressJs , Nestjs, Firebase, Rest API, Apollo GraphQL{" "}
               </p>
               <p>Npm/Yarn, i18n, Slack, Jira, Asana, Trello,</p>
               <p>Goggle Analytics, Lighthouse</p>
