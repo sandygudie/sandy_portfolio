@@ -53,8 +53,9 @@ export default function AboutMe() {
               </h3>
               <p className="my-2 text-lg">
                 HTML, CSS, Javascript, Python, Jquery, Typescript, React, Vue,
-                NextJs, Vite, Webpack, Templating-Engines(EJS, Handlebars), Quarto{" "}
+                NextJs, Vite,Templating-Engines(EJS, Handlebars), Quarto{" "}
               </p>
+
               <p>
                 Sass, CSS-in-Js, Styled-Component, TailwindCSS, Chakara-UI, Material-UI, Twin macro
               </p>
