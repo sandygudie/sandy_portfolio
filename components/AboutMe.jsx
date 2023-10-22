@@ -57,7 +57,7 @@ export default function AboutMe() {
               </p>
               
               <p>
-                Sass, CSS-in-Js, Styled-Component, TailwindCSS, Chakara-UI, Material-UI, Twin macro
+                Sass, CSS-in-Js, Styled-Component, TailwindCSS, Chakara-UI, Material-UI, Twin macro, framer-motion
               </p>
               <p>Figma, Canva, PhotoShop, Adobe</p>
               <p className="my-2 text-lg">

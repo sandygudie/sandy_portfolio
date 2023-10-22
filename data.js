@@ -9,6 +9,7 @@ export const projects = [
       "TailwindCSS",
       "Redux Toolkit",
       "formik-yup",
+      "framer-motion"
     ],
     link: "https://kanban-management-app.netlify.app/",
     image: "/images/kanban.PNG",
