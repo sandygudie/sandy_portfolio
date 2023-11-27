@@ -52,9 +52,9 @@ export default function Project({ viewProjects, setViewProjects }) {
                       <p className="w-48 md:w-full text-sm md:text-2xl font-medium">
                         {item.name}
                       </p>
-                      <div className="flex items-center gap-4">
+                      <div className="flex text-sm items-center gap-4">
                         <a  rel="noreferrer" target="_blank" href={item.link}>
-                          <HiExternalLink className="md:text-xl text-gray-100" />
+                        View Site
                         </a>
                         <a href={item.githubLink}  rel="noreferrer" target="_blank">
                           {" "}
