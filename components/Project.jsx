@@ -10,7 +10,7 @@ export default function Project({ viewProjects, setViewProjects }) {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
   return (
-    <section id="project" className="mt-48  px-6 md:px-12 ">
+    <section id="project" className="mt-48 px-6 md:px-12 ">
       <div className="flex items-center justify-between">
         <h2 className="text-4xl md:text-6xl">MY WORK</h2>
         <hr className="border-gray border w-full" />
@@ -49,10 +49,10 @@ export default function Project({ viewProjects, setViewProjects }) {
                   <div className="pt-4">
                     {" "}
                     <div className="flex items-center justify-between">
-                      <p className="w-48 md:w-full text-sm md:text-2xl font-medium">
+                      <p className="w-48 md:w-full text-sm lg:text-2xl font-medium">
                         {item.name}
                       </p>
-                      <div className="flex text-sm w-[10rem] items-center gap-4">
+                      <div className="flex text-sm w-[7rem] lg:w-[10rem] justify-between items-center gap-4">
                         <a  rel="noreferrer" target="_blank" href={item.link}>
                         View Site
                         </a>
