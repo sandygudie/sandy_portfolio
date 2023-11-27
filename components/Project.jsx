@@ -52,7 +52,7 @@ export default function Project({ viewProjects, setViewProjects }) {
                       <p className="w-48 md:w-full text-sm md:text-2xl font-medium">
                         {item.name}
                       </p>
-                      <div className="flex text-sm items-center gap-4">
+                      <div className="flex text-sm w-[10rem] items-center gap-4">
                         <a  rel="noreferrer" target="_blank" href={item.link}>
                         View Site
                         </a>
