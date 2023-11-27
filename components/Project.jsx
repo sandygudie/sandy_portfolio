@@ -49,10 +49,10 @@ export default function Project({ viewProjects, setViewProjects }) {
                   <div className="pt-4">
                     {" "}
                     <div className="flex items-center justify-between">
-                      <p className="w-48 md:w-full text-sm lg:text-2xl font-medium">
+                      <p className="text-sm lg:text-2xl font-medium">
                         {item.name}
                       </p>
-                      <div className="flex text-sm w-[7rem] lg:w-[10rem] justify-between items-center gap-4">
+                      <div className="flex text-sm justify-between items-center gap-4">
                         <a  rel="noreferrer" target="_blank" href={item.link}>
                         View Site
                         </a>
@@ -62,7 +62,7 @@ export default function Project({ viewProjects, setViewProjects }) {
                         </a>
                       </div>
                     </div>
-                    <p className="text-sm md:text-base font-thin text-gray-100">
+                    <p className="my-3 text-sm md:text-base font-thin text-gray-100">
                       {item.description}
                     </p>
                     {viewProjects &&<div className="hidden mt-2 md:flex gap-2 items-center flex-wrap">
