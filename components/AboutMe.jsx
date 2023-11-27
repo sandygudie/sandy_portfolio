@@ -15,16 +15,14 @@ export default function AboutMe() {
           web development solutions.
         </p> */}
         <p className="leading-[2rem]">
-          My name is Goodnews Sandy, I am an experience fullstack devloper with
-          expertise in building innovative web applications. I build applications using high-quality codes that is
-          easy to maintain and scalable. I always exceed my clients expectations
-          and deliver exceptional results.
+          My name is Goodnews Sandy, I am an experienced Fullstack developer with
+          expertise in building innovative web applications. I build applications using best practice and documented code, easy to maintain and scalable. 
+          I exceed expectations and deliver exceptional results.
         </p>
-        <br />
         <p>
           I enjoy writing and sharing my knowledge, I have a couple of articles
           on{" "}
-          <a className="underline" href="sandygoody.medium.com">
+          <a className="underline text-white" href="sandygoody.medium.com">
             Medium
           </a>.
         </p>
@@ -48,12 +46,12 @@ export default function AboutMe() {
               <p className="my-2 text-lg">
               React, Vue, NextJs, Vite, Webpack, HTML, CSS, Jquery, Javascript, Typescript, {" "}
               </p>
-              <p>
+              <p className="my-2 text-lg">
                 Sass, CSS-in-Js, Styled-Component, TailwindCSS, Chakara-UI, Material-UI, Framer-motion
               </p>
               <p>Figma, Canva, PhotoShop, Adobe</p>
               <p className="my-2 text-lg">
-                NodeJs, ExpressJs, NestJs, Firebase, GraphQL,MongoDB, MySQL, PostgreSQL{" "}
+                NodeJs, ExpressJs, NestJs, Firebase, GraphQL, MongoDB, MySQL, PostgreSQL{" "}
               </p>
               <p className="my-2 text-lg">Github Actions, Docker-Compose, Cypress</p>
             </div>
