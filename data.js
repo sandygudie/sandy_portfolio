@@ -24,15 +24,7 @@ export const projects = [
     image: "/images/devlinks.svg",
     githubLink:"https://github.com/sandygudie/devlinks"
   },
-  {
-    id: 10,
-    name: "Open Innovation",
-    description: "An MOOCs application to learn Open Science Courses.",
-    tools: ["Vite(ReactJs)", "TypeScript", "Sass", "LinguiJs", "Crowdin"],
-    link: "https://moocs-client.netlify.app/",
-    image: "/images/mooc.PNG",
-    githubLink:"https://github.com/Open-Science-Community-Saudi-Arabia/MOOCs"
-  },
+
   {
     id: 3,
     name: "SportBase",
@@ -52,7 +44,15 @@ export const projects = [
     image: "/images/sportbase.svg",
     githubLink:"https://github.com/sandygudie/sportbase"
   },
-
+  {
+    id: 10,
+    name: "Open Innovation",
+    description: "An MOOCs application to learn Open Science Courses.",
+    tools: ["Vite(ReactJs)", "TypeScript", "Sass", "LinguiJs", "Crowdin"],
+    link: "https://moocs-client.netlify.app/",
+    image: "/images/mooc.PNG",
+    githubLink:"https://github.com/Open-Science-Community-Saudi-Arabia/MOOCs"
+  },
   {
     id: 4,
     name: "Invoice App",
