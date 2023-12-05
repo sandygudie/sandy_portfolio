@@ -54,6 +54,15 @@ export const projects = [
     githubLink:"https://github.com/Open-Science-Community-Saudi-Arabia/MOOCs"
   },
   {
+    id: 12,
+    name: "QuizBase",
+    description: "Rest API for programming Language quiz.",
+    tools: ["NodeJs", "Express", "MongoDB", "React", "Docusarus", "Documentation" ],
+    link: "https://quizbase.netlify.app/",
+    image: "/images/quizBase.png",
+    githubLink:"https://github.com/sandygudie/quiz-api"
+  },
+  {
     id: 4,
     name: "Invoice App",
     description: "keep track of your business invoices.",
@@ -103,15 +112,7 @@ export const projects = [
     image: "/images/quizapp.png",
     githubLink:"https://github.com/sandygudie/QuizApp"
   },
-  {
-    id: 12,
-    name: "QuizBase",
-    description: "Rest API for programming Language quiz (Documentation).",
-    tools: ["NodeJs", "Express", "MongoDB", "Docusarus"],
-    link: "https://quizbase.netlify.app/",
-    image: "/images/quizBase.png",
-    githubLink:"https://github.com/sandygudie/quiz-api"
-  },
+  
   {
     id: 7,
     name: "Defiants",
