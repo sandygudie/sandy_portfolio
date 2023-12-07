@@ -9,7 +9,8 @@ export const projects = [
       "TailwindCSS",
       "Redux Toolkit",
       "formik-yup",
-      "framer-motion"
+      "framer-motion",
+      "Chakara-ui"
     ],
     link: "https://kanban-management-app.netlify.app/",
     image: "/images/kanban.PNG",
@@ -37,30 +38,12 @@ export const projects = [
       "MongoDB",
       "Stripe",
       "Flutterwave",
-      "Paypal"
+      "PayPal"
 
     ],
     link: "https://sportbase.netlify.app/",
     image: "/images/sportbase.svg",
     githubLink:"https://github.com/sandygudie/sportbase"
-  },
-  {
-    id: 10,
-    name: "Open Innovation",
-    description: "An MOOCs application to learn Open Science Courses.",
-    tools: ["Vite(ReactJs)", "TypeScript", "Sass", "LinguiJs", "Crowdin"],
-    link: "https://moocs-client.netlify.app/",
-    image: "/images/mooc.PNG",
-    githubLink:"https://github.com/Open-Science-Community-Saudi-Arabia/MOOCs"
-  },
-  {
-    id: 12,
-    name: "QuizBase",
-    description: "Rest API for programming Language quiz.",
-    tools: ["NodeJs", "Express", "MongoDB", "React", "Docusarus", "Documentation" ],
-    link: "https://quizbase.netlify.app/",
-    image: "/images/quizBase.png",
-    githubLink:"https://github.com/sandygudie/quiz-api"
   },
   {
     id: 4,
@@ -77,6 +60,25 @@ export const projects = [
     image: "/images/invoice.png",
     githubLink:"https://github.com/sandygudie/Invoice-App"
   },
+  {
+    id: 12,
+    name: "QuizBase",
+    description: "Rest API for programming Language quiz.",
+    tools: ["NodeJs", "Express", "MongoDB", "React", "Docusarus", "Documentation" ],
+    link: "https://quizbase.netlify.app/",
+    image: "/images/quizBase.png",
+    githubLink:"https://github.com/sandygudie/quiz-api"
+  },
+    {
+    id: 10,
+    name: "Open Innovation",
+    description: "An MOOCs application to learn Open Science Courses.",
+    tools: ["Figma","Vite(ReactJs)", "TypeScript", "Sass", "LinguiJs", "Crowdin","React-query"],
+    link: "https://moocs-client.netlify.app/",
+    image: "/images/mooc.PNG",
+    githubLink:"https://github.com/Open-Science-Community-Saudi-Arabia/MOOCs"
+  },
+
   {
     id: 4,
     name: "Pomodoro-Stopwatch",
