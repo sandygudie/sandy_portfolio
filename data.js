@@ -10,7 +10,7 @@ export const projects = [
       "Redux Toolkit",
       "formik-yup",
       "framer-motion",
-      "Chakara-ui"
+      "Chakara-UI"
     ],
     link: "https://kanban-management-app.netlify.app/",
     image: "/images/kanban.PNG",
