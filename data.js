@@ -8,9 +8,10 @@ export const projects = [
       "TypeScript",
       "TailwindCSS",
       "Redux Toolkit",
-      "formik-yup",
-      "framer-motion",
-      "Chakara-UI"
+      "Formik-yup",
+      "Framer-motion",
+      "Chakara-UI",
+      "Cypress"
     ],
     link: "https://kanban-management-app.netlify.app/",
     image: "/images/kanban.PNG",
