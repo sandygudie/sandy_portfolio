@@ -14,7 +14,7 @@ export const projects = [
       "Cypress"
     ],
     link: "https://kanban-management-app.netlify.app/",
-    image: "/images/kanban.PNG",
+    image: "/images/kanban.png",
     githubLink:"https://github.com/sandygudie/Kanban-App"
   },
   {
@@ -23,7 +23,7 @@ export const projects = [
     description: "Devlinks is a monorepo, full stack development. Devlink manages all your social links in one place. it makes sharing links easy.",
     tools: ["VueJs", "TypeScript", "TailwindCSS","mySQL","Nodejs","ExpressJS"],
     link: "https://devlinks-murex.vercel.app/login",
-    image: "/images/devlinks.svg",
+    image: "/images/devlinks.png",
     githubLink:"https://github.com/sandygudie/devlinks"
   },
 
