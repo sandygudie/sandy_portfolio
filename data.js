@@ -49,7 +49,7 @@ export const projects = [
   {
     id: 4,
     name: "Invoice App",
-    description: "keep track of your business invoices.",
+    description: "Keep track of your business invoices.",
     tools: [
       "React",
       "Typescript",
