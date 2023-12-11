@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     name: "Kanban",
-    description: "Kanban board is project management application for managing and tracking project activites and tasks. It gives holistic view of project progress",
+    description: "Kanban board is project management application for managing and tracking project activites and tasks.",
     tools: [
       "Vite(ReactJs)",
       "TypeScript",
@@ -49,7 +49,7 @@ export const projects = [
   {
     id: 4,
     name: "Invoice App",
-    description: "Invoice is an Invoice management App,  it helps to manage and track your business invoices.",
+    description: "An Invoice management App for managing and tracking your business invoices.",
     tools: [
       "React",
       "Typescript",
