@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     name: "Kanban",
-    description: "A Saas project management board.",
+    description: "Kanban board is project management application for managing and tracking project activites and tasks. It gives holistic view of project progress",
     tools: [
       "Vite(ReactJs)",
       "TypeScript",
@@ -20,7 +20,7 @@ export const projects = [
   {
     id: 2,
     name: "DevLinks",
-    description: "Devlinks is a monorepo, full stack development. Devlink manages all your social links in one place. it makes sharing links easy.",
+    description: "Devlinks is a monorepo, full-stack development application. Devlink manages all your social links in one place. it makes sharing links easy.",
     tools: ["VueJs", "TypeScript", "TailwindCSS","mySQL","Nodejs","ExpressJS"],
     link: "https://devlinks-murex.vercel.app/login",
     image: "/images/devlinks.png",
@@ -30,7 +30,7 @@ export const projects = [
   {
     id: 3,
     name: "SportBase",
-    description: "An Ecommerce sport shop  for all your sport needs. ",
+    description: "SportBase is a modern e-commerce sportwear shop to get all your sport needs.",
     tools: [
       "Nextjs",
       "TypeScript",
@@ -49,7 +49,7 @@ export const projects = [
   {
     id: 4,
     name: "Invoice App",
-    description: "Keep track of your business invoices.",
+    description: "Invoice is an Invoice management App,  it helps to manage and track your business invoices.",
     tools: [
       "React",
       "Typescript",
@@ -119,7 +119,7 @@ export const projects = [
   {
     id: 7,
     name: "Defiants",
-    description: "Empowering Web3 communities.",
+    description: "Official Site for Defiants Community",
     tools: ["NextJs", "TailwindCSS", "Sanity.io"],
     link: "https://defiants-defiants.vercel.app/",
     image: "/images/defiants.png",
