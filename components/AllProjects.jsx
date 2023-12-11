@@ -8,14 +8,14 @@ export default function AllProjects({ setViewProjects }) {
     <>
       <section className="relative">
         <div className=" my-12">
-          <a
+          <button
             href=""
             onClick={() => setViewProjects(false)}
             className="text-white flex items-center gap-4 underline absolute right-10 text-base"
           >
             Home
             <BsArrowRight />
-          </a>
+          </button>
         </div>
         <Project viewProjects />
       </section>

@@ -98,7 +98,7 @@ export default function OpenSource() {
                 target="_blank"
               >
                 <div className="text-base text-gray-100 flex flex-col justify-end h-full">
-                  <p>Contributions</p>
+                
                   {item.contributions.map((ele, index)=>{
                     return(
                       <a  key={index} href={ele.link} className="text-sm underline">
