@@ -9,6 +9,24 @@ export default function OpenSource() {
     700: 2,
   };
   const project = [
+   
+
+    {
+      id: 2,
+      community: "Turning way",
+      name: "Community Handbook",
+      contributions: [
+        {
+          name: "Community Handbook",
+          link: "https://moocs-client.netlify.app/",
+        },
+        
+      ],
+      description:
+        "Created content on “Hybrid Collaboration” for the community handbook",
+      link: "https://moocs-client.netlify.app/",
+      image: "images/turingway.png",
+    },
     {
       id: 1,
       name: "Open Innovation",
@@ -31,24 +49,6 @@ export default function OpenSource() {
       ],
       link: "https://osc-ksa.com/",
       image: "images/osca-logo.png",
-    },
-
-    {
-      id: 2,
-      community: "Turning way",
-      name: "Community Handbook",
-      contributions: [
-        {
-          name: "Community Handbook",
-          link: "https://moocs-client.netlify.app/",
-        },
-        
-      ],
-      description:
-        "Created content on “Hybrid Collaboration” for the community handbook",
-      // tools: ["Jupter Book"],
-      link: "https://moocs-client.netlify.app/",
-      image: "images/turingway.png",
     },
 
     {
@@ -87,7 +87,7 @@ export default function OpenSource() {
              <div className="">
              <img
                 src={item.image}
-                className="rounded-xl w-64 h-24 md:w-72 md:h-48"
+                className="rounded-xl w-64 h-full md:w-72 "
                 alt={item.description}
               />
              </div>
