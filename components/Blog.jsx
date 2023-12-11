@@ -70,13 +70,13 @@ export default function Blog() {
               <div
                 className="w-[45%] lg:w-[30%]
                 hover:scale-110 hover:transition duration-300 ease-out
-                  md:mx-3 md:my-6 rounded-2xl shadow-2xl"
+                  md:mx-3 my-3 rounded-2xl shadow-2xl"
                 key={item.id}
               >
                 <a href={item.link}  rel="noreferrer" target="_blank">
                  
 
-                  <div className="lg:p-6 relative text-gray-100">
+                  <div className=" relative text-gray-100">
                     <p className="text-sm underline md:text-lg">
                       {item.description}.
                     </p>
@@ -93,10 +93,10 @@ export default function Blog() {
       <div className="my-8 text-center">
         <button
           onClick={() => setViewProjects(true)}
-          className="border border-gray-100 hover:text-black hover:bg-white text-gray-100 rounded-full w-24 h-24 md:w-36 md:h-36 p-2 md:p-8 text-xs md:text-sm"
+          className="border border-gray-100 bg-white text-black hover:text-white hover:bg-transparent text-gray-100 rounded-full w-24 h-24  md:w-32 md:h-32 p-2 md:p-8 text-xs md:text-[18px]"
         >
        More on Medium
-       <BsArrowRight className="md:text-3xl mx-auto"/>
+       <BsArrowRight className="md:text-2xl mt-1 mx-auto"/>
         </button>
       </div>
     </div>

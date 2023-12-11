@@ -8,18 +8,13 @@ export default function AboutMe() {
         <hr className="border-gray border w-full" />
       </div>
       <div className="mt-8 lg:pl-32 lg:pr-8 text-xl text-gray-100 text-justify leading-[2em]">
-        {/* <p>
-          I am a passionate web developer with 15 year of experience in creating
-          custom websites and web applications. My mission is to help businesses
-          and organizations achieve their goals through effective and efficient
-          web development solutions.
-        </p> */}
-        <p className="leading-[2rem]">
-          My name is Goodnews Sandy, I am an experienced Fullstack developer with
-          expertise in building innovative web applications. I build applications using best practice and documented code, easy to maintain and scalable. 
-          I exceed expectations and deliver exceptional results.
+        <p className="leading-[3rem]">
+          My name is Goodnews Sandy, I am an experienced software developer with
+          expertise in building innovative web applications. I build efficient
+         solutions that  help business and organizations achieve their goals.
         </p>
-        <p>
+        
+        <p className="mt-3">
           I enjoy writing and sharing my knowledge, I have a couple of articles
           on{" "}
           <a className="underline text-white" href="sandygoody.medium.com">
@@ -28,7 +23,7 @@ export default function AboutMe() {
         </p>
         <div>
           <div className="flex-col md:flex-row flex items-start justify-between gap-8">
-            <div className="leading-[2rem] basis-1/2 text-gray-100 text-lg">
+            <div className="leading-[3rem] basis-[40%] text-gray-100 text-lg">
               {" "}
               <h3 className="text-xl text-white font-medium mt-8">Services</h3>
               <p>Web Development</p>
@@ -39,15 +34,15 @@ export default function AboutMe() {
 
     
             </div>
-            <div className="leading-[2rem] basis-1/2 text-lg text-gray-100">
+            <div className="leading-[3rem]  text-lg text-gray-100">
               <h3 className="text-xl text-white font-medium mt-8">
                 Technologies I Use
               </h3>
               <p className="my-2 text-lg">
-              React, Vue, NextJs, Vite, Webpack, HTML, CSS, Jquery, Javascript, Typescript, {" "}
+              React, Vue, NextJs, Vite, HTML, CSS, Jquery, JavaScript, TypeScript, {" "}
               </p>
               <p className="my-2 text-lg">
-                Sass, CSS-in-Js, Styled-Component, TailwindCSS, Chakara-UI, Material-UI, Framer-motion
+                Sass, CSS-in-JS, Styled-Component, TailwindCSS, Chakra-UI, Material-UI, Framer-motion
               </p>
               <p>Figma, Canva, PhotoShop, Adobe</p>
               <p className="my-2 text-lg">

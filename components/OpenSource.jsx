@@ -76,12 +76,12 @@ export default function OpenSource() {
         <hr className="border-gray border w-full" />
       </div>
     
-      <div className=" w-11/12 mx-auto flex relative mt-12 justify-center items-center flex-wrap">
+      <div className="w-11/12 mx-auto flex relative mt-12 justify-center items-center flex-wrap lg:flex-nowrap">
      
         {project.map((item) => {
           return (
             <div
-              className="md:w-1/2 lg:w-auto flex items-center group gap-6 justify-between hover:scale-110 hover:transition duration-300 ease-out"
+              className="md:w-1/2 lg:w-auto flex items-center group gap-4 justify-between hover:scale-110 hover:transition duration-300 ease-out"
               key={item.id}
             >
              <div className="">
@@ -97,7 +97,7 @@ export default function OpenSource() {
                 rel="noreferrer"
                 target="_blank"
               >
-                <div className="text-base text-gray-100  flex flex-col justify-end h-full">
+                <div className="text-base text-gray-100 flex flex-col justify-end h-full">
                   <p>Contributions</p>
                   {item.contributions.map((ele, index)=>{
                     return(
