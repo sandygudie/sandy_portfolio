@@ -58,7 +58,7 @@ export default function Blog() {
     700: 2,
   };
   return (
-    <div className=" px-6 md:px-12 my-36">
+    <div className="px-6 md:px-12 my-24 md:my-36">
       <div className="flex items-center justify-between">
         <h2 className="text-4xl md:text-6xl">BLOG POSTS</h2>
         <hr className="border-gray border w-full" />

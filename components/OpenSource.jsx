@@ -70,7 +70,7 @@ export default function OpenSource() {
   ];
 
   return (
-    <div className="my-32 relative px-6 md:px-12 ">
+    <div className="mt-24 md:my-32 relative px-6 md:px-12">
       <div className="flex items-center justify-between">
         <h2 className="text-4xl md:text-6xl">OPEN SOURCE</h2>
         <hr className="border-gray border w-full" />

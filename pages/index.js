@@ -48,9 +48,9 @@ export default function Home() {
             <div
               data-aos="zoom-out"
               data-aos-duration="800"
-              className="pt-40 px-6 lg:px-12  text-left over-flow-hidden"
+              className="pt-40 px-6 lg:px-12 text-left over-flow-hidden"
             >
-              <h1 className="font-bold lg:mb-8 text-[2.5rem] md:text-[6rem] lg:text-[8rem] leading-[3.5rem] md:leading-[6.5rem]">
+              <h1 className="font-bold md:w-96 lg:mb-8 text-[2.5rem] md:text-[6rem] lg:text-[8rem] leading-[3.5rem] md:leading-[6.5rem]">
                 CREATIVE DEVELOPER
               </h1>
 

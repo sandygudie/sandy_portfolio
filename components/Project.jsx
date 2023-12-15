@@ -10,7 +10,7 @@ export default function Project({ viewProjects, setViewProjects }) {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
   return (
-    <section id="project" className="mt-48 px-6 md:px-12 ">
+    <section id="project" className="mt-16 md:mt-48 px-6 md:px-12 ">
       <div className="flex items-center justify-between">
         <h2 className="text-4xl md:text-6xl">MY WORK</h2>
         <hr className="border-gray border w-full" />
