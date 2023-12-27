@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import { createClient } from "next-sanity";
 import AboutMe from "../components/AboutMe";
 import Project from "../components/Project";
-import AllProjects from "../components/AllProjects";
 import Footer from "../components/Footer";
 import Blog from "../components/Blog";
 import { HiOutlineArrowDown } from "react-icons/hi";
@@ -77,22 +75,20 @@ export default function Home() {
             <div id="aboutme">
               <AboutMe />
             </div>
+            <div className="mt-16 md:mt-48">
             <Project
               viewProjects={viewProjects}
               setViewProjects={setViewProjects}
             />
+            </div>
+           
             <Blog />
             <OpenSource />
 
             <hr className="border-gray border-t-none" />
             <Footer />
           </div>
-        ) : (
-          <AllProjects
-            viewProjects={viewProjects}
-            setViewProjects={setViewProjects}
-          />
-        )}
+        ): null}
       </main>
     </>
   );

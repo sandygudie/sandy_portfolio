@@ -1,81 +1,27 @@
-/* eslint-disable @next/next/no-img-element */
-import Head from "next/head";
-import React, { useState } from "react";
-import Frontend from "../components/Frontend";
-import Backend from "../components/Backend";
-import Test from "../components/Test";
-import OpenSource from "../components/OpenSource";
+import { useRouter } from "next/router";
+import React from "react";
+import { BsArrowLeft } from "react-icons/bs";
+import Project from "../components/Project";
 
-export default function Project() {
-  const [tab, setTab] = useState("frontend");
 
+export default function AllProjects() {
+  const router = useRouter();
   return (
     <>
-      <Head>
-        <title>Projects</title>
-        <meta
-          name="description"
-          content="Experienced fullstack developer projects"
-        />
-      </Head>
-      <div className="">
-        <div className="w-11/12 md:w-10/12 m-auto py-28">
-          <p className="pb-12 font-bold text-2xl md:text-4xl  flex items-center justify-center">
-            Project Gallery
-          </p>
-          <div className="flex items-center gap-3 justify-center flex-wrap">
-            <button
-              className={`${
-                tab === "frontend"
-                  ? "bg-primary"
-                  : "border text-primary hover:bg-primary hover:text-white border-primary"
-              }  rounded-md font-bold w-36 py-2.5`}
-              onClick={() => setTab("frontend")}
-            >
-              Frontend
-            </button>
-            <button
-              className={`${
-                tab === "backend"
-                  ? "bg-primary"
-                  : "border text-primary hover:bg-primary hover:text-white border-primary"
-              }  rounded-md font-bold w-36 py-2.5`}
-              onClick={() => setTab("backend")}
-            >
-              Backend
-            </button>
-            <button
-              className={`${
-                tab === "test"
-                  ? "bg-primary"
-                  : "border text-primary hover:bg-primary hover:text-white border-primary"
-              }  rounded-md font-bold w-36 py-2.5`}
-              onClick={() => setTab("test")}
-            >
-              Test
-            </button>
-            <button
-              className={`${
-                tab === "opensource"
-                  ? "bg-primary"
-                  : "border text-primary hover:bg-primary hover:text-white border-primary"
-              }  rounded-md font-bold w-36 py-2.5`}
-              onClick={() => setTab("opensource")}
-            >
-              Open Source
-            </button>
-          </div>
-          {tab === "frontend" ? (
-            <Frontend />
-          ) : tab === "backend" ? (
-            <Backend />
-          ) : tab === "test" ? (
-            <Test />
-          ) : (
-            <OpenSource />
-          )}
+      <section className="px-2 md:px-12 pt-24 relative">
+      <button
+            onClick={() => router.push("/")}
+            className="flex ml-6 items-center gap-x-2 text-xl  
+            "
+          >
+            <BsArrowLeft/>
+            Home
+          </button>
+
+        <div className="mt-8 md:mt-24">
+          <Project viewProjects />
         </div>
-      </div>
+      </section>
     </>
   );
 }

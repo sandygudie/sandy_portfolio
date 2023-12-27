@@ -2,15 +2,14 @@ import Image from "next/image";
 import React from "react";
 import { projects } from "../data";
 import { BsArrowRight } from "react-icons/bs";
-import { HiExternalLink } from "react-icons/hi";
+import { useRouter } from "next/router";
 import { FaGithub } from "react-icons/fa";
 
 export default function Project({ viewProjects, setViewProjects }) {
-  const scrolltoTop = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  };
+  const router = useRouter();
+
   return (
-    <section id="project" className="mt-16 md:mt-48 px-6 md:px-12 ">
+    <section id="project" className="px-6 md:px-12 ">
       <div className="flex items-center justify-between">
         <h2 className="text-4xl md:text-6xl">MY WORK</h2>
         <hr className="border-gray border w-full" />
@@ -20,9 +19,10 @@ export default function Project({ viewProjects, setViewProjects }) {
         {projects.map((item, i) => {
           return (
             (!viewProjects ? i <= 3 : i <= projects.length) && (
-              <a   rel="noreferrer"
-              target="_blank"
-              href={item.link}
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href={item.link}
                 className="group relative h-auto w-full md:w-[45%] lg:w-[40%] mt-8  md:mt-12 lg:mx-6"
                 key={item.id}
               >
@@ -41,11 +41,7 @@ export default function Project({ viewProjects, setViewProjects }) {
                   blurDataURL="https://media.tenor.com/UnFx-k_lSckAAAAC/amalie-steiness.gif"
                 />
 
-                <div
-             
-                  className="w-full"
-                
-                >
+                <div className="w-full">
                   <div className="pt-4">
                     {" "}
                     <div className="flex items-center justify-between">
@@ -53,10 +49,14 @@ export default function Project({ viewProjects, setViewProjects }) {
                         {item.name}
                       </p>
                       <div className="flex text-sm justify-between items-center gap-4">
-                        <a  rel="noreferrer" target="_blank" href={item.link}>
-                        View Site
+                        <a rel="noreferrer" target="_blank" href={item.link}>
+                          View Site
                         </a>
-                        <a href={item.githubLink}  rel="noreferrer" target="_blank">
+                        <a
+                          href={item.githubLink}
+                          rel="noreferrer"
+                          target="_blank"
+                        >
                           {" "}
                           <FaGithub className="text-sm md:text-lg text-gray-100" />
                         </a>
@@ -65,16 +65,18 @@ export default function Project({ viewProjects, setViewProjects }) {
                     <p className="my-3 text-sm md:text-base font-thin text-gray-100">
                       {item.description}
                     </p>
-                    {viewProjects &&<div className="hidden mt-2 md:flex gap-2 items-center flex-wrap">
-                      {item.tools.map((ele, index) => (
-                        <p
-                          className="text-[12px] w-fit px-2 py-1 text-white bg-gray-100 rounded-full"
-                          key={index}
-                        >
-                          {ele}
-                        </p>
-                      ))}
-                    </div>}
+                    {viewProjects && (
+                      <div className="hidden mt-2 md:flex gap-2 items-center flex-wrap">
+                        {item.tools.map((ele, index) => (
+                          <p
+                            className="text-[12px] w-fit px-2 py-1 text-white bg-gray-100 rounded-full"
+                            key={index}
+                          >
+                            {ele}
+                          </p>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </div>
               </a>
@@ -86,14 +88,12 @@ export default function Project({ viewProjects, setViewProjects }) {
       {!viewProjects && (
         <div className="my-8 text-center">
           <button
-            onClick={() => (setViewProjects(true), scrolltoTop())}
+            onClick={() => router.push("/projects")}
             className="border bg-white text-black border-gray-100 hover:text-white hover:bg-transparent
              text-gray-100 rounded-full w-24 h-24 md:w-32 md:h-32 md:p-8 text-xs md:text-[18px]"
           >
-             All Projects
+            All Projects
             <BsArrowRight className="md:text-2xl mx-auto mt-1" />
-           
-            
           </button>
         </div>
       )}
