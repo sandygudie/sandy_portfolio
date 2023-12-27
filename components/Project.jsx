@@ -89,8 +89,8 @@ export default function Project({ viewProjects, setViewProjects }) {
         <div className="my-8 text-center">
           <button
             onClick={() => router.push("/projects")}
-            className="border bg-white text-black border-gray-100 hover:text-white hover:bg-transparent
-             text-gray-100 rounded-full w-24 h-24 md:w-32 md:h-32 md:p-8 text-xs md:text-[18px]"
+            className="border bg-white text-black border-gray-100 hover:text-white hover:bg-transparent 
+            rounded-full w-24 h-24 md:w-32 md:h-32 md:p-8 text-xs md:text-[18px]"
           >
             All Projects
             <BsArrowRight className="md:text-2xl mx-auto mt-1" />
