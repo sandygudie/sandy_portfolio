@@ -141,43 +141,4 @@ export const projects = [
     image: "/images/launmax.PNG",
     githubLink:"https://github.com/sandygudie/launmax"
   },
-  
-  
-  {
-    id: 13,
-    name: "Mainstack-ui",
-    description: "Assesement test.",
-    tools: ["Vite(ReactJs)", "TypeScript", "TailwindCSS", "API"],
-    link: "https://mainstack-ui-test.netlify.app/",
-    image: "/images/mainstack.png",
-    githubLink:"https://github.com/sandygudie/mainstack-test"
-  },
-  {
-    id: 14,
-    name: "Akaani",
-    description: "Assesement test. ",
-    tools: ["ReactJs", "TypeScript", "TailwindCSS"],
-    link: "https://akaani-assessment.netlify.app/",
-    image: "/images/akani.png",
-    githubLink:"https://github.com/sandygudie/Akaani-test"
-  },
-  {
-    id: 15,
-    description: "Assesement test. ",
-    name: "Sendfreight",
-    tools: ["Vite(ReactJs)", "TypeScript", "TailwindCSS"],
-    link: "https://sendfreight-testpage.netlify.app",
-    image: "/images/sendfrieght.png",
-
-  },
-
-  {
-    id: 16,
-    description: "Assesement test, ",
-    name: "HR-Work",
-    tools: ["HTML", "CSS", "Javascript"],
-    link: "https://hr-work.netlify.app/",
-    image: "/images/hr-work.png",
-    githubLink: "https://github.com/sandygudie/hrwork"
-  },
 ];

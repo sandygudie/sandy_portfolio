@@ -15,7 +15,7 @@ export default function AboutMe() {
         </p>
 
         <p className="mt-3">
-          I enjoy writing and sharing my knowledge, check out my articles on{" "}
+          I enjoy writing, check out my articles on{" "}
           <a className="underline text-white" href="sandygoody.medium.com">
             Medium
           </a>
