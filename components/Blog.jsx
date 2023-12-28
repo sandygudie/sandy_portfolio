@@ -93,7 +93,7 @@ export default function Blog() {
       <div className="my-8 text-center">
         <button
           onClick={() => setViewProjects(true)}
-          className="border border-gray-100 bg-white text-black hover:text-white hover:bg-transparent text-gray-100 rounded-full w-24 h-24  md:w-32 md:h-32 p-2 md:p-8 text-xs md:text-[18px]"
+          className="border border-gray-100 bg-white text-black hover:text-white hover:bg-transparent rounded-full w-24 h-24  md:w-32 md:h-32 p-2 md:p-8 text-xs md:text-[18px]"
         >
        More on Medium
        <BsArrowRight className="md:text-2xl mt-1 mx-auto"/>
