@@ -61,15 +61,15 @@ export const projects = [
     image: "/images/invoice.png",
     githubLink:"https://github.com/sandygudie/Invoice-App"
   },
-  {
-    id: 12,
-    name: "QuizBase",
-    description: "Rest API for programming Language quiz.",
-    tools: ["NodeJs", "Express", "MongoDB", "React", "Docusarus", "Documentation" ],
-    link: "https://quizbase.netlify.app/",
-    image: "/images/quizBase.png",
-    githubLink:"https://github.com/sandygudie/quiz-api"
+    {
+    id: 7,
+    name: "Defiants",
+    description: "Official Site for Defiants Community",
+    tools: ["NextJs", "TailwindCSS", "Sanity.io"],
+    link: "https://defiants-defiants.vercel.app/",
+    image: "/images/defiants.png",
   },
+  
     {
     id: 10,
     name: "Open Innovation",
@@ -78,6 +78,15 @@ export const projects = [
     link: "https://moocs-client.netlify.app/",
     image: "/images/mooc.PNG",
     githubLink:"https://github.com/Open-Science-Community-Saudi-Arabia/MOOCs"
+  },
+  {
+    id: 12,
+    name: "QuizBase",
+    description: "Rest API for programming Language quiz.",
+    tools: ["NodeJs", "Express", "MongoDB", "React", "Docusarus", "Documentation" ],
+    link: "https://quizbase.netlify.app/",
+    image: "/images/quizBase.png",
+    githubLink:"https://github.com/sandygudie/quiz-api"
   },
 
   {
@@ -105,6 +114,7 @@ export const projects = [
     image: "/images/npm-package.png",
     githubLink:"https://github.com/sandygudie/react-countryname-flag"
   },
+  
 
   {
     id: 6,
@@ -115,15 +125,7 @@ export const projects = [
     image: "/images/quizapp.png",
     githubLink:"https://github.com/sandygudie/QuizApp"
   },
-  
-  {
-    id: 7,
-    name: "Defiants",
-    description: "Official Site for Defiants Community",
-    tools: ["NextJs", "TailwindCSS", "Sanity.io"],
-    link: "https://defiants-defiants.vercel.app/",
-    image: "/images/defiants.png",
-  },
+
   {
     id: 8,
     name: "My Networth",
