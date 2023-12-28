@@ -65,7 +65,7 @@ export const projects = [
     id: 7,
     name: "Defiants",
     description: "Official Site for Defiants Community",
-    tools: ["NextJs", "TailwindCSS", "Sanity.io"],
+    tools: ["NextJs", "TailwindCSS", "Sanity", "Typescript"],
     link: "https://defiants-defiants.vercel.app/",
     image: "/images/defiants.png",
   },
