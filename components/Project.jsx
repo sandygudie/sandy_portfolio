@@ -11,7 +11,7 @@ export default function Project({ viewProjects, setViewProjects }) {
   return (
     <section id="project" className="px-6 md:px-12 ">
       <div className="flex items-center justify-between">
-        <h2 className="text-4xl md:text-6xl">MY WORK</h2>
+        <h2 className="text-4xl md:text-6xl">PROJECTS</h2>
         <hr className="border-gray border w-full" />
       </div>
 
@@ -92,8 +92,8 @@ export default function Project({ viewProjects, setViewProjects }) {
             className="border bg-white text-black border-gray-100 hover:text-white hover:bg-transparent 
             rounded-full w-24 h-24 md:w-32 md:h-32 md:p-8 text-xs md:text-[18px]"
           >
-            All Projects
-            <BsArrowRight className="md:text-2xl mx-auto mt-1" />
+           All Projects
+           <BsArrowRight className="text-lg md:text-2xl mx-auto mt-1.5" />
           </button>
         </div>
       )}

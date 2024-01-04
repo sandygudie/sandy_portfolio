@@ -9,64 +9,25 @@ export default function OpenSource() {
     700: 2,
   };
   const project = [
-   
-
-    {
-      id: 2,
-      community: "Turning way",
-      name: "Community Handbook",
-      contributions: [
-        {
-          name: "Community Handbook",
-          link: "https://moocs-client.netlify.app/",
-        },
-        
-      ],
-      description:
-        "Created content on “Hybrid Collaboration” for the community handbook",
-      link: "https://moocs-client.netlify.app/",
-      image: "images/turingway.png",
-    },
     {
       id: 1,
-      name: "Open Innovation",
       community: "Open Science Community Saudi Arabia",
-      description:
-        "",
-      contributions: [
-        {
-          name: "Open Innovation",
-          link: "https://moocs-client.netlify.app/",
-        },
-        {
-          name: "Official Website",
-          link: "https://osc-ksa.com/",
-        },
-        {
-          name: "Blog",
-          link: "https://oscsa-en-blog.netlify.app/",
-        },
-      ],
       link: "https://osc-ksa.com/",
       image: "images/osca-logo.png",
     },
 
     {
+      id: 2,
+      community: "Turning way",
+      link: "https://the-turing-way.netlify.app/collaboration/hybrid-collab.html",
+      image: "images/turingway.png",
+    },
+    {
       id: 3,
       community: "Layer5",
-      name: "OSCSA",
-      description: "MOOCs to learn Open Science Courses.",
-      contributions: [
-        {
-          name: "Community Handbook",
-          link: "https://moocs-client.netlify.app/",
-        },
-        
-      ],
-      link: "  ",
+      link: "https://layer5.io/",
       image: "images/layer-logo.png",
     },
-   
   ];
 
   return (
@@ -75,41 +36,23 @@ export default function OpenSource() {
         <h2 className="text-4xl md:text-6xl">OPEN SOURCE</h2>
         <hr className="border-gray border w-full" />
       </div>
-    
-      <div className="w-11/12 mx-auto flex relative mt-12 justify-center items-center flex-wrap lg:flex-nowrap">
-     
+
+      <div className="w-11/12 mx-auto flex gap-x-10 relative mt-12 justify-center items-center flex-wrap lg:flex-nowrap">
         {project.map((item) => {
           return (
-            <div
-              className="md:w-1/2 lg:w-auto flex items-center group gap-4 justify-between hover:scale-110 hover:transition duration-300 ease-out"
+            <a
+              href={item.link}
+              className=" hover:scale-110 hover:transition duration-300 ease-out"
               key={item.id}
+              rel="noreferrer"
+              target="_blank"
             >
-             <div className="">
-             <img
+              <img
                 src={item.image}
-                className="rounded-xl w-64 h-full md:w-72 "
+                className="rounded-xl w-28 h-full md:w-40"
                 alt={item.description}
               />
-             </div>
-              <a
-                href={item.link}
-                className="w-full"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <div className="text-base text-gray-100 flex flex-col justify-end h-full">
-                
-                  {item.contributions.map((ele, index)=>{
-                    return(
-                      <a  key={index} href={ele.link} className="text-sm underline">
-                     {ele.name}
-                  </a>
-                    )
-                  })}
-                 
-                </div>
-              </a>
-            </div>
+            </a>
           );
         })}
       </div>

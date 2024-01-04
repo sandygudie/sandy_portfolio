@@ -17,7 +17,6 @@ function Footer() {
         <Social/>
  
       </div> 
-      {/* <hr className="border-gray"/> */}
       <p className="text-gray-100 text-center py-4 text-xs ">
        Goodnews Sandy All rights reserved. {new Date().getFullYear()}
       </p>

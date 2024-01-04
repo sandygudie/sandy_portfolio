@@ -32,7 +32,6 @@ export default function Social() {
   ];
   return (
     <div>
-
       <div className="mt-4 items-start gap-2 flex justify-center ">
         {links.map((item) => {
           return (
@@ -47,12 +46,10 @@ export default function Social() {
                 {" "}
                 {item.icon}{" "}
               </span>
-
             </a>
           );
         })}
       </div>
-      
     </div>
   );
 }

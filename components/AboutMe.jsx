@@ -16,7 +16,7 @@ export default function AboutMe() {
 
         <p className="mt-3">
           I enjoy writing, check out my articles on{" "}
-          <a className="underline text-white" href="sandygoody.medium.com">
+          <a className="underline text-white" target="_blank" rel="noreferrer" href="https://sandygoody.medium.com/">
             Medium
           </a>
           .
@@ -42,20 +42,18 @@ export default function AboutMe() {
               Tech Stack
             </h3>
             <div className="text-left">
-              <p className="md:mb-4">
-                React, Vue, NextJs, Vite, HTML, CSS, Jquery, JavaScript,
+              <p >
+              HTML, CSS, React, Vue, NextJs, Vite, Jquery, JavaScript,
                 TypeScript,{" "}
               </p>
-              <p className="md:mb-4">
+              <p >
                 Sass, Styled-Component, TailwindCSS, Chakra-UI, Material-UI,
-                Framer-motion
               </p>
 
-              <p className="md:mb-4">
-                NodeJs, ExpressJs, NestJs, Firebase, GraphQL, MongoDB, MySQL,
-                PostgreSQL{" "}
+              <p >
+                NodeJs, ExpressJs, NestJs, Firebase, MongoDB, MySQL{" "}
               </p>
-              <p className="md:mb-4">Github Actions, Docker-Compose, Cypress</p>
+              <p >Github Actions, Docker-Compose, Cypress</p>
             </div>
           </div>
         </div>
