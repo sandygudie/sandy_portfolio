@@ -51,7 +51,7 @@ export default function AboutMe() {
               </p>
 
               <p >
-                NodeJs, ExpressJs, NestJs, Firebase, MongoDB, MySQL{" "}
+                NodeJs, ExpressJs, NestJs, Firebase, MongoDB, MySQL,{" "}
               </p>
               <p >Github Actions, Docker-Compose, Cypress</p>
             </div>
