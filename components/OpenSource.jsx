@@ -37,19 +37,19 @@ export default function OpenSource() {
         <hr className="border-gray border w-full" />
       </div>
 
-      <div className="w-11/12 mx-auto flex gap-x-10 relative mt-12 justify-center items-center flex-wrap lg:flex-nowrap">
+      <div className="w-11/12 mx-auto flex relative mt-12 justify-center items-center flex-wrap lg:flex-nowrap">
         {project.map((item) => {
           return (
             <a
               href={item.link}
-              className=" hover:scale-110 hover:transition duration-300 ease-out"
+              className="hover:scale-110 hover:transition duration-300 ease-out"
               key={item.id}
               rel="noreferrer"
               target="_blank"
             >
               <img
                 src={item.image}
-                className="rounded-xl w-28 h-full md:w-40"
+                className="w-36 md:w-52"
                 alt={item.description}
               />
             </a>
