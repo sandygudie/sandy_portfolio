@@ -54,18 +54,18 @@ export default function Home() {
 
               <p className=" hidden md:block w-full md:text-3xl font-light">
                 <span className="text-gray-100">Software developer</span> ,
-                <span className="text-gray-100"> tech instructor</span> and
+                <span className="text-gray-100">tech instructor</span> and
                 <span className="text-gray-100"> writer</span>.
               </p>
               <p className="md:hidden">
                 <p className="text-lg text-gray-100">Software developer</p>
-                <p className="text-lg my-3 text-gray-100"> Tech Instructor</p>
-                <p className="text-lg text-gray-100"> Writer</p>
+                <p className="text-lg my-3 text-gray-100">Tech Instructor</p>
+                <p className="text-lg text-gray-100">Writer</p>
               </p>
               <div className="flex justify-center mt-20">
                 <a
                   href="#aboutme"
-                  className="w-20 bg-white text-black h-20 md:w-24 md:h-24 flex flex-col hover:bg-transparent group border border-gray-100 rounded-full justify-center items-center"
+                  className="w-20 bg-white text-dark h-20 md:w-24 md:h-24 flex flex-col hover:bg-transparent group border border-gray-100 rounded-full justify-center items-center"
                 >
                   <HiOutlineArrowDown className="text-xl md:text-3xl group-hover:text-white" />
                 </a>

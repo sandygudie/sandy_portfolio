@@ -42,7 +42,7 @@ export default function Social() {
               className="flex text-sm hover:underline items-center gap-4 "
               href={item.link}
             >
-              <span className="border-[1px] text-white text-sm border-white p-2 rounded-full hover:bg-white hover:text-black hover:border-white">
+              <span className="border-[1px] text-white text-sm border-white p-2 rounded-full hover:bg-white hover:text-dark hover:border-white">
                 {" "}
                 {item.icon}{" "}
               </span>

@@ -12,7 +12,7 @@ export default function Custom404() {
       <div className="mt-6">
       <button
             onClick={() => router.push("/")}
-            className="border text-white hover:bg-white text-black border-gray-100 hover:text-black bg-transparent
+            className="border text-white hover:bg-white text-white border-gray-100 hover:text-dark bg-transparent
              rounded-md flex items-center gap-x-4 py-3 px-8 font-bold text-xl"
           >
         <BsArrowLeft/> Home

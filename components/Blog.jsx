@@ -87,10 +87,10 @@ export default function Blog() {
         target="_blank"
         rel="noreferrer"
         href="https://sandygoody.medium.com/"
-        className="flex items-center justify-center flex-col border border-gray-100 mx-auto md:mt-12 text-center bg-white text-black hover:text-white hover:bg-transparent rounded-full w-24 h-24 md:w-32 md:h-32 p-2 md:p-6 text-xs md:text-[18px]"
+        className="flex items-center justify-center md:leading-6 flex-col border border-gray-100 mx-auto md:mt-12 text-center bg-white text-dark hover:text-white hover:bg-transparent rounded-full w-24 h-24 md:w-32 md:h-32 p-2 md:p-6 text-xs md:text-[18px]"
       >
         More on Medium
-        <BsArrowRight className="text-lg md:text-2xl mx-auto mt-1.5" />
+        <BsArrowRight className="text-lg md:text-2xl mx-auto mt-1" />
       </a>
     </div>
   );
