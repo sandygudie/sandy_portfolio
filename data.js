@@ -48,7 +48,7 @@ export const projects = [
   {
     id: 4,
     name: "Invoice App",
-    description: "An Invoice management App for managing and tracking your business invoices.",
+    description: "An Invoice management application for managing and tracking your business invoices.",
     tools: [
       "React",
       "Typescript",
@@ -63,7 +63,7 @@ export const projects = [
     {
     id: 7,
     name: "Defiants",
-    description: "Official Site for Defiants Community",
+    description: "Official website for Defiants community",
     tools: ["NextJs", "TailwindCSS", "Sanity", "Typescript"],
     link: "https://defiants-defiants.vercel.app/",
     image: "/images/defiants.png",
@@ -72,7 +72,7 @@ export const projects = [
     {
     id: 10,
     name: "Open Innovation",
-    description: "An MOOCs application to learn Open Science Courses.",
+    description: "An MOOCs application to learn open science courses.",
     tools: ["Figma","Vite(ReactJs)", "TypeScript", "Sass", "LinguiJs", "Crowdin","React-query"],
     link: "https://moocs-client.netlify.app/",
     image: "/images/mooc.PNG",
@@ -107,7 +107,7 @@ export const projects = [
     id: 5,
     name: "CountryName-flag",
     description:
-      "React NPM package for getting countryname,flag and countrycode.",
+      "React NPM package for countryname, flag and countrycode.",
     tools: ["Parcel", "Typescript", "Eslint", "NPM"],
     link: " https://www.npmjs.com/package/react-countryname-flag",
     image: "/images/npm-package.png",
@@ -136,7 +136,7 @@ export const projects = [
   {
     id: 9,
     name: "Launmax",
-    description: "Fast Laundry Service for Lagos Residents.",
+    description: "Fast laundry service for Lagos residents.",
     tools: ["HTML", "SCSS", "Javascript"],
     link: " https://launmax.netlify.app/",
     image: "/images/launmax.PNG",
