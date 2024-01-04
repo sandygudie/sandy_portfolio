@@ -49,7 +49,7 @@ export default function OpenSource() {
             >
               <img
                 src={item.image}
-                className="w-36 md:w-52"
+                className="w-36 md:w-72"
                 alt={item.description}
               />
             </a>
