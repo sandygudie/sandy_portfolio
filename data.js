@@ -30,7 +30,7 @@ export const projects = [
   {
     id: 3,
     name: "SportBase",
-    description: "SportBase is a modern e-commerce sportwear shop to get all your sport needs.",
+    description: "SportBase is a modern eccommerce sportwear shop to get all your sport needs.",
     tools: [
       "Nextjs",
       "TypeScript",
@@ -39,7 +39,6 @@ export const projects = [
       "MongoDB",
       "Stripe",
       "Flutterwave",
-      "PayPal"
 
     ],
     link: "https://sportbase.netlify.app/",
@@ -57,7 +56,7 @@ export const projects = [
       "Framer-motion",
       "Formik-yup",
     ],
-    link: " https://app-invoice.netlify.app/",
+    link: "https://app-invoice.netlify.app/",
     image: "/images/invoice.png",
     githubLink:"https://github.com/sandygudie/Invoice-App"
   },
