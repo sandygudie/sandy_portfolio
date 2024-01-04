@@ -53,7 +53,7 @@ export default function Home() {
               </h1>
 
               <p className=" hidden md:block w-full md:text-3xl font-light">
-                <span className="text-gray-100">Software developer</span> ,
+                <span className="text-gray-100">Software developer, </span>
                 <span className="text-gray-100">tech instructor</span> and
                 <span className="text-gray-100"> writer</span>.
               </p>
