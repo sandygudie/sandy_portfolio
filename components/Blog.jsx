@@ -42,7 +42,7 @@ export default function Blog() {
         "Localization in React applications using LinguiJS and Crowdin",
       link: "https://medium.com/@sandygoody/how-to-set-up-localisation-in-react-app-using-linguijs-and-crowdin-f10c26b7ee38",
       images: "images/blog/localisation.webp",
-      dateCreated: "june 7th, 2023",
+      dateCreated: "June 7th, 2023",
     },
     {
       id: 8,

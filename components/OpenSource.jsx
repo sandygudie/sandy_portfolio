@@ -1,13 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Masonry from "react-masonry-css";
 
 export default function OpenSource() {
-  const breakpointColumnsObj = {
-    default: 2,
-    1100: 2,
-    700: 2,
-  };
+ 
   const project = [
     {
       id: 1,
