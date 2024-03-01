@@ -32,7 +32,7 @@ export default function OpenSource() {
         <hr className="border-gray border w-full" />
       </div>
 
-      <div className="w-11/12 mx-auto flex relative mt-12 justify-center items-center flex-wrap lg:flex-nowrap">
+      <div className="lg:w-[40rem] mx-auto flex relative mt-12 justify-center items-center flex-wrap ">
         {project.map((item) => {
           return (
             <a

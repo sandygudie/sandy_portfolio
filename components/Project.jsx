@@ -5,7 +5,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { useRouter } from "next/router";
 import { FaGithub } from "react-icons/fa";
 
-export default function Project({ viewProjects, setViewProjects }) {
+export default function Project({ viewProjects }) {
   const router = useRouter();
 
   return (
@@ -15,7 +15,7 @@ export default function Project({ viewProjects, setViewProjects }) {
         <hr className="border-gray border w-full" />
       </div>
 
-      <div className="w-12/12 flex flex-wrap gap-x-6 md:gap-12 items-start justify-between lg:justify-center m-auto pb-12">
+      <div className="w-12/12 flex flex-wrap gap-x-6 md:gap-12 items-start justify-between lg:justify-center m-auto">
         {projects.map((item, i) => {
           return (
             (!viewProjects ? i <= 3 : i <= projects.length) && (
@@ -23,7 +23,7 @@ export default function Project({ viewProjects, setViewProjects }) {
                 rel="noreferrer"
                 target="_blank"
                 href={item.link}
-                className="group relative h-auto w-full md:w-[45%] lg:w-[40%] mt-8  md:mt-12 lg:mx-6"
+                className="group relative h-auto w-full md:w-[45%] lg:w-[40%] mt-8 md:mt-12 lg:mx-6"
                 key={item.id}
               >
                 <Image
@@ -86,14 +86,16 @@ export default function Project({ viewProjects, setViewProjects }) {
       </div>
 
       {!viewProjects && (
-        <div className="my-8 text-center">
+        <div className="pr-12 mt-3 md:text-right">
           <button
             onClick={() => router.push("/projects")}
-            className="border bg-white md:leading-5 text-dark border-gray-100 hover:text-white hover:bg-transparent 
-            rounded-full w-24 h-24 md:w-32 md:h-32 md:p-8 text-xs md:text-[18px]"
+            className="text-white text-[18px]"
           >
-           All Projects
-           <BsArrowRight className="text-lg md:text-2xl mx-auto mt-1" />
+            <span className="flex items-center gap-x-4 text-sm md:text-base border-b-[1px] pb-2">
+              {" "}
+              All Projects
+              <BsArrowRight className="text-lg md:text-2xl mx-auto mt-1" />
+            </span>{" "}
           </button>
         </div>
       )}

@@ -8,8 +8,6 @@ import { HiOutlineArrowDown } from "react-icons/hi";
 import OpenSource from "../components/OpenSource";
 
 export default function Home() {
-  const [viewProjects, setViewProjects] = useState(false);
-
   return (
     <>
       <Head>
@@ -41,57 +39,60 @@ export default function Home() {
       </Head>
 
       <main className="">
-        {!viewProjects ? (
-          <div>
-            <div
-              data-aos="zoom-out"
-              data-aos-duration="800"
-              className="pt-40 px-6 lg:px-12 text-left over-flow-hidden"
-            >
-              <h1 className="font-bold md:w-96 lg:mb-8 text-[2.5rem] md:text-[6rem] lg:text-[8rem] leading-[3.5rem] md:leading-[6.5rem]">
-                CREATIVE DEVELOPER
-              </h1>
+        <div className="">
+          <div
+            data-aos="zoom-out"
+            data-aos-duration="800"
+            className="pt-40 px-6 lg:px-12 text-left over-flow-hidden relative "
+          >
+            <div className="flex flex-col-reverse sm:flex-row items-start justify-between">
+              <div className="">
+                <h1 className="font-bold lg:mb-4 text-[2.5rem] md:text-[5rem] lg:text-[7.5rem] leading-[2.5rem] md:leading-[6.5rem]">
+                  CREATIVE DEVELOPER
+                </h1>
 
-              <p className=" hidden md:block w-full md:text-3xl font-light">
-                <span className="text-gray-100">Software developer, </span>
-                <span className="text-gray-100">tech instructor</span> and
-                <span className="text-gray-100"> writer</span>.
-              </p>
-              <p className="md:hidden">
-                <p className="text-lg text-gray-100">Software developer</p>
-                <p className="text-lg my-3 text-gray-100">Tech Instructor</p>
-                <p className="text-lg text-gray-100">Writer</p>
-              </p>
-              <div className="flex justify-center mt-20">
-                <a
-                  href="#aboutme"
-                  className="w-20 bg-white text-dark h-20 md:w-24 md:h-24 flex flex-col hover:bg-transparent group border border-gray-100 rounded-full justify-center items-center"
-                >
-                  <HiOutlineArrowDown className="text-xl md:text-3xl group-hover:text-white" />
-                </a>
+                <p className="text-lg md:text-3xl mt-2 lg:ml-2 font-light">
+                  <p className="text-gray-100">Software developer,</p>
+                  <p className="md:my-2 text-gray-100">Open source advocate,</p>
+                  <p className="text-gray-100"><span className="text-white">and</span> Writer</p>
+                </p>
+              </div>
+              <div
+                className="relative w-full h-48 lg:h-[22rem] rounded-md"
+                style={{
+                  background: 'url("/images/sandy-pics.jpg")',
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "top center",
+                  backgroundSize: "contain",
+                }}
+              >
+                
               </div>
             </div>
-
-            <div id="aboutme">
-              <AboutMe />
+            <div className="flex justify-center mt-10 lg:mt-48">
+              <a
+                href="#aboutme"
+                className="w-20 bg-white text-dark h-20 md:w-24 md:h-24 flex flex-col hover:bg-transparent group border border-gray-100 rounded-full justify-center items-center"
+              >
+                <HiOutlineArrowDown className="text-xl md:text-3xl group-hover:text-white" />
+              </a>
             </div>
-            <div className="mt-16 md:mt-48">
-            <Project
-              viewProjects={viewProjects}
-              setViewProjects={setViewProjects}
-            />
-            </div>
-           
-            <Blog />
-            <OpenSource />
-
-            <hr className="border-gray border-t-none" />
-            <Footer />
           </div>
-        ): null}
+
+          <div id="aboutme">
+            <AboutMe />
+          </div>
+          <div className="mt-16 md:mt-48">
+            <Project />
+          </div>
+
+          <Blog />
+          <OpenSource />
+
+          <hr className="border-gray border-t-none" />
+          <Footer />
+        </div>
       </main>
     </>
   );
 }
-
-
