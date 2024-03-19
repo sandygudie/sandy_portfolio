@@ -46,7 +46,7 @@ export default function Home() {
             className="pt-40 px-6 lg:px-12 text-left over-flow-hidden relative "
           >
             <div className="flex flex-col-reverse sm:flex-row items-start justify-between">
-              <div className="">
+              <div className="text-center sm:text-initial">
                 <h1 className="font-bold lg:mb-4 text-[2.5rem] md:text-[5rem] lg:text-[7.5rem] leading-[2.5rem] md:leading-[6.5rem]">
                   CREATIVE DEVELOPER
                 </h1>
