@@ -48,17 +48,9 @@ export default function Project({ viewProjects }) {
                       <p className="text-sm lg:text-2xl font-medium">
                         {item.name}
                       </p>
-                      <div className="flex text-sm justify-between items-center gap-4">
+                      <div className="flex text-sm justify-end items-center gap-4">
                         <a rel="noreferrer" target="_blank" href={item.link}>
                           View Site
-                        </a>
-                        <a
-                          href={item.githubLink}
-                          rel="noreferrer"
-                          target="_blank"
-                        >
-                          {" "}
-                          <FaGithub className="text-sm md:text-lg text-gray-100" />
                         </a>
                       </div>
                     </div>
