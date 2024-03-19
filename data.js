@@ -8,23 +8,21 @@ export const projects = [
       "TypeScript",
       "TailwindCSS",
       "Redux Toolkit",
-      "Formik-yup",
-      "Framer-motion",
-      "Chakara-UI",
+      "NodeJs",
+      "MongoDB",
       "Cypress"
     ],
-    link: "https://kanban-management-app.netlify.app/",
+    link: "https://kanban-track.vercel.app",
     image: "/images/kanban.png",
-    githubLink:"https://github.com/sandygudie/Kanban-App"
+   
   },
   {
     id: 2,
     name: "DevLinks",
-    description: "Devlinks is a monorepo, full-stack development application. Devlink manages all your social links in one place.",
-    tools: ["VueJs", "TypeScript", "TailwindCSS","mySQL","Nodejs","ExpressJS"],
+    description: "Devlink manages all your social links in one place.",
+    tools: ["VueJs", "TypeScript", "TailwindCSS","mySQL","NodeJs","ExpressJS"],
     link: "https://devlinks-murex.vercel.app/login",
     image: "/images/devlinks.png",
-    githubLink:"https://github.com/sandygudie/devlinks"
   },
 
   {
@@ -43,7 +41,6 @@ export const projects = [
     ],
     link: "https://sportbase.netlify.app/",
     image: "/images/sportbase.svg",
-    githubLink:"https://github.com/sandygudie/sportbase"
   },
   {
     id: 4,
@@ -51,20 +48,19 @@ export const projects = [
     description: "An Invoice management application for managing and tracking your business invoices.",
     tools: [
       "React",
-      "Typescript",
+      "TypeScript",
       "TailwindCSS",
       "Framer-motion",
       "Formik-yup",
     ],
     link: "https://app-invoice.netlify.app/",
     image: "/images/invoice.png",
-    githubLink:"https://github.com/sandygudie/Invoice-App"
   },
     {
     id: 7,
     name: "Defiants",
     description: "Official website for Defiants community",
-    tools: ["NextJs", "TailwindCSS", "Sanity", "Typescript"],
+    tools: ["NextJs", "TailwindCSS", "Sanity", "TypeScript"],
     link: "https://defiants-defiants.vercel.app/",
     image: "/images/defiants.png",
   },
@@ -76,16 +72,16 @@ export const projects = [
     tools: ["Figma","Vite(ReactJs)", "TypeScript", "Sass", "LinguiJs", "Crowdin","React-query"],
     link: "https://moocs-client.netlify.app/",
     image: "/images/mooc.PNG",
-    githubLink:"https://github.com/Open-Science-Community-Saudi-Arabia/MOOCs"
+    
   },
   {
     id: 12,
     name: "QuizBase",
-    description: "Rest API for programming Language quiz.",
-    tools: ["NodeJs", "Express", "MongoDB", "React", "Docusarus", "Documentation" ],
+    description: "Rest API for programming Language quizzes.",
+    tools: ["NodeJs", "ExpressJs", "MongoDB", "React", "Docusarus", "Documentation" ],
     link: "https://quizbase.netlify.app/",
     image: "/images/quizBase.png",
-    githubLink:"https://github.com/sandygudie/quiz-api"
+
   },
 
   {
@@ -96,11 +92,11 @@ export const projects = [
       "HTML",
       "Sass",
       "Webpack",
-      "Javascript",
+      "JavaScript",
     ],
     link: "https://pomodoro-stopwatch.netlify.app/",
     image: "/images/pomodoro.png",
-    githubLink:"https://github.com/sandygudie/Pomodoro-Timer"
+    
   },
   
   {
@@ -108,10 +104,10 @@ export const projects = [
     name: "CountryName-flag",
     description:
       "React NPM package for countryname, flag and countrycode.",
-    tools: ["Parcel", "Typescript", "Eslint", "NPM"],
+    tools: ["Parcel", "TypeScript", "Eslint", "NPM"],
     link: " https://www.npmjs.com/package/react-countryname-flag",
     image: "/images/npm-package.png",
-    githubLink:"https://github.com/sandygudie/react-countryname-flag"
+
   },
   
 
@@ -119,17 +115,17 @@ export const projects = [
     id: 6,
     name: "QuizApp",
     description: "Test your knowledge of popular programming languages.",
-    tools: ["Nextjs", "TypeScript", "TailwindCSS"],
+    tools: ["NextJs", "TypeScript", "TailwindCSS"],
     link: "https://app-quizs.netlify.app/",
     image: "/images/quizapp.png",
-    githubLink:"https://github.com/sandygudie/QuizApp"
+  
   },
 
   {
     id: 8,
     name: "My Networth",
     description: "Track all your assests in one place.",
-    tools: ["HTML", "SCSS", "Javascript"],
+    tools: ["HTML", "SCSS", "JavaScript"],
     link: "https://mynetworth.netlify.app/",
     image: "/images/networth.PNG",
   },
@@ -137,9 +133,9 @@ export const projects = [
     id: 9,
     name: "Launmax",
     description: "Fast laundry service for Lagos residents.",
-    tools: ["HTML", "SCSS", "Javascript"],
+    tools: ["HTML", "SCSS", "JavaScript"],
     link: " https://launmax.netlify.app/",
     image: "/images/launmax.PNG",
-    githubLink:"https://github.com/sandygudie/launmax"
+  
   },
 ];
