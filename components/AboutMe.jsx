@@ -31,17 +31,16 @@ export default function AboutMe() {
             </h3>
             <div className="text-left !text-[1.2rem] md:!text-[23px] !leading-[3rem]">
               <p>
-              HTML, CSS, React, Vue, NextJs, Vite, Jquery, JavaScript,
-                TypeScript,{" "}
+              HTML, CSS, Jquery, JavaScript,
+                TypeScript, React, Vue, NextJs
               </p>
-              <p >
-                Sass, Styled-Component, TailwindCSS, Chakra-UI, Material-UI,
+              <p>
+                Sass, Styled-Component, TailwindCSS, Ant-Design, Material-UI,
               </p>
-
-              <p >
+              <p>
                 NodeJs, ExpressJs, NestJs, Firebase, MongoDB, MySQL,{" "}
               </p>
-              <p >Github Actions, Docker-Compose, Cypress</p>
+              <p> Github Actions, Docker-Compose, Cypress</p>
             </div>
           </div>
         </div>
