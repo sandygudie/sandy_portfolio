@@ -9,6 +9,7 @@ export const projects = [
       "TailwindCSS",
       "Redux Toolkit",
       "NodeJs",
+      "ExpressJS",
       "MongoDB",
       "Cypress"
     ],
@@ -20,7 +21,7 @@ export const projects = [
     id: 2,
     name: "DevLinks",
     description: "Devlink manages all your social links in one place.",
-    tools: ["VueJs", "TypeScript", "TailwindCSS","mySQL","NodeJs","ExpressJS"],
+    tools: ["VueJs", "TypeScript", "TailwindCSS","mySQL","NodeJs","ExpressJs"],
     link: "https://devlinks-murex.vercel.app/login",
     image: "/images/devlinks.png",
   },
@@ -30,7 +31,7 @@ export const projects = [
     name: "SportBase",
     description: "SportBase is a modern eccommerce sportwear shop to get all your sport needs.",
     tools: [
-      "Nextjs",
+      "NextJs",
       "TypeScript",
       "TailwindCSS",
       "Sanity",
@@ -69,7 +70,7 @@ export const projects = [
     id: 10,
     name: "Open Innovation",
     description: "An MOOCs application to learn open science courses.",
-    tools: ["Figma","Vite(ReactJs)", "TypeScript", "Sass", "LinguiJs", "Crowdin","React-query"],
+    tools: ["Figma", "Vite(ReactJs)", "TypeScript", "Sass", "LinguiJs", "Crowdin","React-query"],
     link: "https://moocs-client.netlify.app/",
     image: "/images/mooc.PNG",
     
