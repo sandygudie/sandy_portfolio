@@ -4,18 +4,28 @@ export const projects = [
     name: "Kanban",
     description: "Kanban board is project management application for managing and tracking project activites and tasks.",
     tools: [
-      "Vite(ReactJs)",
+      "ReactJs",
       "TypeScript",
       "TailwindCSS",
       "Redux Toolkit",
       "NodeJs",
       "ExpressJS",
       "MongoDB",
+      "WebSocket (Microservice)",
       "Cypress"
     ],
     link: "https://kanban-track.vercel.app",
     image: "/images/kanban.png",
    
+  },
+  {
+    id: 10,
+    name: "Open Innovation",
+    description: "An Open online course application.",
+    tools: ["Figma", "ReactJs", "TypeScript", "NodeJs", "Express", "Crowdin", "MongoDb", "Redis"],
+    link: "https://moocs-client.netlify.app/",
+    image: "/images/mooc.PNG",
+    
   },
   {
     id: 2,
@@ -66,15 +76,7 @@ export const projects = [
     image: "/images/defiants.png",
   },
   
-    {
-    id: 10,
-    name: "Open Innovation",
-    description: "An MOOCs application to learn open science courses.",
-    tools: ["Figma", "Vite(ReactJs)", "TypeScript", "Sass", "LinguiJs", "Crowdin","React-query"],
-    link: "https://moocs-client.netlify.app/",
-    image: "/images/mooc.PNG",
-    
-  },
+   
   {
     id: 12,
     name: "QuizBase",

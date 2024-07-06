@@ -25,22 +25,15 @@ export default function AboutMe() {
         <div className="mt-4 md:mt-8">
           
 
-          <div className="flex-col md:flex-row flex items-start gap-x-12 py-4 md:py-6 justify-start basis-[60%] lg:basis-[40%] text-gray-100">
-            <h3 className="text-xl md:text-2xl text-white w-36 font-medium">
+          <div className="flex-col md:flex-row flex items-center gap-x-8 py-4 md:py-6 justify-start basis-[60%] lg:basis-[40%] text-gray-100">
+            <h3 className="text-xl md:text-2xl text-white w-64 font-medium">
               Tech Stack
             </h3>
             <div className="text-left !text-[1.2rem] md:!text-[23px] !leading-[3rem]">
               <p>
-              HTML, CSS, Jquery, JavaScript,
-                TypeScript, React, Vue, NextJs
+             JavaScript,
+                TypeScript, React, Vue, NextJs, Python, NodeJs, ExpressJs, NestJs, Redis, MongoDB, MySQL, Github Actions, Docker-Compose, Cypress
               </p>
-              <p>
-                Sass, Styled-Component, TailwindCSS, Ant-Design, Material-UI,
-              </p>
-              <p>
-                NodeJs, ExpressJs, NestJs, Firebase, MongoDB, MySQL,{" "}
-              </p>
-              <p> Github Actions, Docker-Compose, Cypress</p>
             </div>
           </div>
         </div>
