@@ -48,13 +48,13 @@ export default function Home() {
             <div className="flex flex-col-reverse sm:flex-row items-start justify-between">
               <div className="text-center sm:text-left">
                 <h1 className="font-bold lg:mb-4 text-[2.5rem] md:text-[5rem] lg:text-[7.5rem] leading-[2.5rem] md:leading-[6.5rem]">
-                  CREATIVE DEVELOPER
+                  SOFTWARE DEVELOPER
                 </h1>
 
                 <p className="text-lg md:text-3xl mt-2 lg:ml-2 font-light">
-                  <p className="text-gray-100">Software developer,</p>
-                  <p className="md:my-2 text-gray-100">Open source advocate,</p>
-                  <p className="text-gray-100"><span className="text-white">and</span> Writer</p>
+                  <p className="md:my-2 text-gray-100">Open Source Contributor,</p>
+                  // <p className="text-gray-100">Dig</p>
+                  <p className="text-gray-100">Technical Writer</p>
                 </p>
               </div>
               <div
