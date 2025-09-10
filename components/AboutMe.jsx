@@ -9,13 +9,13 @@ export default function AboutMe() {
       </div>
       <div className="lg:pl-32 lg:pr-8 text-gray-100 !text-[1.2rem] md:!text-[23px] !leading-[3.5rem]">
         <p className="">
-          My name is Goodnews Sandy, I am an experienced software developer with
-          expertise in building innovative web applications. I build efficient
-          solutions that help business and organizations achieve their goals.
+          My name is Goodnews Sandy, I am a software developer with
+          expertise in building innovative and scalable applications. I build efficient
+          digital solutions that help business and organizations achieve their goals.
         </p>
 
         <p className="">
-          I contribute to open source project and I enjoy writing, check out my articles on{" "}
+          I contribute to open source communities and support digital transformation projects. I enjoy writing, check out my articles on{" "}
           <a className="underline text-white" target="_blank" rel="noreferrer" href="https://sandygoody.medium.com/">
             Medium
           </a>
