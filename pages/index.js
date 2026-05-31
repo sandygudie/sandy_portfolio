@@ -15,7 +15,7 @@ export default function Home() {
         <meta name="description" content="Experienced fullstack developer" />
         <meta
           name="keywords"
-          content="software developer, react developer , backend developer, web development, web developer, open source contributor, frontend developer,fullstack developer"
+          content="software developer, digital transformation, innovation, data analyst, react developer , backend developer, web development, web developer, open source contributor, frontend developer,fullstack developer"
         />
         <link rel="icon" href="/logo.svg" />
         <link
@@ -52,8 +52,8 @@ export default function Home() {
                 </h1>
 
                 <p className="text-lg md:text-3xl mt-2 lg:ml-2 font-light">
-                  <p className="md:my-2 text-gray-100">Open Source Contributor,</p>
-                  <p className="text-gray-100">Technical Writer</p>
+                <p className="md:my-2 text-gray-100">Digital Innovation Expert</p>
+                <p className="md:my-2 text-gray-100">Open Source Contributor</p>
                 </p>
               </div>
               <div
