@@ -9,30 +9,33 @@ export default function AboutMe() {
       </div>
       <div className="lg:pl-32 lg:pr-8 text-gray-100 !text-[1.2rem] md:!text-[23px] !leading-[3.5rem]">
         <p className="">
-          My name is Goodnews Sandy, I am a software developer with
-          expertise in building innovative and scalable applications. I build efficient
-          digital solutions that help business and organizations achieve their goals.
+          I am a software developer with expertise in building innovative and scalable enterprise applications. 
+          I help organizations achieve their goals through efficient, and user-focused digital solutions. I advocate for open source technology because it benefits everyone and drives inclusive innovation.
         </p>
-
-        <p className="">
-          I contribute to open source communities and support digital transformation projects. I enjoy writing, check out my articles on{" "}
-          <a className="underline text-white" target="_blank" rel="noreferrer" href="https://sandygoody.medium.com/">
-            Medium
-          </a>
-          .
+        <p className="mt-2">
+          I am currently working on advancing Africa’s digital future through <span className="text-white">technology, </span><span className="text-white">policy, </span>and <span className="text-white">open collaboration</span>, with focus on impactful public sector innovation.
         </p>
 
         <div className="mt-4 md:mt-8">
-          
-
+          <div className="flex-col md:flex-row flex items-center gap-x-8 py-4 md:py-6 justify-start basis-[60%] lg:basis-[40%] text-gray-100">
+            <h3 className="text-xl md:text-2xl text-white w-64 font-medium">
+              Core Skills
+            </h3>
+            <div className="text-left !text-[1.2rem] md:!text-[23px] !leading-[3rem]">
+              <p>
+              Software development, Project management, Data analysis, Monitoring, evaluation and reporting, Data management, Capacity building, Cybersecurity, 
+                Open source technologies,
+              </p>
+            </div>
+          </div>
           <div className="flex-col md:flex-row flex items-center gap-x-8 py-4 md:py-6 justify-start basis-[60%] lg:basis-[40%] text-gray-100">
             <h3 className="text-xl md:text-2xl text-white w-64 font-medium">
               Tech Stack
             </h3>
             <div className="text-left !text-[1.2rem] md:!text-[23px] !leading-[3rem]">
               <p>
-             JavaScript,
-                TypeScript, React, Vue, NextJs, Python, NodeJs, ExpressJs, NestJs, Redis, MongoDB, MySQL, Github Actions, Docker-Compose, Cypress
+             JavaScript, TypeScript, React, Vue, NextJs, Python, NodeJs, ExpressJs, NestJs, Redis, MongoDB, MySQL, Github Actions, Docker-Compose, Cypress, PowerBi,
+                Power Query, SharePoint
               </p>
             </div>
           </div>

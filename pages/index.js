@@ -52,8 +52,8 @@ export default function Home() {
                 </h1>
 
                 <p className="text-lg md:text-3xl mt-2 lg:ml-2 font-light">
-                <p className="md:my-2 text-gray-100">Digital Innovation Expert</p>
-                <p className="md:my-2 text-gray-100">Open Source Contributor</p>
+                <p className="md:my-2 text-gray-100"> • Digital Innovation Expert</p>
+                <p className="md:my-2 text-gray-100"> • Open Source Contributor</p>
                 </p>
               </div>
               <div
