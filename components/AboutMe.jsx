@@ -13,7 +13,7 @@ export default function AboutMe() {
           I help organizations achieve their goals through efficient, and user-focused software solutions. I advocate for open source technology because it benefits everyone and drives inclusive innovation.
         </p>
         <p className="mt-2">
-          I am currently working on advancing Africa’s digital future through <b className="text-white">technology</b>,<b className="text-white">policy</b>,and <b className="text-white">open collaboration</b>, with focus on impactful public sector innovation.
+          I am currently working on advancing Africa’s digital future through <span className="text-white">technology, </span><span className="text-white">policy, </span>and <span className="text-white">open collaboration</span>, with focus on impactful public sector innovation.
         </p>
 
         <div className="mt-4 md:mt-8">
