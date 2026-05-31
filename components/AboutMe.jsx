@@ -12,7 +12,7 @@ export default function AboutMe() {
           I am a software developer with expertise in building innovative and scalable enterprise applications. 
           I help organizations achieve their goals through efficient, and user-focused software solutions. I advocate for open source technology because it benefits everyone and drives inclusive innovation.
         </p>
-        <br></br>
+        </br>
         <p className="">
           I am currently working on advancing Africa’s digital future through <b classname="text-white">technology</b>,<b classname="text-white">policy</b>,and <b classname="text-white">open collaboration</b>, with focus on impactful public sector innovation.
         </p>
